@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter basename="/">
-      <div className="flex min-h-screen flex-col bg-gray-900 font-mono text-gray-200">
+      <div className="flex flex-col min-h-screen font-mono text-gray-200 bg-gray-900">
         <App />
       </div>
     </BrowserRouter>

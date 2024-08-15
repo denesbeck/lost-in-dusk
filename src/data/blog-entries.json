@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "First blog entry",
+    "description": "This is the first blog entry",
+    "date": "2017-01-01"
+  },
+  {
+    "id": 2,
+    "title": "Second blog entry",
+    "description": "This is the second blog entry",
+    "date": "2017-01-01"
+  }
+]

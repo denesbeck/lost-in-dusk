@@ -1,25 +1,12 @@
-import { useLocation, useNavigate } from "react-router-dom";
-
-interface NavitemProps {
-  label: string;
-  path: string;
-}
-
-const Navitem = ({ label, path }: NavitemProps) => {
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
-
-  return (
-    <button
-      onClick={() => {
-        navigate(path);
-      }}
-      className={`min-w-[6rem] -skew-x-6 px-4 py-2 text-lg underline-offset-4 transition-colors duration-200 ease-in-out hover:bg-slate-700 hover:shadow-[8px_8px_0px_0px_black] ${pathname === path ? "!bg-teal-500 underline underline-offset-4 shadow-[8px_8px_0px_0px_black]" : ""}`}
-    >
-      {label}
-    </button>
-  );
-};
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+} from "@chakra-ui/react";
+import { Navitem } from "components";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const ITEMS = [
   { label: "Home", path: "/" },
@@ -29,11 +16,32 @@ const ITEMS = [
 
 const Navbar = () => {
   return (
-    <div className="mb-4 flex w-full items-center justify-center space-x-4 px-4 py-1">
-      <div className="mr-auto text-lg font-semibold">LostInDusk</div>
-      {ITEMS.map((item) => (
-        <Navitem key={item.path} label={item.label} path={item.path} />
-      ))}
+    <div className="flex animate-textFocus">
+      <div className="py-2 px-4 mr-auto text-lg font-semibold">LostInDusk</div>
+      <div className="hidden justify-center items-center py-1 px-4 mb-4 space-x-4 w-max sm:flex">
+        {ITEMS.map((item) => (
+          <Navitem key={item.path} label={item.label} path={item.path} />
+        ))}
+      </div>
+      <div className="flex z-10 justify-end py-2 px-4 w-full sm:hidden">
+        <Menu>
+          <MenuButton
+            className="ring-1 ring-slate-700"
+            p={6}
+            as={IconButton}
+            icon={<GiHamburgerMenu className="w-6 h-6" />}
+            w="max-content"
+            bg={"black"}
+          />
+          <MenuList className="py-4 px-6 space-y-2 bg-gray-900 ring-1 -skew-x-6 shadow-[8px_8px_0px_black] ring-slate-700">
+            {ITEMS.map((item) => (
+              <MenuItem key={item.path}>
+                <Navitem label={item.label} path={item.path} />
+              </MenuItem>
+            ))}
+          </MenuList>
+        </Menu>
+      </div>
     </div>
   );
 };

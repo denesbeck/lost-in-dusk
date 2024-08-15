@@ -1,4 +1,4 @@
-import { useTypewriter } from "../hooks";
+import { useTypewriter } from "hooks";
 
 const Home = () => {
   const output = useTypewriter(
@@ -7,7 +7,7 @@ const Home = () => {
   );
 
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center">
+    <div className="flex flex-col justify-center items-center px-4 w-full h-[70vh]">
       <div className="text-2xl">{output.split("|")[0]}</div>
       <div className="text-base">{output.split("|")[1]}</div>
     </div>

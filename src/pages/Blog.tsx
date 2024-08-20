@@ -1,11 +1,11 @@
 import blogEntries from "../data/blog-entries.json";
-import { BlogEntryCard } from "components";
+import { BlogCard } from "components";
 
 const Blog = () => {
   return (
-    <div className="flex flex-wrap gap-20 justify-center px-10">
+    <div className="flex flex-wrap justify-center gap-20 px-10">
       {blogEntries.map((entry: any) => (
-        <BlogEntryCard
+        <BlogCard
           key={entry.id}
           id={entry.id}
           title={entry.title}

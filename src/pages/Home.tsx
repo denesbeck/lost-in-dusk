@@ -1,4 +1,4 @@
-import { useTypewriter } from "hooks";
+import { useTypewriter } from "@/hooks";
 
 const Home = () => {
   const output = useTypewriter(

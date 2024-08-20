@@ -1,6 +1,6 @@
 import blogEntries from "../data/blog-entries.json";
 import { BlogEntry } from "@/interfaces/blog";
-import { BlogCard } from "components";
+import { BlogCard } from "@/components";
 
 const Blog = () => {
   return (

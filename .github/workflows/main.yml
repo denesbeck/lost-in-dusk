@@ -1,4 +1,4 @@
-name: My Blog CI/CD
+name: LostInDusk CI/CD
 on:
   push:
     branches: ["main"]

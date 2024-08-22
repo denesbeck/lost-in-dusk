@@ -16,9 +16,11 @@ const ITEMS = [
 
 const Navbar = () => {
   return (
-    <div className="flex animate-textFocus">
-      <div className="mr-auto px-4 py-2 text-lg font-semibold">LostInDusk</div>
-      <div className="mb-4 hidden w-max items-center justify-center space-x-4 px-4 py-1 sm:flex">
+    <div className="flex animate-textFocus py-2">
+      <div className="mr-auto animate-textFocus px-8 py-2 text-lg font-semibold">
+        LostInDusk
+      </div>
+      <div className="mb-4 hidden w-max items-center justify-center space-x-4 px-8 py-1 sm:flex">
         {ITEMS.map((item) => (
           <Navitem key={item.path} label={item.label} path={item.path} />
         ))}

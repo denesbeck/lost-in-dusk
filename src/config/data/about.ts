@@ -21,7 +21,7 @@ export const CONNECTIONS = [
     icon: FaLinkedin,
   },
   {
-    url: "https://credly.com/users/denesbeck",
+    url: "https://www.credly.com/users/denesbeck",
     icon: SiCredly,
   },
 ];

@@ -16,14 +16,14 @@ const ITEMS = [
 
 const Navbar = () => {
   return (
-    <div className="flex animate-textFocus py-2">
+    <div className="flex animate-textFocus px-6 py-2">
       <Title mr />
-      <div className="mb-4 hidden w-max items-center justify-center space-x-4 px-8 py-1 sm:flex">
+      <div className="mb-4 hidden w-max items-center justify-center space-x-4 py-1 sm:flex">
         {ITEMS.map((item) => (
           <Navitem key={item.path} label={item.label} path={item.path} />
         ))}
       </div>
-      <div className="z-10 flex w-full justify-end px-4 py-2 sm:hidden">
+      <div className="z-10 flex w-full justify-end py-2 sm:hidden">
         <Menu>
           <MenuButton
             className="ring-1 ring-slate-700"

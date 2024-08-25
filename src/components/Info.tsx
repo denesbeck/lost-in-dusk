@@ -4,9 +4,9 @@ import { INFO } from "@/config/data/about";
 
 const Info = () => {
   return (
-    <Stack maxW={"25rem"} overflowX={"auto"} gap={8}>
+    <Stack maxW={"26rem"} overflowX={"auto"} gap={8}>
       <Heading2 content="Info" />
-      <div className="flex animate-textFocus gap-8">
+      <div className="flex animate-textFocus gap-8 px-1">
         <Avatar />
         <div>
           {Object.entries(INFO).map(([key, value]) => (

@@ -1,8 +1,13 @@
-import blogEntries from "../data/blog-entries.json";
+import blogEntries from "@/config/data/blog-entries.json";
 import { BlogEntry } from "@/interfaces/blog";
 import { BlogCard } from "@/components";
+import { useEffect } from "react";
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = "LostInDusk | Blog";
+  }, []);
+
   return (
     <div className="flex flex-wrap justify-center gap-20 px-10">
       {blogEntries.map((entry: BlogEntry) => (

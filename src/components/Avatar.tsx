@@ -17,7 +17,7 @@ function Avatar() {
 
   return (
     <img
-      className="h-[90px] w-[90px] rounded-full p-2 ring-slate-700 transition-all duration-200 ease-in hover:bg-slate-800 hover:ring-2"
+      className="hidden h-[90px] w-[90px] rounded-full p-2 ring-slate-700 transition-all duration-200 ease-in hover:bg-slate-800 hover:ring-2 sm:block"
       src={avatar}
       alt="Avatar"
     />

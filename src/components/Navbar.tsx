@@ -5,7 +5,7 @@ import {
   MenuItem,
   IconButton,
 } from "@chakra-ui/react";
-import { Navitem } from "@/components";
+import { Navitem, Title } from "@/components";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const ITEMS = [
@@ -17,9 +17,7 @@ const ITEMS = [
 const Navbar = () => {
   return (
     <div className="flex animate-textFocus py-2">
-      <div className="mr-auto animate-textFocus px-8 py-2 text-lg font-semibold">
-        LostInDusk
-      </div>
+      <Title mr />
       <div className="mb-4 hidden w-max items-center justify-center space-x-4 px-8 py-1 sm:flex">
         {ITEMS.map((item) => (
           <Navitem key={item.path} label={item.label} path={item.path} />

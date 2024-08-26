@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="my-10 flex h-full w-screen flex-1 items-start justify-center">
+      <div className="flex flex-1 justify-center items-start my-10 w-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />

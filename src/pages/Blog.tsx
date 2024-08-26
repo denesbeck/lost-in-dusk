@@ -9,7 +9,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center gap-20 px-10">
+    <div className="flex flex-wrap gap-20 justify-center px-10 mt-10">
       {blogEntries.map((entry: BlogEntry) => (
         <BlogCard
           key={entry.id}

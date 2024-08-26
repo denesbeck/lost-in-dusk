@@ -8,7 +8,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="animate-slideInFromBottom">
+    <div className="mt-10 animate-slideInFromBottom">
       {/* wrapper for adding animate-slideInFromBottom */}
       <Stack
         w={"max-content"}

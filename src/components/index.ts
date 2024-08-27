@@ -8,6 +8,7 @@ import Connections from "./Connections";
 import Footer from "./Footer";
 import Heading2 from "./Heading2";
 import Info from "./Info";
+import Like from "./Like";
 import MacOSBar from "./MacOSBar";
 import Navbar from "./Navbar";
 import Navitem from "./Navitem";
@@ -25,6 +26,7 @@ export {
   Footer,
   Heading2,
   Info,
+  Like,
   MacOSBar,
   Navbar,
   Navitem,

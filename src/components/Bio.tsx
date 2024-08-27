@@ -8,7 +8,7 @@ const Bio = () => {
   return (
     <Stack gap={8} maxW={"25rem"} overflowX={"auto"}>
       <Heading2 content="Bio" />
-      <p className="w-[25rem] animate-textFocus overflow-auto break-words">
+      <p className="overflow-auto pb-2 break-words w-[25rem] animate-textFocus">
         {BIO}
       </p>
     </Stack>

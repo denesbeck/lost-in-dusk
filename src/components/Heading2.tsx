@@ -3,7 +3,7 @@ interface Heading2Props {
 }
 
 const Heading2 = ({ content }: Heading2Props) => {
-  return <h2 className="w-full font-semibold">{content}</h2>;
+  return <h2 className="w-full font-semibold animate-textFocus">{content}</h2>;
 };
 
 export default Heading2;

@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "First blog entry",
-    "description": "This is the first blog entry",
+    "title": "Migrating to Tekton",
+    "description": "This blog post is about my experience migrating from Travis CI to Tekton.",
     "date": "2017-01-01"
   },
   {
     "id": 2,
-    "title": "Second blog entry",
-    "description": "This is the second blog entry",
+    "title": "IBM Tech 2024 Conference",
+    "description": "Insights and takeaways from the IBM Tech 2024 conference.",
     "date": "2017-01-01"
   }
 ]

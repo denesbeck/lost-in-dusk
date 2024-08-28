@@ -6,7 +6,7 @@ const BIO =
 
 const Bio = () => {
   return (
-    <Stack gap={8} maxW={"25rem"} overflowX={"auto"}>
+    <Stack gap={8} maxW={"26rem"} overflowX={"auto"} px={2}>
       <Heading2 content="Bio" />
       <p className="overflow-auto pb-2 break-words w-[25rem] animate-textFocus">
         {BIO}

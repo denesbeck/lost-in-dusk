@@ -4,7 +4,7 @@ import { INFO } from "@/config/data/about";
 
 const Info = () => {
   return (
-    <Stack maxW={"26rem"} overflowX={"auto"} gap={8}>
+    <Stack maxW={"26rem"} overflowX={"auto"} gap={8} px={2}>
       <Heading2 content="Info" />
       <div className="flex gap-8 px-1 pb-3 animate-textFocus">
         <Avatar />

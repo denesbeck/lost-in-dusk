@@ -8,35 +8,48 @@ import {
 import { Navitem, Title } from "@/components";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const ITEMS = [
-  { label: "Home", path: "/" },
-  { label: "Blog", path: "/blog" },
-  { label: "About", path: "/about" },
-];
+interface Item {
+  label: string;
+  path: string;
+  action: () => void;
+}
 
-const Navbar = () => {
+interface NavbarProps {
+  items: Item[];
+}
+
+const Navbar = ({ items }: NavbarProps) => {
   return (
-    <div className="flex animate-textFocus px-6 py-2">
+    <div className="flex fixed top-0 py-2 px-6 w-full animate-textFocus">
       <Title mr />
-      <div className="mb-4 hidden w-max items-center justify-center space-x-4 py-1 sm:flex">
-        {ITEMS.map((item) => (
-          <Navitem key={item.path} label={item.label} path={item.path} />
+      <div className="hidden justify-center items-center py-1 mb-4 space-x-4 w-max sm:flex">
+        {items.map((item) => (
+          <Navitem
+            key={item.label}
+            label={item.label}
+            path={item.path}
+            action={item.action || (() => {})}
+          />
         ))}
       </div>
-      <div className="z-10 flex w-full justify-end py-2 sm:hidden">
+      <div className="flex z-10 justify-end py-2 w-full sm:hidden">
         <Menu>
           <MenuButton
             className="ring-1 ring-slate-700"
             p={6}
             as={IconButton}
-            icon={<GiHamburgerMenu className="h-6 w-6" />}
+            icon={<GiHamburgerMenu className="w-6 h-6" />}
             w="max-content"
             bg={"black"}
           />
-          <MenuList className="-skew-x-6 space-y-2 bg-gray-900 px-6 py-4 shadow-[8px_8px_0px_black] ring-1 ring-slate-700">
-            {ITEMS.map((item) => (
-              <MenuItem key={item.path}>
-                <Navitem label={item.label} path={item.path} />
+          <MenuList className="py-4 px-6 space-y-2 bg-gray-900 ring-1 -skew-x-6 shadow-[8px_8px_0px_black] ring-slate-700">
+            {items.map((item) => (
+              <MenuItem key={item.label}>
+                <Navitem
+                  label={item.label}
+                  path={item.path}
+                  action={item.action || (() => {})}
+                />
               </MenuItem>
             ))}
           </MenuList>

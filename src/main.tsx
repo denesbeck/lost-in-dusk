@@ -3,13 +3,16 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import { Stack } from "@chakra-ui/react";
+import { ScrollToTop } from "@/components";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename="/">
-      <div className="flex overflow-auto flex-col min-h-screen font-mono dark:text-gray-200 dark:bg-gray-900">
+      <Stack className="font-mono dark:text-gray-200 dark:bg-gray-900">
         <App />
-      </div>
+        <ScrollToTop />
+      </Stack>
     </BrowserRouter>
   </StrictMode>,
 );

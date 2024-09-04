@@ -1,4 +1,3 @@
-import { Heading2 } from "@/components";
 import { Center, Input, Stack, Textarea } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 

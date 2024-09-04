@@ -1,15 +1,11 @@
 import blogEntries from "@/config/data/blog-entries.json";
 import { BlogEntry } from "@/interfaces/blog";
 import { BlogCard } from "@/components";
-import { useEffect } from "react";
+import { Wrap } from "@chakra-ui/react";
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = "LostInDusk | Blog";
-  }, []);
-
   return (
-    <div className="flex flex-wrap gap-20 justify-center px-10 mt-10">
+    <Wrap justify={"center"} spacing={"3rem"} px={10} pt={"8rem"} h={"100vh"}>
       {blogEntries.map((entry: BlogEntry) => (
         <BlogCard
           key={entry.id}
@@ -19,7 +15,7 @@ const Blog = () => {
           date={entry.date}
         />
       ))}
-    </div>
+    </Wrap>
   );
 };
 

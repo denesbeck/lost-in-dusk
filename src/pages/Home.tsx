@@ -1,4 +1,6 @@
+import { ContactMe } from "@/components";
 import { useTypewriter } from "@/hooks";
+import { Stack } from "@chakra-ui/react";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -13,10 +15,13 @@ const Home = () => {
 
   return (
     // The height of the div is calculated by subtracting the height of the Navbar, Footer, and the two 5rem paddings from the viewport height.
-    <div className="flex h-[calc(100vh-5.25rem-5rem-5rem)] w-full flex-col items-center justify-center px-4">
-      <div className="text-2xl text-center">{output.split("|")[0]}</div>
-      <div className="text-base text-center">{output.split("|")[1]}</div>
-    </div>
+    <Stack className="h-[calc(100vh-5.25rem-5rem-5rem)] min-h-screen w-full items-center justify-center px-4">
+      <div className="text-2xl text-center min-h-8">{output.split("|")[0]}</div>
+      <div className="text-base text-center min-h-6">
+        {output.split("|")[1]}
+      </div>
+      <ContactMe mt={16} />
+    </Stack>
   );
 };
 

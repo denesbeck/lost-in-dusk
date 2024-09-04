@@ -1,10 +1,16 @@
-const MacOSBar = () => {
+interface MacOSBarProps {
+  close?: () => void;
+}
+const MacOSBar = ({ close }: MacOSBarProps) => {
   return (
-    <div className="flex w-full items-center justify-end space-x-2 p-4">
-      <div className="h-4 w-4 rounded-full bg-red-400" />
-      <div className="h-4 w-4 rounded-full bg-yellow-400" />
-      <div className="h-4 w-4 rounded-full bg-green-400" />
-    </div>
+    <button
+      onClick={close || (() => {})}
+      className="flex justify-end items-center p-4 space-x-2 w-full"
+    >
+      <div className="w-4 h-4 bg-red-400 rounded-full" />
+      <div className="w-4 h-4 bg-yellow-400 rounded-full" />
+      <div className="w-4 h-4 bg-green-400 rounded-full" />
+    </button>
   );
 };
 

@@ -1,34 +1,43 @@
-// import { Routes, Route } from "react-router-dom";
 import { useRef } from "react";
 import { Footer, Navbar } from "./components";
-import { About, Blog, Home } from "./pages";
+import { About, Blog, Home, Contact } from "./pages";
 import { Stack } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
   const home = useRef<HTMLDivElement | null>(null);
   const blog = useRef<HTMLDivElement | null>(null);
   const about = useRef<HTMLDivElement | null>(null);
+  const contact = useRef<HTMLDivElement | null>(null);
 
   const items = [
     {
       label: "Home",
       path: "/",
-      action: () =>
-        (home.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" }),
+      action: () => {
+        (home.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+        navigate("/");
+      },
     },
     {
       label: "Blog",
       path: "/blog",
-      action: () =>
-        (blog.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" }),
+      action: () => {
+        (blog.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+        navigate("/blog");
+      },
     },
     {
       label: "About",
       path: "/about",
-      action: () =>
+      action: () => {
         (about.current as HTMLDivElement).scrollIntoView({
           behavior: "smooth",
-        }),
+        });
+        navigate("/about");
+      },
     },
   ];
 
@@ -37,12 +46,22 @@ function App() {
       <div ref={home} />
       <Navbar items={items} />
       <Stack className="my-10 w-screen">
-        <Home />
+        <Home
+          contactAction={() => {
+            (contact.current as HTMLDivElement).scrollIntoView({
+              behavior: "smooth",
+            });
+            navigate("/contact");
+          }}
+        />
         <div ref={blog}>
           <Blog />
         </div>
         <div ref={about}>
           <About />
+        </div>
+        <div ref={contact}>
+          <Contact />
         </div>
       </Stack>
       <Footer />

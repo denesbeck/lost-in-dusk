@@ -28,7 +28,7 @@ module.exports = {
       },
       animation: {
         slideInFromBottom: "slideInFromBottom 0.2s ease-out",
-        textFocus: "textFocus 0.5s ease-in",
+        textFocus: "textFocus 0.3s ease-in",
       },
     },
   },

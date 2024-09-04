@@ -1,12 +1,7 @@
 import { Bio, Certificates, Info } from "@/components";
 import { Center, Stack } from "@chakra-ui/react";
-import { useEffect } from "react";
 
 const About = () => {
-  useEffect(() => {
-    document.title = "LostInDusk | About";
-  }, []);
-
   return (
     <Center h={"100vh"} className="animate-slideInFromBottom">
       {/* wrapper for adding animate-slideInFromBottom */}

@@ -1,13 +1,8 @@
 import { ContactMe } from "@/components";
 import { useTypewriter } from "@/hooks";
 import { Stack } from "@chakra-ui/react";
-import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "LostInDusk | Home";
-  }, []);
-
   const output = useTypewriter(
     // The first two spaces are required to prevent the second character from being omitted.
     "  Hello, my name is Denes.|🚀 I'm a DevOps Engineer.",
@@ -20,7 +15,7 @@ const Home = () => {
       <div className="text-base text-center min-h-6">
         {output.split("|")[1]}
       </div>
-      <ContactMe mt={16} />
+      <ContactMe />
     </Stack>
   );
 };

@@ -1,3 +1,4 @@
-import BlogEntry01 from "./blog-entry-01";
+import BlogEntry01 from "./BlogEntry01";
+import BlogEntry02 from "./BlogEntry02";
 
-export { BlogEntry01 };
+export { BlogEntry01, BlogEntry02 };

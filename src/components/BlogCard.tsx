@@ -1,9 +1,14 @@
-import { BlogEntry as BlogEntryInterface } from "@/interfaces/blog";
 import { Like, Modal } from "@/components";
-import { useState } from "react";
-import { BlogEntry01 } from "@/blog-entries";
+import { ReactElement, useState } from "react";
 
-const BlogCard = ({ id, title, description, date }: BlogEntryInterface) => {
+interface BlogCardProps {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  content: ReactElement;
+}
+const BlogCard = ({ id, title, description, date, content }: BlogCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
@@ -22,11 +27,7 @@ const BlogCard = ({ id, title, description, date }: BlogEntryInterface) => {
           <div className="text-sm">{date}</div>
         </div>
       </button>
-      {isVisible && (
-        <Modal close={() => setIsVisible(false)}>
-          <BlogEntry01 />
-        </Modal>
-      )}
+      {isVisible && <Modal close={() => setIsVisible(false)}>{content}</Modal>}
     </>
   );
 };

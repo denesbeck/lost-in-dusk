@@ -1,3 +1,4 @@
+import { Button } from "@/components";
 import { Center, Input, Stack, Textarea } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 
@@ -5,33 +6,34 @@ const Contact = () => {
   const toast = useToast();
   return (
     <Center h={"100vh"}>
-      <Stack spacing={"1rem"} className="group relative bg-gray-900 p-6">
-        <div className="absolute -right-4 -top-4 h-12 w-12 border-r-2 border-t-2 border-teal-400 transition-transform duration-200 ease-in-out group-hover:scale-110" />
-        <div className="absolute -bottom-4 -left-4 h-12 w-12 border-b-2 border-l-2 border-teal-400 transition-transform duration-200 ease-in-out group-hover:scale-110" />
-        <h2 className="text-xl font-bold">Contact</h2>
+      <Stack spacing={"1rem"} className="relative p-6">
+        <div className="absolute -top-4 -right-4 w-12 h-12 border-t-2 border-r-2 border-teal-400" />
+        <div className="absolute -bottom-4 -left-4 w-12 h-12 border-b-2 border-l-2 border-teal-400" />
+        <h2 className="text-2xl font-bold">Contact</h2>
         <Input
           w={"20rem"}
           placeholder="Name"
           rounded={"none"}
           border={"none"}
-          className="bg-transparent px-4 py-3 ring-2 ring-teal-400"
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
         />
         <Input
           w={"20rem"}
           placeholder="Email"
           rounded={"none"}
           border={"none"}
-          className="bg-transparent px-4 py-3 ring-2 ring-teal-400"
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
         />
         <Textarea
           w={"20rem"}
           placeholder="Message"
           rounded={"none"}
           border={"none"}
-          className="bg-transparent px-4 py-3 ring-2 ring-teal-400"
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
         />
-        <button
-          onClick={() => {
+        <Button
+          label={"Submit"}
+          action={() => {
             if (!toast.isActive("not-implemented"))
               toast({
                 id: "not-implemented",
@@ -44,10 +46,7 @@ const Contact = () => {
                 isClosable: true,
               });
           }}
-          className="mt-8 bg-teal-400 px-4 py-2 font-semibold text-gray-900 ring-2 ring-teal-400 transition-colors duration-200 ease-in-out hover:bg-gray-900 hover:text-teal-400 hover:shadow-[10px_10px_0px_0px_black] active:bg-gray-800"
-        >
-          Submit
-        </button>
+        />
       </Stack>
     </Center>
   );

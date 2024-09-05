@@ -7,7 +7,7 @@ const About = () => {
       {/* wrapper for adding animate-slideInFromBottom */}
       <Stack
         w={"max-content"}
-        className="max-h-[80vh] max-w-[90vw] overflow-auto px-6 py-8 ring-2 ring-teal-400 lg:shadow-[20px_20px_black]"
+        className="overflow-auto py-8 px-6 ring-2 ring-teal-400 max-h-[80vh] max-w-[90vw] backdrop-blur-md lg:shadow-[20px_20px_black]"
       >
         {/* main container */}
         <div className="grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">

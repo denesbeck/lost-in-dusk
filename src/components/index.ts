@@ -3,9 +3,10 @@ import Badge from "./Badge";
 import Bio from "./Bio";
 import BlogEntry from "./BlogEntry";
 import BlogCard from "./BlogCard";
+import Button from "./Button";
 import Certificates from "./Certificates";
 import Connections from "./Connections";
-import ContactMe from "./ContactMe";
+import ContactButton from "./ContactButton";
 import DarkLayout from "./DarkLayout";
 import Footer from "./Footer";
 import Heading2 from "./Heading2";
@@ -24,9 +25,10 @@ export {
   Bio,
   BlogEntry,
   BlogCard,
+  Button,
   Certificates,
   Connections,
-  ContactMe,
+  ContactButton,
   DarkLayout,
   Footer,
   Heading2,

@@ -23,11 +23,11 @@ const Navbar = ({ items }: NavbarProps) => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="fixed top-0 flex h-max w-full animate-textFocus items-start px-6 py-2 backdrop-blur-sm">
+    <nav className="flex fixed top-0 z-50 items-start py-2 px-6 w-full h-max animate-textFocus backdrop-blur-sm">
       <Title mr />
       {pathname !== "/contact" && (
         <>
-          <div className="mb-4 hidden w-max animate-textFocus items-center justify-center space-x-4 py-1 sm:flex">
+          <div className="hidden justify-center items-center py-1 mb-4 space-x-4 w-max sm:flex animate-textFocus">
             {items.map((item) => (
               <Navitem
                 key={item.label}
@@ -37,19 +37,34 @@ const Navbar = ({ items }: NavbarProps) => {
               />
             ))}
           </div>
-          <div className="flex w-full animate-textFocus justify-end py-2 sm:hidden">
+          <div className="flex justify-end py-2 w-full sm:hidden animate-textFocus">
             <Menu>
               <MenuButton
-                className="ring-1 ring-slate-700"
-                p={6}
+                rounded={"none"}
+                py={2}
+                color={"slate.900"}
                 as={IconButton}
-                icon={<GiHamburgerMenu className="h-6 w-6" />}
+                icon={<GiHamburgerMenu className="w-5 h-5" />}
                 w="max-content"
+                h="max-content"
                 bg={"black"}
+                border={"1px solid gray"}
+                _hover={{ bg: "gray.800" }}
+                _active={{ bg: "gray.800" }}
               />
-              <MenuList className="-skew-x-6 space-y-2 bg-gray-900 px-6 py-4 shadow-[8px_8px_0px_black] ring-1 ring-slate-700">
+              <MenuList
+                border={"1px solid gray"}
+                maxWidth={"5rem"}
+                bg={"gray.900"}
+                rounded={"none"}
+                shadow={"8px 8px 0px black"}
+              >
                 {items.map((item) => (
-                  <MenuItem key={item.label}>
+                  <MenuItem
+                    bg={"transparent"}
+                    key={item.label}
+                    maxWidth={"5rem"}
+                  >
                     <Navitem
                       label={item.label}
                       path={item.path}

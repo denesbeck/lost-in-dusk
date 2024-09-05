@@ -23,7 +23,7 @@ const ScrollToTop = () => {
   return (
     <button
       ref={ref}
-      className="fixed bottom-8 right-8 animate-textFocus rounded-md bg-gray-800 p-2 text-white"
+      className="fixed right-8 bottom-8 z-50 p-2 text-white bg-gray-800 rounded-md animate-textFocus"
       onClick={() => navigate("/")}
     >
       Scroll to top

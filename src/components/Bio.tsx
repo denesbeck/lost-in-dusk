@@ -11,10 +11,10 @@ const Bio = () => {
       maxW={"26rem"}
       overflowX={"auto"}
       className="animate-textFocus"
-      px={4}
+      px={2}
     >
       <Heading2 content="Bio" />
-      <p className="w-[25rem] overflow-auto break-words pb-2">{BIO}</p>
+      <p className="overflow-auto pb-2 break-words w-[25rem]">{BIO}</p>
     </Stack>
   );
 };

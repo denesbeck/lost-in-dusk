@@ -25,7 +25,9 @@ function App() {
       label: "Blog",
       path: "/blog",
       action: () => {
-        (blog.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+        (blog.current as HTMLDivElement).scrollIntoView({
+          behavior: "smooth",
+        });
         navigate("/blog");
       },
     },
@@ -41,19 +43,19 @@ function App() {
     },
   ];
 
+  const handleContactAction = () => {
+    (contact.current as HTMLDivElement).scrollIntoView({
+      behavior: "smooth",
+    });
+    navigate("/contact");
+  };
+
   return (
     <>
       <div ref={home} />
       <Navbar items={items} />
-      <Stack className="my-10 w-screen">
-        <Home
-          contactAction={() => {
-            (contact.current as HTMLDivElement).scrollIntoView({
-              behavior: "smooth",
-            });
-            navigate("/contact");
-          }}
-        />
+      <Stack className="z-10 my-10 w-screen">
+        <Home contactAction={handleContactAction} />
         <div ref={blog}>
           <Blog />
         </div>

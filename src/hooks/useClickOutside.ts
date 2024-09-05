@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 type ChildNodeWithId = ChildNode & { id: string };
 
 function useClickOutside<T extends HTMLElement = HTMLElement>(
-  handler: (event: MouseEvent) => void,
+  action: (event: MouseEvent) => void,
   id?: string,
 ) {
   const ref = useRef<T>(null);
@@ -23,7 +23,7 @@ function useClickOutside<T extends HTMLElement = HTMLElement>(
       }
 
       if (el && !suppressHandler && !el.contains(e.target as Node)) {
-        handler(e);
+        action(e);
       }
     };
 

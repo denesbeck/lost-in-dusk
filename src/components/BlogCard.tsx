@@ -1,5 +1,5 @@
 import { BlogEntry as BlogEntryInterface } from "@/interfaces/blog";
-import { BlogEntry, Like } from "@/components";
+import { Like, Modal } from "@/components";
 import { useState } from "react";
 import { BlogEntry01 } from "@/blog-entries";
 
@@ -23,9 +23,9 @@ const BlogCard = ({ id, title, description, date }: BlogEntryInterface) => {
         </div>
       </button>
       {isVisible && (
-        <BlogEntry close={() => setIsVisible(false)}>
+        <Modal close={() => setIsVisible(false)}>
           <BlogEntry01 />
-        </BlogEntry>
+        </Modal>
       )}
     </>
   );

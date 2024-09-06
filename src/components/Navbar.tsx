@@ -27,7 +27,7 @@ const Navbar = ({ items }: NavbarProps) => {
       <Title mr />
       {pathname !== "/contact" && (
         <>
-          <div className="hidden justify-center items-center py-1 mb-4 space-x-4 w-max sm:flex animate-textFocus">
+          <div className="hidden justify-center items-center py-1 space-x-4 w-max sm:flex animate-textFocus">
             {items.map((item) => (
               <Navitem
                 key={item.label}

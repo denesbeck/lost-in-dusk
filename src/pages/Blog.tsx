@@ -4,7 +4,15 @@ import { Wrap } from "@chakra-ui/react";
 
 const Blog = () => {
   return (
-    <Wrap justify={"center"} spacing={"3rem"} px={10} pt={"8rem"} h={"100vh"}>
+    <Wrap
+      justify={"center"}
+      overflow={"auto"}
+      maxH={"calc(100vh-170px)"}
+      spacing={"3rem"}
+      px={10}
+      pt={"8rem"}
+      h={"100vh"}
+    >
       {blogEntries.map((entry) => {
         const Content = entry.content;
         return (

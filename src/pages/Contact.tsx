@@ -1,4 +1,4 @@
-import { Button } from "@/components";
+import { Button, Heading2 } from "@/components";
 import { Center, Input, Stack, Textarea } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 
@@ -12,27 +12,30 @@ const Contact = () => {
       >
         <div className="absolute -top-4 -right-4 w-12 h-12 border-t-2 border-r-2 border-teal-400" />
         <div className="absolute -bottom-4 -left-4 w-12 h-12 border-b-2 border-l-2 border-teal-400" />
-        <h2 className="text-2xl font-bold">Contact</h2>
+        <Heading2>Contact</Heading2>
         <Input
           w={"20rem"}
           placeholder="Name"
           rounded={"none"}
           border={"none"}
-          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
+          _focusVisible={{ boxShadow: "not-implemented" }}
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400 focus-visible:ring-blue-400 active:ring-blue-400"
         />
         <Input
           w={"20rem"}
           placeholder="Email"
           rounded={"none"}
           border={"none"}
-          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
+          _focusVisible={{ boxShadow: "not-implemented" }}
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400 focus-visible:ring-blue-400 active:ring-blue-400"
         />
         <Textarea
           w={"20rem"}
           placeholder="Message"
           rounded={"none"}
           border={"none"}
-          className="py-3 px-4 bg-transparent ring-2 ring-teal-400"
+          _focusVisible={{ boxShadow: "not-implemented" }}
+          className="py-3 px-4 bg-transparent ring-2 ring-teal-400 focus-visible:ring-blue-400 active:ring-blue-400"
         />
         <Button
           label={"Submit"}

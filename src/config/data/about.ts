@@ -1,6 +1,4 @@
-import awsDeveloperAssociate from "@/assets/aws-certified-developer-associate.png";
-import terraform from "@/assets/hashicorp-certified-terraform-associate-003.png";
-import ibmDeveloper from "@/assets/developer-profession-level-2-experienced.png";
+import { aws_dev, terraform, ibm_dev } from "@/assets/certificates";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiCredly } from "react-icons/si";
 
@@ -17,7 +15,7 @@ export const CONNECTIONS = [
     icon: FaGithub,
   },
   {
-    url: "https://linkedin.com/in/denesbeck",
+    url: "https://www.linkedin.com/in/denesbeck",
     icon: FaLinkedin,
   },
   {
@@ -37,7 +35,7 @@ export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/b4bf4117-6a90-49eb-baee-e382447b72c2/public_url",
     size: 90,
-    img: awsDeveloperAssociate,
+    img: aws_dev,
     alt: "awsDeveloperAssociate",
   },
   {
@@ -49,7 +47,7 @@ export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/d991722d-3d60-4d76-9e62-49a5677b25e3/public_url",
     size: 80,
-    img: ibmDeveloper,
+    img: ibm_dev,
     alt: "ibmDeveloper",
   },
 ];

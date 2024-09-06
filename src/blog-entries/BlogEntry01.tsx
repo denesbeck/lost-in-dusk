@@ -2,8 +2,8 @@ import { Center, Stack } from "@chakra-ui/react";
 
 const BlogEntry01 = () => {
   return (
-    <Stack w={"max-content"} maxW={"50rem"}>
-      <h1 className="mb-4 text-4xl font-semibold">
+    <Stack maxW={"50rem"}>
+      <h1 className="mb-6 text-4xl font-semibold">
         Migrating from Travis CI to Tekton
       </h1>
       <p className="mb-2">
@@ -16,7 +16,7 @@ const BlogEntry01 = () => {
         using Tekton. In this article I would like to share my experience and
         perception related to this project.
       </p>
-      <h2 className="text-2xl font-semibold">Why?</h2>
+      <h2 className="mt-4 text-2xl font-semibold">Why?</h2>
       <p className="mb-2">
         First of all, a question to answer: Why we committed to replace Travis
         CI — a working pipeline solution — with another, less trending solution?
@@ -53,7 +53,7 @@ const BlogEntry01 = () => {
         that moved many people out of their comfort zone — made a lot of sense
         actually.
       </p>
-      <h2 className="text-2xl font-semibold">What is CI/CD?</h2>
+      <h2 className="mt-4 text-2xl font-semibold">What is CI/CD?</h2>
       <p className="mb-2">
         If you read this article, you’re probably aware what CI/CD is, however,
         I felt important to write down just the basics as a refresher or as a
@@ -102,9 +102,17 @@ const BlogEntry01 = () => {
       <p className="mb-2">
         We were really just scratching the surface here to understand the
         relevancy and functioning of the CI/CD pipelines. If you want to read
-        more about CI/CD, I can highly recommend this article from Red Hat.
+        more about CI/CD, I can highly recommend{" "}
+        <a
+          className="text-blue-400 underline"
+          href="https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+          target="_blank"
+        >
+          this article
+        </a>{" "}
+        from Red Hat.
       </p>
-      <h2 className="text-2xl font-semibold">Travis CI vs Tekton</h2>
+      <h2 className="mt-4 text-2xl font-semibold">Travis CI vs Tekton</h2>
       <p className="mb-2">
         After dealing with the theory about CI/CD, we can jump back to my use
         case and examine the two CI/CD solutions. So, what’s the difference?
@@ -151,10 +159,17 @@ const BlogEntry01 = () => {
         my pipeline — approx. eight more — have been created earlier by other
         contributors. For example I didn’t have to recreate the git-clone task,
         as its usage is independent from the language. There is a registry
-        called Tekton Hub where you can find or upload reusable Tekton assets
-        like tasks or pipelines. As a matter of fact, this is where I started my
-        InnerSource contribution with Tekton, because I wanted to avoid
-        duplication of work.
+        called{" "}
+        <a
+          className="text-blue-400 underline"
+          target="_blank"
+          href="https://hub.tekton.dev/"
+        >
+          Tekton Hub
+        </a>{" "}
+        where you can find or upload reusable Tekton assets like tasks or
+        pipelines. As a matter of fact, this is where I started my InnerSource
+        contribution with Tekton, because I wanted to avoid duplication of work.
       </p>
       <p className="mb-2">
         Tekton is easy to customize, in fact, it urges you to build your own
@@ -169,10 +184,31 @@ const BlogEntry01 = () => {
         As for scalability, since Tekton runs in Kubernetes for scaling your
         workloads, you can apply horizontal or vertical scaling just like in
         case of a regular containerized application. You have two options for
-        managing your custom Tekton resources: You can use the Tekton
-        Command-Line Interface, which works quite similar to kubectl, or you can
-        access your resources through the Tekton Dashboard, which is a web UI
-        that you need to host separately in Kubernetes.
+        managing your custom Tekton resources: You can use the{" "}
+        <a
+          href="https://tekton.dev/docs/cli/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Tekton Command-Line Interface
+        </a>
+        , which works quite similar to{" "}
+        <a
+          href="https://kubernetes.io/docs/reference/kubectl/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          kubectl
+        </a>
+        , or you can access your resources through the{" "}
+        <a
+          href="https://tekton.dev/docs/dashboard/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Tekton Dashboard
+        </a>
+        , which is a web UI that you need to host separately in Kubernetes.
       </p>
       <p className="mb-2">
         As you can see Tekton is basically a DIY pipeline solution, that
@@ -183,16 +219,30 @@ const BlogEntry01 = () => {
         concepts. For example, I worked a lot with Kubernetes before, but using
         it with Tekton gave me a greater insight into Kubernetes API resources
         and the components of Kubernetes in general. At this point it’s also
-        important to mention that the documentation of Tekton is well structured
-        and easy to understand.
+        important to mention that the{" "}
+        <a
+          href="https://tekton.dev/docs/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          documentation
+        </a>{" "}
+        of Tekton is well structured and easy to understand.
       </p>
       <p className="mb-2">
         I will also leave this video here that I found useful while writing this
-        article. Although, in this video the differences between Tekton and
-        Jenkins are highlighted and evaluated, I found it quite useful for
-        comparing Tekton with Travis CI:
+        article. Although, in this video the differences between Tekton and{" "}
+        <a
+          href="https://www.jenkins.io/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Jenkins
+        </a>{" "}
+        are highlighted and evaluated, I found it quite useful for comparing
+        Tekton with Travis CI:
       </p>
-      <Center>
+      <Center py={2}>
         <iframe
           width="560"
           height="315"
@@ -203,17 +253,24 @@ const BlogEntry01 = () => {
           allowFullScreen
         ></iframe>
       </Center>
-      <h2 className="text-2xl font-semibold">InnerSource</h2>
+      <h2 className="mt-4 text-2xl font-semibold">InnerSource</h2>
       <p className="mb-2">
-        I also wanted to touch on InnerSource as for me it was a game-changer in
-        our organization. So far, I couldn’t really participate in fancy
-        projects that a developer would consider meaningful and exciting.
-        Usually, in big companies such projects are outsourced to other
-        countries considering the cost-efficiency or are driven directly from
-        the US. Making the pipeline project InnerSource made it possible for
-        developers around the globe within our organization to contribute to it
-        and get in-depth knowledge about CI/CD pipeline functionality and DevOps
-        in general.
+        I also wanted to touch on{" "}
+        <a
+          href="https://about.gitlab.com/topics/version-control/what-is-innersource/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          InnerSource
+        </a>{" "}
+        as for me it was a game-changer in our organization. So far, I couldn’t
+        really participate in fancy projects that a developer would consider
+        meaningful and exciting. Usually, in big companies such projects are
+        outsourced to other countries considering the cost-efficiency or are
+        driven directly from the US. Making the pipeline project InnerSource
+        made it possible for developers around the globe within our organization
+        to contribute to it and get in-depth knowledge about CI/CD pipeline
+        functionality and DevOps in general.
       </p>
       <p className="mb-2">The way I define InnerSource is the following:</p>
       <p className="pl-4 mx-8 mb-2 italic border-l-2">
@@ -239,7 +296,7 @@ const BlogEntry01 = () => {
         continuity and the opportunity to contribute to a meaningful project
         boosted my motivation level and moved me out of my comfort zone.
       </p>
-      <h2 className="text-2xl font-semibold">Contribution</h2>
+      <h2 className="mt-4 text-2xl font-semibold">Contribution</h2>
       <p className="mb-2">
         Since Tekton is a cloud-native framework, the prerequisite to work with
         it is to have some knowledge and work experience with Kubernetes, Docker
@@ -250,37 +307,71 @@ const BlogEntry01 = () => {
         working in a Linux environment.
       </p>
       <p className="mb-2">
-        Since I had the prerequisites, I started with reviewing the Tekton
-        documentation. As I mentioned before, Tekton has an excellent and
-        up-to-date documentation, so I was able to understand the core concepts
-        quite easily. Once I had a better understanding I started to experiment
-        with this technology in a local minikube cluster. I started to create
-        some basic tasks, then some advanced ones with multiple steps. After
-        that I used these building blocks in a pipeline resource. I also
-        experimented with conditional executions, environment variables,
-        workspaces and parameters.
+        Since I had the prerequisites, I started with reviewing the{" "}
+        <a
+          href="https://tekton.dev/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Tekton documentation
+        </a>
+        . As I mentioned before, Tekton has an excellent and up-to-date
+        documentation, so I was able to understand the core concepts quite
+        easily. Once I had a better understanding I started to experiment with
+        this technology in a local{" "}
+        <a
+          href="https://minikube.sigs.k8s.io/docs/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          minikube
+        </a>{" "}
+        cluster. I started to create some basic tasks, then some advanced ones
+        with multiple steps. After that I used these building blocks in a
+        pipeline resource. I also experimented with conditional executions,
+        environment variables, workspaces and parameters.
       </p>
       <p className="mb-2">
         Once I covered these basic use cases, I started to review the code base
-        of the InnerSource pipeline project. At this point I learned about
-        kustomize which is a Kubernetes native way for updating existing
-        configurations. This tool was used in the project to customize default
-        configurations of various manifests, so that new, slightly different
-        ones could be created without code duplication. For example, we could
-        create pipelines for different Ruby versions using this approach or we
-        could also create different e2e test flows by omitting or including
-        specific tasks.
+        of the InnerSource pipeline project. At this point I learned about{" "}
+        <a
+          href="https://kustomize.io/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          kustomize
+        </a>{" "}
+        which is a Kubernetes native way for updating existing configurations.
+        This tool was used in the project to customize default configurations of
+        various manifests, so that new, slightly different ones could be created
+        without code duplication. For example, we could create pipelines for
+        different Ruby versions using this approach or we could also create
+        different e2e test flows by omitting or including specific tasks.
       </p>
       <p className="mb-2">
-        Podman was another tool that I discovered during this project. This was
-        the first time that instead of using Docker — which is the de facto
-        standard container management tool (at least this is my impression so
-        far) — I had to work with another container management tool. The
-        front-end of both tools are pretty much the same meaning that you can
-        use the same commands (e.g. container, image, run, build, inspect) with
-        minor differences, so getting used to it was not a big deal. The main
+        <a
+          href="https://podman.io/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Podman
+        </a>{" "}
+        was another tool that I discovered during this project. This was the
+        first time that instead of using Docker — which is the de facto standard
+        container management tool (at least this is my impression so far) — I
+        had to work with another container management tool. The front-end of
+        both tools are pretty much the same meaning that you can use the same
+        commands (e.g. container, image, run, build, inspect) with minor
+        differences, so getting used to it was not a big deal. The main
         difference is at the back-end: Docker runs a service called daemon on
-        your host while Podman is daemon-less. In a nutshell, the Docker daemon
+        your host while Podman is daemon-less. In a nutshell, the{" "}
+        <a
+          href="https://docs.docker.com/get-started/overview/#the-docker-daemon"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Docker daemon
+        </a>{" "}
         is responsible for listening for Docker API requests and managing the
         Docker resources. It runs continuously in the background (even if no
         containers are running) and requires root level privilege. Due to this,
@@ -295,7 +386,14 @@ const BlogEntry01 = () => {
       </p>
       <ol className="px-8 list-decimal">
         <li>
-          <strong>buildah:</strong> A command-line tool that lets you build OCI
+          <strong>buildah:</strong> A command-line tool that lets you build{" "}
+          <a
+            href="https://opencontainers.org/"
+            target="_blank"
+            className="text-blue-400 underline"
+          >
+            OCI
+          </a>{" "}
           compliant container images. It was created for K8s clusters to
           eliminate the need to use Docker Daemon for building images in order
           to deal with the above mentioned security risk.
@@ -316,12 +414,26 @@ const BlogEntry01 = () => {
         inherited the Rails-applications and I only had to maintain them.
         Moreover, I always had ambivalent feelings about Ruby on Rails, let’s
         say it was a marriage of convenience. I believe it was the concept of
-        the Asset Pipeline that I struggled the most with to understand, so I
-        spent plenty of hours on debugging, reading the documentation, the
-        application code itself and Stack Overflow questions, asking for advice
-        from other Rails-developers within my organization and adjusting the
-        pipeline based on the inputs I got. Long story short, I messed up a lot
-        of things and course-corrected.
+        the{" "}
+        <a
+          href="https://guides.rubyonrails.org/asset_pipeline.html"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Asset Pipeline
+        </a>{" "}
+        that I struggled the most with to understand, so I spent plenty of hours
+        on debugging, reading the documentation, the application code itself and{" "}
+        <a
+          href="https://stackoverflow.com/"
+          target="_blank"
+          className="text-blue-400 underline"
+        >
+          Stack Overflow
+        </a>{" "}
+        questions, asking for advice from other Rails-developers within my
+        organization and adjusting the pipeline based on the inputs I got. Long
+        story short, I messed up a lot of things and course-corrected.
       </p>
       <p className="mb-2">
         Once I overcame the challenges with Rails, it was quite fast to deliver
@@ -335,7 +447,7 @@ const BlogEntry01 = () => {
         you to get the bigger picture and will highly reduce the time to adapt
         to new situations and environments in future projects.
       </p>
-      <h2 className="text-2xl font-semibold">Results</h2>
+      <h2 className="mt-4 text-2xl font-semibold">Results</h2>
       <p className="mb-2">
         For our organization securing business continuity was obviously the most
         important result that I was able to support with this contribution.
@@ -360,7 +472,7 @@ const BlogEntry01 = () => {
         secure and compliant with our company’s IT security standards which was
         the main reason we undertook this venture.
       </p>
-      <p className="mb-2">
+      <p className="mt-4 mb-2">
         Check the original article on Medium:{" "}
         <a
           target="_blank"

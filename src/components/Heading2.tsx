@@ -1,9 +1,9 @@
 interface Heading2Props {
-  content: string;
+  children: string;
 }
 
-const Heading2 = ({ content }: Heading2Props) => {
-  return <h2 className="w-full font-semibold animate-textFocus">{content}</h2>;
+const Heading2 = ({ children }: Heading2Props) => {
+  return <h2 className="w-full text-2xl font-semibold">{children}</h2>;
 };
 
 export default Heading2;

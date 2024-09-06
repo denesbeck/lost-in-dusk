@@ -8,9 +8,10 @@ import Connections from "./Connections";
 import ContactButton from "./ContactButton";
 import DarkLayout from "./DarkLayout";
 import Footer from "./Footer";
+import Heading1 from "./Heading1";
 import Heading2 from "./Heading2";
+import Heading3 from "./Heading3";
 import Info from "./Info";
-import Like from "./Like";
 import MacOSBar from "./MacOSBar";
 import Modal from "./Modal";
 import Navbar from "./Navbar";
@@ -30,9 +31,10 @@ export {
   ContactButton,
   DarkLayout,
   Footer,
+  Heading1,
   Heading2,
+  Heading3,
   Info,
-  Like,
   MacOSBar,
   Modal,
   Navbar,

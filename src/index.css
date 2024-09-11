@@ -5,3 +5,7 @@
 body {
   overflow: hidden;
 }
+
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

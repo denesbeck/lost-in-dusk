@@ -3,7 +3,7 @@ import { CONNECTIONS } from "@/config/data/about";
 
 const Connections = () => {
   return (
-    <div className="mt-4 flex w-full max-w-[40vw] items-center justify-start space-x-4">
+    <div className="flex justify-start items-center mt-4 space-x-5 w-full max-w-[40vw]">
       {CONNECTIONS.map(({ url, icon }) => (
         <Social key={url} url={url} icon={icon} />
       ))}

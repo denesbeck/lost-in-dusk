@@ -8,7 +8,7 @@ const Bio = () => {
   return (
     <Stack
       gap={2}
-      maxW={"26rem"}
+      maxW={"29rem"}
       overflowX={"auto"}
       className="animate-textFocus"
       px={2}

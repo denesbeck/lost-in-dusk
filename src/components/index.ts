@@ -1,4 +1,3 @@
-import Avatar from "./Avatar";
 import Badge from "./Badge";
 import Bio from "./Bio";
 import BlogCard from "./BlogCard";
@@ -21,7 +20,6 @@ import Social from "./Social";
 import Title from "./Title";
 
 export {
-  Avatar,
   Badge,
   Bio,
   BlogCard,

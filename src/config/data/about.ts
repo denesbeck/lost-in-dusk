@@ -34,19 +34,19 @@ export type Certificate = {
 export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/b4bf4117-6a90-49eb-baee-e382447b72c2/public_url",
-    size: 90,
+    size: 110,
     img: aws_dev,
     alt: "awsDeveloperAssociate",
   },
   {
     url: "https://www.credly.com/badges/91d294a8-8f7d-4f5a-80c1-071fa0bf2be6/public_url",
-    size: 90,
+    size: 110,
     img: terraform,
     alt: "terraform",
   },
   {
     url: "https://www.credly.com/badges/d991722d-3d60-4d76-9e62-49a5677b25e3/public_url",
-    size: 80,
+    size: 110,
     img: ibm_dev,
     alt: "ibmDeveloper",
   },

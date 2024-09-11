@@ -6,10 +6,19 @@ import "./index.css";
 import { Stack } from "@chakra-ui/react";
 import { ScrollToTop } from "@/components";
 import { ChakraProvider } from "@chakra-ui/react";
+import theme from "@/theme";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ChakraProvider>
+    <ChakraProvider
+      theme={theme}
+      toastOptions={{
+        defaultOptions: {
+          position: "top-right",
+          variant: "solid",
+        },
+      }}
+    >
       <BrowserRouter basename="/">
         <Stack className="relative font-mono text-slate-100">
           <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black via-gray-900 to-black backdrop-blur-md" />

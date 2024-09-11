@@ -1,10 +1,4 @@
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  IconButton,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
 import { Navitem, Title } from "@/components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
@@ -45,7 +39,6 @@ const Navbar = ({ items }: NavbarProps) => {
                 color={"slate.900"}
                 as={IconButton}
                 icon={<GiHamburgerMenu className="w-5 h-5" />}
-                w="max-content"
                 h="max-content"
                 bg={"black"}
                 border={"1px solid gray"}
@@ -54,23 +47,19 @@ const Navbar = ({ items }: NavbarProps) => {
               />
               <MenuList
                 border={"1px solid gray"}
-                maxWidth={"5rem"}
+                p={4}
                 bg={"gray.900"}
                 rounded={"none"}
                 shadow={"8px 8px 0px black"}
+                className="grid"
               >
                 {items.map((item) => (
-                  <MenuItem
-                    bg={"transparent"}
+                  <Navitem
                     key={item.label}
-                    maxWidth={"5rem"}
-                  >
-                    <Navitem
-                      label={item.label}
-                      path={item.path}
-                      action={item.action || (() => {})}
-                    />
-                  </MenuItem>
+                    label={item.label}
+                    path={item.path}
+                    action={item.action || (() => {})}
+                  />
                 ))}
               </MenuList>
             </Menu>

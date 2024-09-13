@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 const useContact = () => {
-  const API_GW_ENDPOINT = import.meta.env.VITE_API_GW_ENDPOINT;
-  const SITE_KEY = import.meta.env.VITE_SITE_KEY;
+  const API_GW_ENDPOINT =
+    "https://aukqoyekq4.execute-api.eu-central-1.amazonaws.com/v1/contact";
+  const SITE_KEY = "6LeiTzkqAAAAADjmQFpT61B3_v2LjN6Joqs4HZOj";
 
   const [loading, setLoading] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
@@ -22,7 +23,6 @@ const useContact = () => {
     return () => {
       document.body.removeChild(script);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = async () => {

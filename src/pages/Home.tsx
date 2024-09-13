@@ -22,7 +22,7 @@ const Home = ({ contactAction }: HomeProps) => {
           </div>
         )}
       </div>
-      <div className="relative mt-2 text-base text-center min-h-5">
+      <div className="relative mt-2 text-base text-center min-h-6">
         {output.split("|")[1]}
         {output.includes("|") && (
           <div className="absolute top-0 -right-3 px-0.5 w-max text-base text-white bg-white h-max animate-blink">

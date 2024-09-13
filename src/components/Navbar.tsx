@@ -51,7 +51,7 @@ const Navbar = ({ items }: NavbarProps) => {
                 bg={"gray.900"}
                 rounded={"none"}
                 shadow={"8px 8px 0px black"}
-                className="grid"
+                className="grid gap-2"
               >
                 {items.map((item) => (
                   <Navitem

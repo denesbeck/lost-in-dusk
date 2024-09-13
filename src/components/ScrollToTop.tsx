@@ -1,17 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollToTop = () => {
   const navigate = useNavigate();
-  const ref = useRef<HTMLButtonElement>(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!ref.current) return;
       if (window.scrollY > 200) {
-        ref.current.classList.remove("hidden");
+        setVisible(true);
       } else {
-        ref.current.classList.add("hidden");
+        setVisible(false);
       }
     };
 
@@ -21,13 +20,16 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <button
-      ref={ref}
-      className="fixed right-8 bottom-8 z-50 p-2 text-white bg-gray-800 rounded-md animate-textFocus"
-      onClick={() => navigate("/")}
-    >
-      Scroll to top
-    </button>
+    <>
+      {visible && (
+        <button
+          className="fixed right-8 bottom-8 z-50 p-2 text-white bg-gray-800 rounded-md animate-textFocus"
+          onClick={() => navigate("/")}
+        >
+          Scroll to top
+        </button>
+      )}
+    </>
   );
 };
 

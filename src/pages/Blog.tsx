@@ -10,7 +10,7 @@ const Blog = () => {
       maxH={"calc(100vh-170px)"}
       spacing={"3rem"}
       px={10}
-      pt={"8rem"}
+      className="pt-[80px] lg:pt-[8rem]"
       h={"100vh"}
     >
       {blogEntries.map((entry) => {

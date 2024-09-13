@@ -24,7 +24,12 @@ const validate = (name: string, email: string, message: string) => {
     output.invalidFields.push("message");
   }
 
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+  if (
+    email &&
+    !/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g.test(
+      email,
+    )
+  )
     output.messages.push("Invalid email format.");
 
   if (output.messages.length === 0) output.valid = true;

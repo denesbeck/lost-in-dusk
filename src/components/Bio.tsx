@@ -14,7 +14,7 @@ const Bio = () => {
       px={2}
     >
       <Heading3>Bio</Heading3>
-      <p className="overflow-auto pb-2 break-words w-[25rem]">{BIO}</p>
+      <p className="pb-2 break-words">{BIO}</p>
     </Stack>
   );
 };

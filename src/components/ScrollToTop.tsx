@@ -23,7 +23,7 @@ const ScrollToTop = () => {
     <>
       {visible && (
         <button
-          className="fixed right-8 bottom-8 z-50 p-2 text-white bg-gray-800 rounded-md animate-textFocus"
+          className="fixed right-6 bottom-6 z-50 p-2 text-white bg-gray-800 rounded-md animate-textFocus"
           onClick={() => navigate("/")}
         >
           Scroll to top

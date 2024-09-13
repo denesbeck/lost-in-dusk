@@ -11,7 +11,7 @@ const Info = () => {
         <img
           src={profile}
           alt="profile"
-          className="w-32 h-32 rounded-full ring-2 transition-all duration-200 ease-in hover:scale-110 ring-slate-200 hover:brightness-110"
+          className="hidden w-32 h-32 rounded-full ring-2 transition-all duration-200 ease-in lg:block hover:scale-110 ring-slate-200 hover:brightness-110"
         />
         <div>
           {Object.entries(INFO).map(([key, value]) => (

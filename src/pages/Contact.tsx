@@ -116,10 +116,12 @@ const Contact = () => {
     <Center h={"100vh"}>
       <Stack
         spacing={"1rem"}
-        className="relative max-h-[calc(100vh-180px)] max-w-[90vw] p-6"
+        className="group relative max-h-[calc(100vh-180px)] max-w-[90vw] bg-gray-900 p-6 ring-2 ring-slate-800 ring-offset-gray-900 backdrop-blur-md transition-all duration-200 ease-in-out hover:ring-slate-500 hover:ring-offset-2"
       >
-        <div className="absolute -top-4 -right-4 w-12 h-12 border-t-2 border-r-2 border-teal-400" />
-        <div className="absolute -bottom-4 -left-4 w-12 h-12 border-b-2 border-l-2 border-teal-400" />
+        <div className="absolute -top-8 -right-8 w-12 h-12 border-t-2 border-r-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-top-6 group-hover:-right-6" />
+        <div className="absolute -top-8 -left-8 w-48 h-48 border-t-2 border-l-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-top-6 group-hover:-left-6" />
+        <div className="absolute -bottom-8 -left-8 w-12 h-12 border-b-2 border-l-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-bottom-6 group-hover:-left-6" />
+        <div className="absolute -right-8 -bottom-8 w-48 h-48 border-r-2 border-b-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-right-6 group-hover:-bottom-6" />
         <Heading2>Contact</Heading2>
         <Input
           w={"20rem"}

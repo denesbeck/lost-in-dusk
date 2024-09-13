@@ -25,10 +25,15 @@ module.exports = {
             opacity: "1",
           },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
       },
       animation: {
         slideInFromBottom: "slideInFromBottom 0.2s ease-out",
         textFocus: "textFocus 0.3s ease-in",
+        blink: "blink 1s step-end infinite",
       },
     },
   },

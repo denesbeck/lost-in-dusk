@@ -26,7 +26,7 @@ const validate = (name: string, email: string, message: string) => {
 
   if (
     email &&
-    !/[a-z0-9]{1,20}(\.[a-z0-9]{1,20}){1,4}@[a-z0-9]{1,20}(\.[a-z0-9]{1,20}){1,4}/g.test(
+    !/[a-z0-9]{1,32}(\.[a-z0-9]{1,32}){0,4}@[a-z0-9]{1,32}(\.[a-z0-9]{1,32}){1,4}/g.test(
       email,
     )
   )

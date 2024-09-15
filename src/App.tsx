@@ -11,7 +11,7 @@ function App() {
     <>
       <div ref={home} />
       <Navbar items={navItems} />
-      <Stack className="z-10 my-10 w-screen">
+      <Stack className="z-10 w-screen">
         <Home contactAction={contactAction} />
         <div ref={blog}>
           <Blog />

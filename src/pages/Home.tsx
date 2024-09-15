@@ -13,7 +13,7 @@ const Home = ({ contactAction }: HomeProps) => {
 
   return (
     // The height of the div is calculated by subtracting the height of the Navbar, Footer, and the two 5rem paddings from the viewport height.
-    <Stack className="h-[calc(100vh-170px)] min-h-screen w-full items-center justify-center px-4">
+    <Stack className="h-[calc(100vh-150px)] min-h-screen w-full items-center justify-center px-4">
       <div className="relative text-2xl text-center min-h-8">
         {output.split("|")[0]}
         {!output.includes("Denes.") && (

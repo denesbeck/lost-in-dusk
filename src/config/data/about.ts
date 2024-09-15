@@ -46,7 +46,7 @@ export const CERTIFICATES: Certificate[] = [
   },
   {
     url: "https://www.credly.com/badges/d991722d-3d60-4d76-9e62-49a5677b25e3/public_url",
-    size: 110,
+    size: 100,
     img: ibm_dev,
     alt: "ibmDeveloper",
   },

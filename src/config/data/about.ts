@@ -10,7 +10,14 @@ import {
   SiGithubactions,
   SiLua,
 } from "react-icons/si";
-import { FaGithub, FaLinkedin, FaAws, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaAws,
+  FaReact,
+  FaNodeJs,
+  FaLinux,
+} from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 
 export const INFO = {
@@ -99,6 +106,10 @@ export const SKILLS = [
   {
     name: "GitHub Actions",
     icon: SiGithubactions,
+  },
+  {
+    name: "Linux",
+    icon: FaLinux,
   },
   {
     name: "Docker",

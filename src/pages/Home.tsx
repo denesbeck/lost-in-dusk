@@ -1,6 +1,7 @@
 import { ContactButton } from "@/components";
 import { useTypewriter } from "@/hooks";
 import { Stack } from "@chakra-ui/react";
+import { INFO } from "@/config/data/about";
 
 interface HomeProps {
   contactAction: () => void;
@@ -8,7 +9,7 @@ interface HomeProps {
 const Home = ({ contactAction }: HomeProps) => {
   const output = useTypewriter(
     // The first two spaces are required to prevent the second character from being omitted.
-    "  Hello, my name is Denes.|I'm a DevOps Engineer.",
+    `  Hello, my name is ${INFO.Name.split(" ")[0]}.|I'm a ${INFO.Role}.`,
   );
 
   return (
@@ -16,7 +17,7 @@ const Home = ({ contactAction }: HomeProps) => {
     <Stack className="h-[calc(100vh-150px)] min-h-screen w-full items-center justify-center px-4">
       <div className="relative text-2xl text-center min-h-8">
         {output.split("|")[0]}
-        {!output.includes("Denes.") && (
+        {!output.includes(`${INFO.Name.split(" ")[0]}.`) && (
           <div className="absolute top-0 -right-4 px-0.5 w-max text-2xl text-white bg-white h-max animate-blink">
             *
           </div>

@@ -14,7 +14,7 @@ const Bio = () => {
       px={2}
     >
       <Heading3>Bio</Heading3>
-      <p className="pb-2 break-words">{BIO}</p>
+      <p className="break-words">{BIO}</p>
     </Stack>
   );
 };

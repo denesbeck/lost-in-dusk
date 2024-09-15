@@ -1,4 +1,4 @@
-import { Bio, Certificates, Info } from "@/components";
+import { Bio, Certificates, Info, Skills } from "@/components";
 import { Center, Stack } from "@chakra-ui/react";
 
 const About = () => {
@@ -14,6 +14,7 @@ const About = () => {
           <Info />
           <Bio />
           <Certificates />
+          <Skills />
         </div>
       </Stack>
     </Center>

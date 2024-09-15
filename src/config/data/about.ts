@@ -1,6 +1,17 @@
 import { aws_dev, terraform, ibm_dev } from "@/assets/certificates";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiCredly } from "react-icons/si";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import {
+  SiCredly,
+  SiChakraui,
+  SiTypescript,
+  SiTerraform,
+  SiKubernetes,
+  SiDocker,
+  SiGithubactions,
+  SiLua,
+} from "react-icons/si";
+import { FaGithub, FaLinkedin, FaAws, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 
 export const INFO = {
   Name: "Denes Beck",
@@ -49,5 +60,60 @@ export const CERTIFICATES: Certificate[] = [
     size: 100,
     img: ibm_dev,
     alt: "ibmDeveloper",
+  },
+];
+
+export const SKILLS = [
+  {
+    name: "Next.js",
+    icon: RiNextjsFill,
+  },
+  {
+    name: "React",
+    icon: FaReact,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: RiTailwindCssFill,
+  },
+  {
+    name: "Chakra UI",
+    icon: SiChakraui,
+  },
+  {
+    name: "Node.js",
+    icon: FaNodeJs,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    name: "Golang",
+    icon: FaGolang,
+  },
+  {
+    name: "Lua",
+    icon: SiLua,
+  },
+  {
+    name: "GitHub Actions",
+    icon: SiGithubactions,
+  },
+  {
+    name: "Docker",
+    icon: SiDocker,
+  },
+  {
+    name: "Kubernetes",
+    icon: SiKubernetes,
+  },
+  {
+    name: "Terraform",
+    icon: SiTerraform,
+  },
+  {
+    name: "AWS",
+    icon: FaAws,
   },
 ];

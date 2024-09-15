@@ -16,6 +16,7 @@ import Modal from "./Modal";
 import Navbar from "./Navbar";
 import Navitem from "./Navitem";
 import ScrollToTop from "./ScrollToTop";
+import Skills from "./Skills";
 import Social from "./Social";
 import Title from "./Title";
 
@@ -38,6 +39,7 @@ export {
   Navbar,
   Navitem,
   ScrollToTop,
+  Skills,
   Social,
   Title,
 };

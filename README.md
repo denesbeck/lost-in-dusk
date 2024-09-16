@@ -4,7 +4,9 @@ My portfolio project to showcase my web development and DevOps skills.
 
 ## Architecture 🏗️
 
-WIP
+<div align="center">
+    <img src="./public/lost_in_dusk_arch.svg" alt="Architecture" width="70%">
+</div>
 
 ## Tech Stack 💻
 

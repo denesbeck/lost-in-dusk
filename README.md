@@ -16,10 +16,12 @@ My portfolio project to showcase my web development and DevOps skills.
 |              | Chakra UI                                                                    |
 |              | Tailwind CSS                                                                 |
 | **Backend**  | AWS S3                                                                       |
-|              | AWS SES                                                                      |
+|              | AWS CloudFront                                                               |
 |              | AWS API Gateway                                                              |
-|              | AWS ACM (Certificate Manager)                                                |
+|              | AWS Lambda                                                                   |
 |              | AWS Route 53                                                                 |
+|              | AWS ACM (Certificate Manager)                                                |
+|              | AWS SES                                                                      |
 |              | Terraform ([lost-in-dusk-tf](https://github.com/denes-beck/lost-in-dusk-tf)) |
 
 ## Deployment ⚡

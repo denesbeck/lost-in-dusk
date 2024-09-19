@@ -22,7 +22,7 @@ const Menu = ({ children }: MenuProps) => {
     <>
       <button
         onClick={() => setIsOpen((prevState) => !prevState)}
-        className={`z-10 p-1 ${!isOpen && "ring-1 hover:bg-gray-800"} ring-slate-200 transition-colors duration-200 ease-in-out`}
+        className={`z-50 p-1 ${!isOpen && "ring-1 hover:bg-gray-800"} ring-slate-200 transition-colors duration-200 ease-in-out`}
       >
         <RxHamburgerMenu
           className={`text-3xl transition-all duration-200 ease-in-out ${isOpen && "rotate-90"}`}

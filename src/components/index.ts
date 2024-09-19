@@ -12,6 +12,7 @@ import Heading2 from "./Heading2";
 import Heading3 from "./Heading3";
 import Info from "./Info";
 import MacOSBar from "./MacOSBar";
+import Menu from "./Menu";
 import Modal from "./Modal";
 import Navbar from "./Navbar";
 import Navitem from "./Navitem";
@@ -35,6 +36,7 @@ export {
   Heading3,
   Info,
   MacOSBar,
+  Menu,
   Modal,
   Navbar,
   Navitem,

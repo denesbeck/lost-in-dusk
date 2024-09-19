@@ -17,7 +17,7 @@ const SkillBadge = ({ children, label }: SkillBadgeProps) => {
 
 const Skills = () => {
   return (
-    <Stack maxW={"29rem"} overflowX={"auto"} pb={2} gap={2} px={2}>
+    <Stack maxW={"30rem"} overflowX={"auto"} pb={2} gap={2} px={2}>
       <Heading3>Skills</Heading3>
       <Wrap spacing={4} className="items-center">
         {SKILLS.map((skill) => {

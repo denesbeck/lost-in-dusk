@@ -4,7 +4,7 @@ import { Stack } from "@chakra-ui/react";
 
 const Certificates = () => {
   return (
-    <Stack gap={4} maxW={"29rem"}>
+    <Stack gap={4} maxW={"30rem"}>
       <Heading3>Certificates</Heading3>
       <div className="flex flex-wrap gap-8 justify-start w-full animate-textFocus">
         {CERTIFICATES.map((item, index) => (

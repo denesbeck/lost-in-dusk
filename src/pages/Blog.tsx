@@ -5,12 +5,8 @@ import { Wrap } from "@chakra-ui/react";
 const Blog = () => {
   return (
     <div className="h-screen">
-      <div className="mt-[70px] max-h-[calc(100vh-150px)] overflow-auto py-4">
-        <Wrap
-          justify={"center"}
-          spacing={"3rem"}
-          className="px-10 h-full lg:pt-12"
-        >
+      <div className="mt-[70px] max-h-[calc(100vh-120px)] overflow-auto py-4 lg:mt-[100px]">
+        <Wrap justify={"center"} spacing={"3rem"} className="px-10 h-full">
           {blogEntries.map((entry) => {
             const Content = entry.content;
             return (

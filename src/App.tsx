@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "@/components";
+import { Navbar } from "@/components";
 import { About, Blog, Home, Contact } from "./pages";
 import { Stack } from "@chakra-ui/react";
 import { useNav } from "@/hooks";
@@ -23,7 +23,6 @@ function App() {
           <Contact />
         </div>
       </Stack>
-      <Footer />
     </>
   );
 }

@@ -24,7 +24,7 @@ export const INFO = {
   Name: "Denes Beck",
   Location: "Budapest, Hungary",
   Company: "IBM",
-  Role: "DevOps Engineer",
+  Role: "Software Engineer",
 };
 
 export const CONNECTIONS = [

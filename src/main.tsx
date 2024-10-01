@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import "./assets/fonts/DepartureMono-Regular.woff2";
 import { Stack } from "@chakra-ui/react";
 import { ScrollToTop } from "@/components";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -20,8 +21,8 @@ createRoot(document.getElementById("root")!).render(
       }}
     >
       <BrowserRouter basename="/">
-        <Stack className="relative font-mono text-white">
-          <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black via-gray-900 to-black backdrop-blur-md" />
+        <Stack className="relative font-[DepartureMono] text-white">
+          <div className="fixed top-0 z-0 h-screen w-screen bg-gradient-to-tr from-black via-gray-900 to-black backdrop-blur-md" />
           <div
             style={{
               position: "fixed",

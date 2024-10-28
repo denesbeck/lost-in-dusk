@@ -15,10 +15,10 @@ const Modal = ({ children, close }: ModalProps) => {
       <Stack
         ref={ref}
         w={"max-content"}
-        className="w-[60rem] max-w-[90vw] animate-slideInFromBottom px-4 pb-8 font-[DepartureMono] ring-2 ring-teal-500 dark:text-slate-200"
+        className="h-full ring-teal-500 lg:px-4 lg:pb-8 lg:ring-2 w-[60rem] max-w-[90vw] animate-slideInFromBottom font-[DepartureMono] lg:h-[90vh] dark:text-slate-200"
       >
         <MacOSBar close={close} />
-        <div className="max-h-[calc(100vh-170px)] overflow-auto px-2">
+        <div className="h-full max-h-[calc(100vh-85px)] overflow-auto px-2 lg:max-h-[calc(100vh-170px)]">
           {children}
         </div>
       </Stack>

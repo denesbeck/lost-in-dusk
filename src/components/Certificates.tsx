@@ -1,17 +1,16 @@
 import { Badge, Heading3 } from "@/components";
 import { CERTIFICATES } from "@/config/data/about";
-import { Stack } from "@chakra-ui/react";
 
 const Certificates = () => {
   return (
-    <Stack gap={4} maxW={"30rem"}>
+    <div className="hidden gap-4 lg:grid max-w-[30rem]">
       <Heading3>Certificates</Heading3>
       <div className="flex flex-wrap gap-8 justify-start w-full animate-textFocus">
         {CERTIFICATES.map((item, index) => (
           <Badge key={index} {...item} />
         ))}
       </div>
-    </Stack>
+    </div>
   );
 };
 

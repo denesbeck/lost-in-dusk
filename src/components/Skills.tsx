@@ -1,4 +1,4 @@
-import { Stack, Tooltip, Wrap } from "@chakra-ui/react";
+import { Tooltip, Wrap } from "@chakra-ui/react";
 import { Heading3 } from "@/components";
 import { SKILLS } from "@/config/data/about";
 import { ReactElement } from "react";

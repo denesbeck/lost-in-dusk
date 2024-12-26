@@ -1,4 +1,5 @@
 import { BlogEntry01, BlogEntry02 } from "@/blog-entries";
+import { JSX } from "react";
 
 interface BlogEntry {
   id: number;

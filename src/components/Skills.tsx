@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div className="hidden overflow-x-auto px-2 pb-2 lg:block max-w-[30rem]">
       <Heading3>Skills</Heading3>
-      <Wrap spacing={4} className="items-center">
+      <Wrap spacing={4} mt={3.5} className="items-center">
         {SKILLS.map((skill) => {
           const Icon = skill.icon;
           return (

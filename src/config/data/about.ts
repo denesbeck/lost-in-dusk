@@ -29,7 +29,7 @@ export const INFO = {
 
 export const CONNECTIONS = [
   {
-    url: "https://github.com/denes-beck",
+    url: "https://github.com/denesbeck",
     icon: FaGithub,
   },
   {

@@ -349,16 +349,6 @@ const BlogEntry02 = () => {
           </div>
         </Stack>
       </Center>
-      <p className="mb-2">
-        Check the original article on Medium:{" "}
-        <a
-          target="_blank"
-          className="text-blue-400 underline"
-          href="https://medium.com/@denes-beck/insights-from-ibm-tech-2024-conference-511b4e2ebcd3"
-        >
-          IBM Tech 2024 Conference
-        </a>
-      </p>
     </Stack>
   );
 };

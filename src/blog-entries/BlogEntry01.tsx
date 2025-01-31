@@ -472,16 +472,6 @@ const BlogEntry01 = () => {
         secure and compliant with our company’s IT security standards which was
         the main reason we undertook this venture.
       </p>
-      <p className="mt-4 mb-2">
-        Check the original article on Medium:{" "}
-        <a
-          target="_blank"
-          className="text-blue-400 underline"
-          href="https://medium.com/@denes-beck/migrating-from-travis-ci-to-tekton-a9768d06d85b"
-        >
-          Migrating from Travis CI to Tekton
-        </a>
-      </p>
     </Stack>
   );
 };

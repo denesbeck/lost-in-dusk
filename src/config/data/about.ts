@@ -23,8 +23,8 @@ import { FaGolang } from "react-icons/fa6";
 export const INFO = {
   Name: "Denes Beck",
   Location: "Budapest, Hungary",
-  Company: "IBM",
-  Role: "Software Engineer",
+  Company: "SEON",
+  Role: "Senior Full Stack Engineer",
 };
 
 export const CONNECTIONS = [

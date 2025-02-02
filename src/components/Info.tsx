@@ -17,7 +17,7 @@ const Info = () => {
           {Object.entries(INFO).map(([key, value]) => (
             <div key={key} className="flex space-x-4 max-w-[40vw]">
               <h4 className="text-base font-semibold min-w-[6rem]">{key}</h4>
-              <div className="whitespace-nowrap">{value}</div>
+              <div >{value}</div>
             </div>
           ))}
           <Connections />

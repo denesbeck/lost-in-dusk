@@ -1,40 +1,27 @@
-import { aws_dev, terraform, ibm_dev } from "@/assets/certificates";
+import { aws_dev, terraform } from "@/assets/certificates";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiCredly,
-  SiChakraui,
   SiTypescript,
   SiTerraform,
   SiKubernetes,
   SiDocker,
   SiGithubactions,
-  SiLua,
 } from "react-icons/si";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaAws,
-  FaReact,
-  FaNodeJs,
-  FaLinux,
-} from "react-icons/fa";
+import { FaGithub, FaAws, FaReact, FaNodeJs, FaLinux } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 
 export const INFO = {
-  Name: "Denes Beck",
+  Name: "Denes B.",
   Location: "Budapest, Hungary",
   Company: "SEON",
-  Role: "Senior Full Stack Engineer",
+  Role: "Software Engineer",
 };
 
 export const CONNECTIONS = [
   {
     url: "https://github.com/denesbeck",
     icon: FaGithub,
-  },
-  {
-    url: "https://www.linkedin.com/in/denesbeck",
-    icon: FaLinkedin,
   },
   {
     url: "https://www.credly.com/users/denesbeck",
@@ -62,12 +49,6 @@ export const CERTIFICATES: Certificate[] = [
     img: terraform,
     alt: "terraform",
   },
-  {
-    url: "https://www.credly.com/badges/d991722d-3d60-4d76-9e62-49a5677b25e3/public_url",
-    size: 100,
-    img: ibm_dev,
-    alt: "ibmDeveloper",
-  },
 ];
 
 export const SKILLS = [
@@ -83,10 +64,7 @@ export const SKILLS = [
     name: "Tailwind CSS",
     icon: RiTailwindCssFill,
   },
-  {
-    name: "Chakra UI",
-    icon: SiChakraui,
-  },
+
   {
     name: "Node.js",
     icon: FaNodeJs,
@@ -98,10 +76,6 @@ export const SKILLS = [
   {
     name: "Golang",
     icon: FaGolang,
-  },
-  {
-    name: "Lua",
-    icon: SiLua,
   },
   {
     name: "GitHub Actions",
@@ -128,3 +102,6 @@ export const SKILLS = [
     icon: FaAws,
   },
 ];
+
+export const BIO =
+  "🚀 I'm a software engineer with a strong focus on creating scalable, efficient, and maintainable applications using modern frameworks and best practices.";

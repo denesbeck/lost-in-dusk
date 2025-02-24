@@ -1,6 +1,7 @@
 import { Stack } from "@chakra-ui/react";
 import { Connections, Heading3 } from "@/components";
 import { INFO } from "@/config/data/about";
+import profile from "@/assets/profile.png";
 
 const Info = () => {
   return (
@@ -8,9 +9,9 @@ const Info = () => {
       <Heading3>Info</Heading3>
       <div className="flex gap-10 items-start pb-3 animate-textFocus">
         <img
-          src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Aidan"
+          src={profile}
           alt="profile"
-          className="w-20 h-20 rounded transition-all duration-200 ease-in hover:scale-110 hover:brightness-110"
+          className="w-36 h-36 rounded transition-all duration-200 ease-in hover:scale-110"
         />
         <div>
           {Object.entries(INFO).map(([key, value]) => (

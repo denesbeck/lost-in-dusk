@@ -39,13 +39,13 @@ export type Certificate = {
 export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/b4bf4117-6a90-49eb-baee-e382447b72c2/public_url",
-    size: 110,
+    size: 105,
     img: aws_dev,
     alt: "awsDeveloperAssociate",
   },
   {
     url: "https://www.credly.com/badges/91d294a8-8f7d-4f5a-80c1-071fa0bf2be6/public_url",
-    size: 110,
+    size: 105,
     img: terraform,
     alt: "terraform",
   },

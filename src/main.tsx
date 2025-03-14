@@ -21,8 +21,8 @@ createRoot(document.getElementById("root")!).render(
       }}
     >
       <BrowserRouter basename="/">
-        <Stack className="relative font-[DepartureMono] text-white">
-          <div className="fixed top-0 z-0 h-screen w-screen bg-gradient-to-tr from-black via-gray-900 to-black backdrop-blur-md" />
+        <Stack className="relative text-white font-[DepartureMono]">
+          <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black to-black via-gray-900/10 backdrop-blur-md" />
           <div
             style={{
               position: "fixed",

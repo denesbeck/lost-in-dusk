@@ -1,4 +1,4 @@
-import { Tooltip, Wrap } from "@chakra-ui/react";
+import { Tooltip } from "@chakra-ui/react";
 import { Heading3 } from "@/components";
 import { SKILLS } from "@/config/data/about";
 import { ReactElement } from "react";
@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div className="hidden overflow-x-auto px-2 pb-2 lg:block max-w-[30rem]">
       <Heading3>Skills</Heading3>
-      <Wrap spacing={4} mt={3.5} className="items-center">
+      <div className="flex flex-wrap gap-4 items-center mt-3.5">
         {SKILLS.map((skill) => {
           const Icon = skill.icon;
           return (
@@ -28,7 +28,7 @@ const Skills = () => {
             </SkillBadge>
           );
         })}
-      </Wrap>
+      </div>
     </div>
   );
 };

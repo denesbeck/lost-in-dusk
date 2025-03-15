@@ -22,7 +22,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "echo \"No test specified\" && exit 0",
-    "update": "npx npm-check-updates -x @chakra-ui/react -u && npm install"
+    "update": "npx npm-check-updates -x @chakra-ui/react -x tailwindcss -u && npm install"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

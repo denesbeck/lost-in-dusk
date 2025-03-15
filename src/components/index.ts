@@ -11,6 +11,7 @@ import Heading1 from "./Heading1";
 import Heading2 from "./Heading2";
 import Heading3 from "./Heading3";
 import Info from "./Info";
+import Input from "./Input";
 import MacOSBar from "./MacOSBar";
 import Menu from "./Menu";
 import Modal from "./Modal";
@@ -19,6 +20,7 @@ import Navitem from "./Navitem";
 import ScrollToTop from "./ScrollToTop";
 import Skills from "./Skills";
 import Social from "./Social";
+import TextArea from "./TextArea";
 import Title from "./Title";
 
 export {
@@ -35,6 +37,7 @@ export {
   Heading2,
   Heading3,
   Info,
+  Input,
   MacOSBar,
   Menu,
   Modal,
@@ -43,5 +46,6 @@ export {
   ScrollToTop,
   Skills,
   Social,
+  TextArea,
   Title,
 };

@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import "./assets/fonts/DepartureMono-Regular.woff2";
-import { Stack } from "@chakra-ui/react";
 import { ScrollToTop } from "@/components";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "@/theme";
@@ -21,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
       }}
     >
       <BrowserRouter basename="/">
-        <Stack className="relative text-white font-[DepartureMono]">
+        <div className="grid relative text-white font-[DepartureMono]">
           <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black to-black via-gray-900/10 backdrop-blur-md" />
           <div
             style={{
@@ -32,12 +31,12 @@ createRoot(document.getElementById("root")!).render(
               height: "100vh",
               backgroundSize: "2rem 2rem",
               backgroundImage:
-                "linear-gradient(to right, rgba(17, 24, 39, 0.15) 2px, transparent 2px),linear-gradient(to bottom, rgba(17, 24, 39, 0.15) 2px, transparent 2px)",
+                "linear-gradient(to right, rgba(17, 24, 39, 0.2) 2px, transparent 2px),linear-gradient(to bottom, rgba(17, 24, 39, 0.2) 2px, transparent 2px)",
             }}
           />
           <App />
           <ScrollToTop />
-        </Stack>
+        </div>
       </BrowserRouter>
     </ChakraProvider>
   </StrictMode>,

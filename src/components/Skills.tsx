@@ -17,7 +17,7 @@ const SkillBadge = ({ children, label }: SkillBadgeProps) => {
 
 const Skills = () => {
   return (
-    <div className="hidden overflow-x-auto px-2 pb-2 lg:block max-w-[30rem]">
+    <div className="overflow-x-auto px-2 pb-2 max-w-[30rem]">
       <Heading3>Skills</Heading3>
       <div className="flex flex-wrap gap-4 items-center mt-3.5">
         {SKILLS.map((skill) => {

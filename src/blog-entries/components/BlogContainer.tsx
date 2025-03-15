@@ -5,7 +5,7 @@ interface IBlogContainer {
 }
 
 const BlogContainer = ({ children }: IBlogContainer) => {
-  return <div className="grid max-w-[50rem]">{children}</div>;
+  return <div className="max-w-[50rem]">{children}</div>;
 };
 
 export default BlogContainer;

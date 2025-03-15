@@ -8,14 +8,31 @@ import {
   SiDocker,
   SiGithubactions,
 } from "react-icons/si";
-import { FaGithub, FaAws, FaReact, FaNodeJs, FaLinux } from "react-icons/fa";
+import {
+  FaGithub,
+  FaAws,
+  FaReact,
+  FaNodeJs,
+  FaLinux,
+  FaMapMarkerAlt,
+  FaBuilding,
+  FaBriefcase,
+} from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
+import { HiIdentification } from "react-icons/hi2";
 
 export const INFO = {
   Name: "Denes B.",
   Location: "Budapest, Hungary",
   Company: "SEON",
   Role: "Software Engineer",
+};
+
+export const INFO_ICONS = {
+  Name: HiIdentification,
+  Location: FaMapMarkerAlt,
+  Company: FaBuilding,
+  Role: FaBriefcase,
 };
 
 export const CONNECTIONS = [

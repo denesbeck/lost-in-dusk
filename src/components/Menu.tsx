@@ -29,7 +29,7 @@ const Menu = ({ children }: MenuProps) => {
         />
       </button>
       {isOpen && (
-        <div className="flex fixed top-0 left-0 flex-col justify-center items-center p-8 space-y-4 w-screen h-screen bg-gray-900 animate-textFocus">
+        <div className="flex fixed top-0 left-0 flex-col justify-center items-center p-8 space-y-4 w-screen h-screen animate-textFocus bg-gray-900/30 backdrop-blur-md backdrop-brightness-90">
           {children}
         </div>
       )}

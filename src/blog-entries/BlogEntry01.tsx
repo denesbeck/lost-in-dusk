@@ -1,12 +1,18 @@
-import { Center, Stack } from "@chakra-ui/react";
+import { Center } from "@/components";
+import {
+  BlogContainer,
+  Heading1,
+  Heading2,
+  Paragraph,
+  Title,
+} from "./components";
 
 const BlogEntry01 = () => {
   return (
-    <Stack maxW={"50rem"}>
-      <h1 className="mb-6 text-4xl font-semibold">
-        Migrating from Travis CI to Tekton
-      </h1>
-      <p className="mb-2">
+    <BlogContainer>
+      <Title content="Migrating from Travis CI to Tekton" />
+      <Heading1 content="Oppurtunity" />
+      <Paragraph>
         At the company where I work recently a strategic decision was made to
         migrate all CI/CD workflows from Travis CI to the company’s own CI/CD
         solution built with Tekton. As result, since the majority of our
@@ -15,16 +21,16 @@ const BlogEntry01 = () => {
         contribute to this InnerSource project and develop a CI/CD pipeline
         using Tekton. In this article I would like to share my experience and
         perception related to this project.
-      </p>
-      <h2 className="mt-4 text-2xl font-semibold">Why?</h2>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading1 content="Why?" />
+      <Paragraph>
         First of all, a question to answer: Why we committed to replace Travis
         CI — a working pipeline solution — with another, less trending solution?
         Well, it was important to reduce the spending on third-party IT tools
         and the elimination of the dependency on these tools was also a relevant
         concern.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Using third-party tools is a convenient approach as you don’t have to
         develop or maintain the software, you don’t have to establish the
         infrastructure, install and deploy your application, fix security
@@ -34,8 +40,8 @@ const BlogEntry01 = () => {
         have full control over the data security. Besides, you can’t extend the
         functionality of these tools, you can only work with a limited amount of
         features already available.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Beside reducing the cost and dependency, it was also important to create
         a secure and standardized software supply chain. Forcing application
         development teams to follow coding conventions and best practices by
@@ -47,19 +53,19 @@ const BlogEntry01 = () => {
         build-time arguments. Using a pipeline that has a SAST (Static
         application security testing) task can eliminate the risk of pushing
         vulnerable code to the main code base.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Considering the above reasoning, we can say that this huge commitment —
         that moved many people out of their comfort zone — made a lot of sense
         actually.
-      </p>
-      <h2 className="mt-4 text-2xl font-semibold">What is CI/CD?</h2>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading1 content="What is CI/CD?" />
+      <Paragraph>
         If you read this article, you’re probably aware what CI/CD is, however,
         I felt important to write down just the basics as a refresher or as a
         quick introduction.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Back in the old days software delivery was a bit more complicated. First
         of all, you had to make sure that your software is properly tested. It
         was important to carefully compose your test cases because changing and
@@ -73,17 +79,16 @@ const BlogEntry01 = () => {
         potential risks and compare this process with the same process in a
         cloud environment where you can easily rollout or rollback changes in no
         time.
-      </p>
-
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         CI/CD — which stands for continuous integration and continuous delivery
         — was a solution to this manual, slow and inflexible workflow. It’s a
         method that makes frequent software delivery more flexible by automating
         the different tasks (e.g., opensource vulnerability scanning, code
         linting, secret scanning, testing, image vulnerability scanning) of the
         whole software delivery process.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Continuous Integration is basically the automation process of the
         development team: It’s about preparing the code for pushing it to the
         shared repository. Continuous Delivery on the other hand is the
@@ -98,8 +103,8 @@ const BlogEntry01 = () => {
         Actions, Tekton) you or your organization decides to work with, you will
         have the opportunity to customize your workflow based on specific
         requirements which makes this whole process agile.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         We were really just scratching the surface here to understand the
         relevancy and functioning of the CI/CD pipelines. If you want to read
         more about CI/CD, I can highly recommend{" "}
@@ -111,19 +116,19 @@ const BlogEntry01 = () => {
           this article
         </a>{" "}
         from Red Hat.
-      </p>
-      <h2 className="mt-4 text-2xl font-semibold">Travis CI vs Tekton</h2>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading1 content="Travis CI vs Tekton" />
+      <Paragraph>
         After dealing with the theory about CI/CD, we can jump back to my use
         case and examine the two CI/CD solutions. So, what’s the difference?
-      </p>
-      <h3 className="text-xl font-semibold">Travis CI</h3>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading2 content="Travis CI" />
+      <Paragraph>
         Travis CI is a service. It runs on its own server, therefore, you can
         setup your pipeline in no time. It has its own hosted web UI for
         monitoring and managing your builds.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         For customizing the steps and environment of your Travis pipeline, you
         would mostly use a YAML config file in the root folder of your
         application or in advanced use cases you can import other YAML files
@@ -132,8 +137,8 @@ const BlogEntry01 = () => {
         install packages and services, define languages and execution
         environments, create different build stages which you can further
         customize using lifecycle hooks and conditions.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         While I never had any difficulties to customize Travis for any of our
         applications — even though we also had some exceptional requirements — I
         have to admit that after using Tekton for a while, coming back to Travis
@@ -141,16 +146,16 @@ const BlogEntry01 = () => {
         much customizable as Tekton is a valid argument in my opinion, however,
         Travis can probably also cover most of your requirements when it comes
         to CI/CD.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         A more important difference is that Tekton is opensource and Travis CI
         is not, so you can examine and therefore better understand the code base
         of Tekton which opens a lot of opportunities. Another important
         difference is that in contrast to Travis CI you need to setup Tekton in
         your own environment which gives you full control on what’s going on.
-      </p>
-      <h3 className="text-xl font-semibold">Tekton</h3>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading2 content="Tekton" />
+      <Paragraph>
         Tekton is a cloud-native solution that runs on Kubernetes. It’s
         object-oriented and modular which means that you can create reusable
         assets (called tasks) and integrate them in different workflows (called
@@ -170,8 +175,8 @@ const BlogEntry01 = () => {
         where you can find or upload reusable Tekton assets like tasks or
         pipelines. As a matter of fact, this is where I started my InnerSource
         contribution with Tekton, because I wanted to avoid duplication of work.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Tekton is easy to customize, in fact, it urges you to build your own
         assets and assemble them as a custom workflow. However, if you don’t
         find a reusable asset suitable for your use case, you’ll need to take on
@@ -179,8 +184,8 @@ const BlogEntry01 = () => {
         and responsibility, on the other hand you need to consider that setting
         everything will take more time than in case of Travis CI or other
         out-of-the-box pipeline solutions.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         As for scalability, since Tekton runs in Kubernetes for scaling your
         workloads, you can apply horizontal or vertical scaling just like in
         case of a regular containerized application. You have two options for
@@ -209,8 +214,8 @@ const BlogEntry01 = () => {
           Tekton Dashboard
         </a>
         , which is a web UI that you need to host separately in Kubernetes.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         As you can see Tekton is basically a DIY pipeline solution, that
         requires the understanding of different concepts like containers,
         Kubernetes and Tekton itself. Setting your own Tekton pipeline requires
@@ -228,8 +233,8 @@ const BlogEntry01 = () => {
           documentation
         </a>{" "}
         of Tekton is well structured and easy to understand.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         I will also leave this video here that I found useful while writing this
         article. Although, in this video the differences between Tekton and{" "}
         <a
@@ -241,8 +246,8 @@ const BlogEntry01 = () => {
         </a>{" "}
         are highlighted and evaluated, I found it quite useful for comparing
         Tekton with Travis CI:
-      </p>
-      <Center py={2}>
+      </Paragraph>
+      <Center py={8}>
         <iframe
           width="560"
           height="315"
@@ -253,8 +258,8 @@ const BlogEntry01 = () => {
           allowFullScreen
         ></iframe>
       </Center>
-      <h2 className="mt-4 text-2xl font-semibold">InnerSource</h2>
-      <p className="mb-2">
+      <Heading1 content="InnerSource" />
+      <Paragraph>
         I also wanted to touch on{" "}
         <a
           href="https://about.gitlab.com/topics/version-control/what-is-innersource/"
@@ -271,21 +276,21 @@ const BlogEntry01 = () => {
         made it possible for developers around the globe within our organization
         to contribute to it and get in-depth knowledge about CI/CD pipeline
         functionality and DevOps in general.
-      </p>
-      <p className="mb-2">The way I define InnerSource is the following:</p>
+      </Paragraph>
+      <Paragraph>The way I define InnerSource is the following:</Paragraph>
       <p className="pl-4 mx-8 mb-2 italic border-l-2">
         It’s a strategy to improve collaboration across different teams (also in
         different time zones) within an organization to achieve a common goal
         more effectively by communicating, making the code transparent while
         accepting and following the organization’s code of conduct.
       </p>
-      <p className="mb-2">
+      <Paragraph>
         InnerSource projects can increase the job satisfaction level of the
         developers tremendously. Since it’s based on communication, it also
         establishes a healthy culture around the project that can even outlive
         the project itself.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         At the time when the Tekton solution was announced in our organization
         there were pipelines already created for Node.js, Java, Golang and
         Python, however, Ruby on Rails or Ruby in general was not covered. Our
@@ -295,9 +300,9 @@ const BlogEntry01 = () => {
         existing applications to this new solution. The need to secure business
         continuity and the opportunity to contribute to a meaningful project
         boosted my motivation level and moved me out of my comfort zone.
-      </p>
-      <h2 className="mt-4 text-2xl font-semibold">Contribution</h2>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading1 content="Contribution" />
+      <Paragraph>
         Since Tekton is a cloud-native framework, the prerequisite to work with
         it is to have some knowledge and work experience with Kubernetes, Docker
         (or other container management tools) and Linux. Fortunately, I already
@@ -305,8 +310,8 @@ const BlogEntry01 = () => {
         technologies, so I had a pretty good understanding about the idea of
         containerization and container orchestration and I also felt comfortable
         working in a Linux environment.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Since I had the prerequisites, I started with reviewing the{" "}
         <a
           href="https://tekton.dev/"
@@ -330,8 +335,8 @@ const BlogEntry01 = () => {
         with multiple steps. After that I used these building blocks in a
         pipeline resource. I also experimented with conditional executions,
         environment variables, workspaces and parameters.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Once I covered these basic use cases, I started to review the code base
         of the InnerSource pipeline project. At this point I learned about{" "}
         <a
@@ -347,8 +352,8 @@ const BlogEntry01 = () => {
         without code duplication. For example, we could create pipelines for
         different Ruby versions using this approach or we could also create
         different e2e test flows by omitting or including specific tasks.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         <a
           href="https://podman.io/"
           target="_blank"
@@ -379,12 +384,12 @@ const BlogEntry01 = () => {
         compromised, all your containers gets compromised. Contrary to Docker,
         Podman is daemon-less: It runs containers as child-processes and it can
         run them with non-root privilege as well.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         I don’t want to go through all the tools that I learned about during my
         journey, however, I just want draw the reader’s attention on two more:
-      </p>
-      <ol className="px-8 list-decimal">
+      </Paragraph>
+      <ol className="py-8 px-14 list-decimal">
         <li>
           <strong>buildah:</strong> A command-line tool that lets you build{" "}
           <a
@@ -406,7 +411,7 @@ const BlogEntry01 = () => {
           content.
         </li>
       </ol>
-      <p className="mb-2">
+      <Paragraph>
         Besides getting familiar with the tools listed above, I also had to
         understand the Ruby on Rails framework better and this was the point
         where I struggled the most. Although, I was familiar with this
@@ -434,8 +439,8 @@ const BlogEntry01 = () => {
         questions, asking for advice from other Rails-developers within my
         organization and adjusting the pipeline based on the inputs I got. Long
         story short, I messed up a lot of things and course-corrected.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Once I overcame the challenges with Rails, it was quite fast to deliver
         a functioning pipeline, which was later adopted by other teams and was
         used as a basis for other Ruby language pipelines. It might sound like a
@@ -446,9 +451,9 @@ const BlogEntry01 = () => {
         Understanding the concepts of more languages and frameworks will help
         you to get the bigger picture and will highly reduce the time to adapt
         to new situations and environments in future projects.
-      </p>
-      <h2 className="mt-4 text-2xl font-semibold">Results</h2>
-      <p className="mb-2">
+      </Paragraph>
+      <Heading1 content="Results" />
+      <Paragraph>
         For our organization securing business continuity was obviously the most
         important result that I was able to support with this contribution.
         Besides, I think delivering a reusable asset that anyone can use
@@ -457,22 +462,22 @@ const BlogEntry01 = () => {
         self-sufficient meaning that if we have an application using an older
         tech stack that is not supported, we can just build a new workflow on
         our own.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         As far as I’m concerned, this was my first time contributing to an
         InnerSource project and I dare to say that this was not my last time
         either. As a matter of fact, I have plenty of projects on my radar for
         next year. Moreover, I can’t emphasize enough that my most important
         result related to this project was the hands-on DevOps experience and
         the in-depth knowledge I gained, I’m glad I got this opportunity.
-      </p>
-      <p className="mb-2">
+      </Paragraph>
+      <Paragraph>
         Last but not least, with the migration to this new CI/CD solution we got
         rid of third-party dependencies and our software supply chain is more
         secure and compliant with our company’s IT security standards which was
         the main reason we undertook this venture.
-      </p>
-    </Stack>
+      </Paragraph>
+    </BlogContainer>
   );
 };
 

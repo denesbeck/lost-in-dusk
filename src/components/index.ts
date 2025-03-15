@@ -2,6 +2,7 @@ import Badge from "./Badge";
 import Bio from "./Bio";
 import BlogCard from "./BlogCard";
 import Button from "./Button";
+import Center from "./Center";
 import Certificates from "./Certificates";
 import Connections from "./Connections";
 import ContactButton from "./ContactButton";
@@ -28,6 +29,7 @@ export {
   Bio,
   BlogCard,
   Button,
+  Center,
   Certificates,
   Connections,
   ContactButton,

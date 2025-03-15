@@ -3,7 +3,7 @@ interface IHeading2 {
 }
 
 const Heading2 = ({ content }: IHeading2) => {
-  return <h3 className="text-xl font-semibold">{content}</h3>;
+  return <div className="text-xl font-bold">{content}</div>;
 };
 
 export default Heading2;

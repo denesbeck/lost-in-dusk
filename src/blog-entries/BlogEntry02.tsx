@@ -15,6 +15,7 @@ import {
   ImageContainer,
   ImageDescription,
   Paragraph,
+  Quote,
   Subtitle,
   Title,
 } from "./components";
@@ -180,11 +181,11 @@ const BlogEntry02 = () => {
         workbooks, while ensuring the generation of high-quality and secure code
         that aligns with best practices and standards.
       </Paragraph>
-      <p className="pl-4 mx-8 mb-2 italic border-l-2">
+      <Quote>
         “watsonx Code Assistant for Red Hat Ansible Lightspeed leverages
         generative AI to accelerate development while maintaining the principles
         of trust, security and compliance at its core.”
-      </p>
+      </Quote>
       <Paragraph>
         From these examples, we can see that IBM puts significant effort into
         AI-supported development, with the goal of simplifying developers’ lives
@@ -200,9 +201,7 @@ const BlogEntry02 = () => {
         a commitment to modernizing within this field. A tool that can be used
         to reliably accelerate the automation of your infrastructure is Ansible.
       </Paragraph>
-      <p className="pl-4 mx-8 mb-2 italic border-l-2">
-        “Ansible is the de facto language of automation.”
-      </p>
+      <Quote>“Ansible is the de facto language of automation.”</Quote>
       <Paragraph>
         With its agentless architecture, it offers a relatively straightforward
         approach to gaining control over multiple resources and consistently
@@ -255,10 +254,10 @@ const BlogEntry02 = () => {
         and tested set of tools that enables faster production deployment of
         AI-enabled applications.
       </Paragraph>
-      <p className="pl-4 mx-8 mb-2 italic border-l-2">
+      <Quote>
         “Red Hat OpenShift A platform for continuous development, integration,
         and deployment for AI/ML models, such as GPU support”
-      </p>
+      </Quote>
       <Heading2 content="Security" />
       <Paragraph>
         The sessions about security primarily centered around AI. The rationale
@@ -285,10 +284,10 @@ const BlogEntry02 = () => {
         minimizing human interface latencies and prioritizing AI over human
         involvement was emphasized.
       </Paragraph>
-      <p className="pl-4 mx-8 mb-2 italic border-l-2">
+      <Quote>
         “Protecting foundation models, generative AI, and their data sets is
         essential for enterprise-ready AI”
-      </p>
+      </Quote>
       <Paragraph>
         When discussing Security for AI, it’s crucial to ensure that the AI
         training data remains safeguarded against theft or manipulation of

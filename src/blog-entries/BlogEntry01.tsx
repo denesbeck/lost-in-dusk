@@ -4,6 +4,7 @@ import {
   Heading1,
   Heading2,
   Paragraph,
+  Quote,
   Title,
 } from "./components";
 
@@ -278,12 +279,12 @@ const BlogEntry01 = () => {
         functionality and DevOps in general.
       </Paragraph>
       <Paragraph>The way I define InnerSource is the following:</Paragraph>
-      <p className="pl-4 mx-8 mb-2 italic border-l-2">
+      <Quote>
         It’s a strategy to improve collaboration across different teams (also in
         different time zones) within an organization to achieve a common goal
         more effectively by communicating, making the code transparent while
         accepting and following the organization’s code of conduct.
-      </p>
+      </Quote>
       <Paragraph>
         InnerSource projects can increase the job satisfaction level of the
         developers tremendously. Since it’s based on communication, it also

@@ -4,6 +4,7 @@ import Heading2 from "./Heading2";
 import ImageContainer from "./ImageContainer";
 import ImageDescription from "./ImageDescription";
 import Paragraph from "./Paragraph";
+import Quote from "./Quote";
 import Subtitle from "./Subtitle";
 import Title from "./Title";
 
@@ -14,6 +15,7 @@ export {
   ImageContainer,
   ImageDescription,
   Paragraph,
+  Quote,
   Subtitle,
   Title,
 };

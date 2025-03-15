@@ -3,7 +3,7 @@ interface ISubtitle {
 }
 
 const Subtitle = ({ content }: ISubtitle) => {
-  return <h3 className="mb-4 text-xl font-light">{content}</h3>;
+  return <div className="mb-4 text-xl font-light">{content}</div>;
 };
 
 export default Subtitle;

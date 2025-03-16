@@ -7,7 +7,7 @@ const Info = () => {
   return (
     <Stack maxW={"30rem"} overflowX={"auto"} gap={2} px={2}>
       <Heading3>Info</Heading3>
-      <div className="flex gap-2 items-start pb-3 animate-textFocus">
+      <div className="flex gap-2 items-start animate-textFocus">
         <img
           src={profile}
           alt="profile"

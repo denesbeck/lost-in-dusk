@@ -1,6 +1,5 @@
 import { ContactButton } from "@/components";
 import { useTypewriter } from "@/hooks";
-import { Stack } from "@chakra-ui/react";
 import { INFO } from "@/config/data/about";
 
 interface HomeProps {
@@ -13,25 +12,25 @@ const Home = ({ contactAction }: HomeProps) => {
   );
 
   return (
-    <Stack className="h-screen min-h-screen w-full items-center justify-center px-4">
-      <div className="relative min-h-8 text-center text-2xl">
+    <div className="flex flex-col justify-center items-center px-4 w-full h-screen min-h-screen">
+      <div className="relative text-2xl text-center min-h-8">
         {output.split("|")[0]}
         {!output.includes(`${INFO.Name.split(" ")[0]}.`) && (
-          <div className="absolute -right-4 top-0 h-max w-max animate-blink bg-white px-0.5 text-2xl text-white">
+          <div className="absolute top-0 -right-4 px-0.5 w-max text-2xl text-white bg-white h-max animate-blink">
             *
           </div>
         )}
       </div>
-      <div className="relative mt-2 min-h-6 text-center text-base">
+      <div className="relative mt-2 text-base text-center min-h-6">
         {output.split("|")[1]}
         {output.includes("|") && (
-          <div className="absolute -right-3 top-0 h-max w-max animate-blink bg-white px-0.5 text-base text-white">
+          <div className="absolute top-0 -right-3 px-0.5 w-max text-base text-white bg-white h-max animate-blink">
             *
           </div>
         )}
       </div>
       <ContactButton label={"Contact me"} action={contactAction} />
-    </Stack>
+    </div>
   );
 };
 

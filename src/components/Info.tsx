@@ -1,11 +1,10 @@
-import { Stack } from "@chakra-ui/react";
 import { Connections, Heading3 } from "@/components";
 import { INFO, INFO_ICONS } from "@/config/data/about";
 import profile from "@/assets/profile.png";
 
 const Info = () => {
   return (
-    <Stack maxW={"30rem"} overflowX={"auto"} gap={2} px={2}>
+    <div className="flex overflow-x-auto flex-col gap-2 px-2 max-w-[30rem] animate-textFocus">
       <Heading3>Info</Heading3>
       <div className="flex gap-2 items-start animate-textFocus">
         <img
@@ -31,7 +30,7 @@ const Info = () => {
           <Connections />
         </div>
       </div>
-    </Stack>
+    </div>
   );
 };
 

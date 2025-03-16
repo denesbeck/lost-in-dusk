@@ -1,6 +1,5 @@
 import { Navbar } from "@/components";
 import { About, Blog, Home, Contact } from "./pages";
-import { Stack } from "@chakra-ui/react";
 import { useNav } from "@/hooks";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     <>
       <div ref={home} />
       <Navbar items={navItems} />
-      <Stack className="z-10 w-screen">
+      <div className="flex z-10 flex-col w-screen">
         <Home contactAction={contactAction} />
         <div ref={blog}>
           <Blog />
@@ -22,7 +21,7 @@ function App() {
         <div ref={contact}>
           <Contact />
         </div>
-      </Stack>
+      </div>
     </>
   );
 }

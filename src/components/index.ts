@@ -21,6 +21,7 @@ import Navitem from "./Navitem";
 import ScrollToTop from "./ScrollToTop";
 import Skills from "./Skills";
 import Social from "./Social";
+import Spinner from "./Spinner";
 import TextArea from "./TextArea";
 import Title from "./Title";
 
@@ -48,6 +49,7 @@ export {
   ScrollToTop,
   Skills,
   Social,
+  Spinner,
   TextArea,
   Title,
 };

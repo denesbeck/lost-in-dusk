@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
       }}
     >
       <BrowserRouter basename="/">
-        <div className="grid relative text-white font-[DepartureMono]">
+        <div className="flex relative flex-col text-white font-[DepartureMono]">
           <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black to-black via-gray-900/10 backdrop-blur-md" />
           <div
             style={{

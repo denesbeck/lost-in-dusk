@@ -2,6 +2,7 @@ import { ReactElement, useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useCheckBrowser } from "@/hooks";
 
 interface MenuProps {
   children: ReactElement;
@@ -10,6 +11,7 @@ interface MenuProps {
 const Menu = ({ children }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
+  const browser = useCheckBrowser();
 
   useEffect(() => {
     if (isOpen) {
@@ -29,7 +31,9 @@ const Menu = ({ children }: MenuProps) => {
         />
       </button>
       {isOpen && (
-        <div className="flex fixed top-0 left-0 flex-col justify-center items-center p-8 space-y-4 w-screen h-screen animate-textFocus bg-gray-900/30 backdrop-blur-md backdrop-brightness-90">
+        <div
+          className={`fixed left-0 top-0 flex h-screen w-screen animate-textFocus flex-col items-center justify-center space-y-4 p-8 ${browser === "Safari" ? "bg-gray-900" : "bg-gray-900/30 backdrop-blur-md backdrop-brightness-90"}`}
+        >
           {children}
         </div>
       )}

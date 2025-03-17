@@ -1,3 +1,5 @@
+import Alert from "./Alert";
+import AlertBox from "./AlertBox";
 import Badge from "./Badge";
 import Bio from "./Bio";
 import BlogCard from "./BlogCard";
@@ -26,6 +28,8 @@ import TextArea from "./TextArea";
 import Title from "./Title";
 
 export {
+  Alert,
+  AlertBox,
   Badge,
   Bio,
   BlogCard,

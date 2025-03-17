@@ -1,6 +1,6 @@
 import validate from "@/utils/validate";
-import { useToast } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
+import { useAlert } from "@/hooks";
 import axios from "axios";
 
 const useContact = () => {
@@ -13,7 +13,7 @@ const useContact = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
-  const toast = useToast();
+  const { alert } = useAlert();
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -32,15 +32,12 @@ const useContact = () => {
       messageRef.current?.value || "",
     );
     if (!valid) {
-      if (!toast.isActive("invalid-input"))
-        toast({
-          id: "invalid-input",
-          title: "Invalid input",
-          description: messages.join("\n"),
-          status: "error",
-          duration: 5000,
-          isClosable: true,
-        });
+      alert({
+        id: "invalid-input",
+        title: "Invalid input",
+        message: messages.join("\n"),
+        severity: "error",
+      });
       return;
     }
     if (typeof window !== "undefined") {
@@ -69,21 +66,19 @@ const useContact = () => {
               .then((res) => {
                 if (res.data.statusCode !== 200)
                   throw new Error("Unable to send message.");
-                toast({
+                alert({
+                  id: "message-sent",
                   title: "Success",
-                  description: "Message sent successfully.",
-                  status: "success",
-                  duration: 5000,
-                  isClosable: true,
+                  message: "Message sent successfully.",
+                  severity: "success",
                 });
               })
               .catch(() => {
-                toast({
+                alert({
+                  id: "message-failed",
                   title: "Error",
-                  description: "Unable to send message.",
-                  status: "error",
-                  duration: 5000,
-                  isClosable: true,
+                  message: "Unable to send message.",
+                  severity: "error",
                 });
                 console.error("Unable to send message.");
                 return;
@@ -96,12 +91,11 @@ const useContact = () => {
               });
           })
           .catch(() => {
-            toast({
+            alert({
+              id: "recaptcha-failed",
               title: "Error",
-              description: "Unable to get reCAPTCHA token.",
-              status: "error",
-              duration: 5000,
-              isClosable: true,
+              message: "Unable to get reCAPTCHA token.",
+              severity: "error",
             });
             console.error("Unable to get reCAPTCHA token.");
             setLoading(false);

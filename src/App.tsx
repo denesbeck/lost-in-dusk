@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { AlertBox, Navbar } from "@/components";
 import { About, Blog, Home, Contact } from "./pages";
 import { useNav } from "@/hooks";
 
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+      <AlertBox />
       <div ref={home} />
       <Navbar items={navItems} />
       <div className="flex z-10 flex-col w-screen">

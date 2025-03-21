@@ -2,7 +2,6 @@ import { Modal } from "@/components";
 import { ReactElement, useState } from "react";
 
 interface BlogCardProps {
-  id: number;
   title: string;
   description: string;
   date: string;

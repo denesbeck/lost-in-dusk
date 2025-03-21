@@ -6,7 +6,7 @@ interface TitleProps {
 const Title = ({ mr = false, ml = false }: TitleProps) => {
   return (
     <div
-      className={`${mr && "mr-auto"} ${ml && "ml-auto"} z-10 animate-textFocus select-none py-2 text-lg font-semibold`}
+      className={`${mr && "mr-auto"} ${ml && "ml-auto"} animate-text-focus z-10 py-2 text-lg font-semibold select-none`}
     >
       LostInDusk
     </div>

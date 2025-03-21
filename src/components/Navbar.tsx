@@ -15,21 +15,21 @@ const Navbar = ({ items }: NavbarProps) => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="flex fixed top-0 z-50 items-center py-2 px-6 w-full h-max animate-textFocus backdrop-blur-xs">
+    <nav className="flex fixed top-0 z-50 items-center py-2 px-6 w-full animate-text-focus h-max backdrop-blur-xs">
       <Title mr />
       {pathname !== "/contact" && (
         <>
-          <div className="hidden justify-center items-center py-1 space-x-4 w-max sm:flex animate-textFocus">
+          <div className="hidden justify-center items-center py-1 space-x-4 w-max sm:flex animate-text-focus">
             {items.map((item) => (
               <Navitem
                 key={item.label}
                 label={item.label}
                 path={item.path}
-                action={item.action || (() => {})}
+                action={item.action || (() => { })}
               />
             ))}
           </div>
-          <div className="flex justify-end py-2 w-full sm:hidden animate-textFocus">
+          <div className="flex justify-end py-2 w-full sm:hidden animate-text-focus">
             <Menu>
               <>
                 {items.map((item) => (
@@ -37,7 +37,7 @@ const Navbar = ({ items }: NavbarProps) => {
                     key={item.label}
                     label={item.label}
                     path={item.path}
-                    action={item.action || (() => {})}
+                    action={item.action || (() => { })}
                   />
                 ))}
               </>

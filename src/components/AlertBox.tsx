@@ -73,7 +73,7 @@ const AlertBox = ({ maxAlert = 5, context = "" }: IAlertBox) => {
   }, [alerts]);
 
   return (
-    <div className="flex fixed top-2 right-2 flex-col space-y-2 w-max z-[999]">
+    <div className="flex fixed top-2 right-2 flex-col space-y-2 w-max z-999">
       {alerts.map((el) => {
         return (
           <Alert

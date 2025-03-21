@@ -15,7 +15,7 @@ const Navbar = ({ items }: NavbarProps) => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="flex fixed top-0 z-50 items-center py-2 px-6 w-full h-max animate-textFocus backdrop-blur-sm">
+    <nav className="flex fixed top-0 z-50 items-center py-2 px-6 w-full h-max animate-textFocus backdrop-blur-xs">
       <Title mr />
       {pathname !== "/contact" && (
         <>

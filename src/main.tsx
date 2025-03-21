@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename="/">
       <div className="flex relative flex-col text-white font-[DepartureMono]">
-        <div className="fixed top-0 z-0 w-screen h-screen bg-gradient-to-tr from-black to-black via-gray-900/10 backdrop-blur-md" />
+        <div className="fixed top-0 z-0 w-screen h-screen bg-linear-to-tr from-black to-black via-gray-900/10 backdrop-blur-md" />
         <div
           style={{
             position: "fixed",

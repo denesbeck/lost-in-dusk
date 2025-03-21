@@ -10,7 +10,7 @@ const Info = () => {
         <img
           src={profile}
           alt="profile"
-          className="w-36 h-36 rounded transition-all duration-200 ease-in hover:scale-110"
+          className="w-36 h-36 rounded-sm transition-all duration-200 ease-in hover:scale-110"
         />
         <div>
           {Object.entries(INFO).map(([key, value]) => {

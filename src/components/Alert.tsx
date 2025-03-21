@@ -69,7 +69,7 @@ const Alert = ({
 
   return (
     <div
-      className={`relative flex flex-col items-start px-4 py-2 text-black ${calculateStyle()} w-[30rem] animate-textFocus rounded`}
+      className={`relative flex flex-col items-start px-4 py-2 text-black ${calculateStyle()} w-[30rem] animate-textFocus rounded-sm`}
     >
       <div className="flex items-center">
         {calculateIcon()}

@@ -24,12 +24,11 @@ jobs:
           GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v3.1.0
+        uses: SonarSource/sonarqube-scan-action@v5
         with:
           args: >
             -Dsonar.organization=denes-beck
-            -Dsonar.projectKey=denes-beck_my-blog
-            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.projectKey=lost-in-dusk
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         continue-on-error: true

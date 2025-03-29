@@ -4,9 +4,9 @@ import profile from "@/assets/profile.png";
 
 const Info = () => {
   return (
-    <div className="flex overflow-x-auto flex-col gap-2 px-2 animate-text-focus max-w-[30rem]">
+    <div className="flex overflow-x-auto flex-col gap-2 pr-2 animate-text-focus max-w-[30rem]">
       <Heading3>Info</Heading3>
-      <div className="flex gap-2 items-start animate-text-focus">
+      <div className="flex gap-2 items-start py-2 animate-text-focus">
         <img
           src={profile}
           alt="profile"

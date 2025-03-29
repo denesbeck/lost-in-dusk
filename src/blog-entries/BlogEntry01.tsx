@@ -250,7 +250,7 @@ const BlogEntry01 = () => {
       </Paragraph>
       <Center py={8}>
         <iframe
-          width="560"
+          width="90%"
           height="315"
           src="https://www.youtube.com/embed/7aSe1HQ2lXo?si=qmAn35j9XuRhGeiR"
           title="YouTube video player"

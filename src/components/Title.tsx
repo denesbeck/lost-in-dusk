@@ -1,4 +1,4 @@
-import lostInDuskLogo from "../../public/lost_in_dusk_logo_120.png";
+import lostInDuskLogo from "../assets/lost_in_dusk_logo_120.png";
 interface TitleProps {
   mr?: boolean;
   ml?: boolean;

@@ -75,10 +75,10 @@ const Alert = ({
         {calculateIcon()}
         <div className="font-bold">{title}</div>
       </div>
-      <div className="ml-8">{message}</div>
+      <div className="ml-8 text-sm">{message}</div>
       {closable && (
         <button
-          className="absolute top-1 right-1 p-1 rounded-full"
+          className="absolute top-1 right-1 p-1 rounded-full cursor-pointer"
           onClick={close}
         >
           <IoMdClose className="text-xl" />

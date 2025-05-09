@@ -1,5 +1,5 @@
 import { Badge, Heading3 } from "@/components";
-import { CERTIFICATES } from "@/config/data/about";
+import { CERTIFICATES } from "@/config/about";
 
 const Certificates = () => {
   return (

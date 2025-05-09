@@ -17,6 +17,7 @@ import {
   FaMapMarkerAlt,
   FaBuilding,
   FaBriefcase,
+  FaLinkedin,
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { HiIdentification } from "react-icons/hi2";
@@ -43,6 +44,10 @@ export const CONNECTIONS = [
   {
     url: "https://www.credly.com/users/denesbeck",
     icon: SiCredly,
+  },
+  {
+    url: "www.linkedin.com/in/denesbeck",
+    icon: FaLinkedin,
   },
 ];
 
@@ -121,4 +126,4 @@ export const SKILLS = [
 ];
 
 export const BIO =
-  "🚀 I'm a software engineer with a strong focus on creating scalable, efficient, and maintainable applications using modern frameworks and best practices.";
+  "🚀 I'm a full-stack software engineer with a strong focus on creating scalable, efficient, and maintainable applications using modern frameworks and best practices.";

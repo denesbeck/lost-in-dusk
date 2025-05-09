@@ -1,16 +1,16 @@
 import { Connections, Heading3 } from "@/components";
-import { INFO, INFO_ICONS } from "@/config/data/about";
-import profile from "@/assets/profile.png";
+import { INFO, INFO_ICONS } from "@/config/about";
+import profile from "@/assets/ghibli_avatar.png";
 
 const Info = () => {
   return (
-    <div className="flex overflow-x-auto flex-col gap-2 pr-2 animate-text-focus max-w-[30rem]">
+    <div className="flex overflow-hidden flex-col gap-2 pr-2 animate-text-focus max-w-[34rem]">
       <Heading3>Info</Heading3>
-      <div className="flex gap-2 items-start py-2 animate-text-focus">
+      <div className="flex gap-4 items-start py-2 animate-text-focus">
         <img
           src={profile}
           alt="profile"
-          className="w-36 h-36 rounded-sm transition-all duration-200 ease-in hover:scale-110"
+          className="mx-2 w-40 h-40 rounded-full transition-all duration-200 ease-in hover:scale-110"
         />
         <div>
           {Object.entries(INFO).map(([key, value]) => {
@@ -23,7 +23,7 @@ const Info = () => {
                     {key}
                   </div>
                 </div>
-                <div className="whitespace-nowrap">{value}</div>
+                <div>{value}</div>
               </div>
             );
           })}

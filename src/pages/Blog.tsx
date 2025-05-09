@@ -1,4 +1,4 @@
-import blogEntries from "@/config/data/blog-entries";
+import blogEntries from "@/config/blog";
 import { BlogCard } from "@/components";
 
 const Blog = () => {

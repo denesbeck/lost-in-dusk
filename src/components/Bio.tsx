@@ -1,5 +1,5 @@
 import { Heading3 } from "@/components";
-import { BIO } from "@/config/data/about";
+import { BIO } from "@/config/about";
 
 const Bio = () => {
   return (

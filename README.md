@@ -13,7 +13,7 @@ My portfolio project to showcase my web development and DevOps skills.
 | **Category** | **Technology**                                                               |
 | ------------ | ---------------------------------------------------------------------------- |
 | **Frontend** | React (Vite)                                                                 |
-|              | Chakra UI                                                                    |
+|              | Material UI                                                                  |
 |              | Tailwind CSS                                                                 |
 | **Backend**  | AWS S3                                                                       |
 |              | AWS CloudFront                                                               |

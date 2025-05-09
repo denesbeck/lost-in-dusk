@@ -1,3 +1,5 @@
+import { isEmail } from "validator";
+
 const validate = (name: string, email: string, message: string) => {
   const output: {
     valid: boolean;
@@ -24,13 +26,7 @@ const validate = (name: string, email: string, message: string) => {
     output.invalidFields.push("message");
   }
 
-  if (
-    email &&
-    !/[a-z0-9]{1,32}(\.[a-z0-9]{1,32}){0,4}@[a-z0-9]{1,32}(\.[a-z0-9]{1,32}){1,4}/g.test(
-      email,
-    )
-  )
-    output.messages.push("Invalid email format.");
+  if (!isEmail(email)) output.messages.push("Invalid email format.");
 
   if (output.messages.length === 0) output.valid = true;
 

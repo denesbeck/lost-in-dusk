@@ -46,7 +46,7 @@ export const CONNECTIONS = [
     icon: SiCredly,
   },
   {
-    url: "www.linkedin.com/in/denesbeck",
+    url: "https://www.linkedin.com/in/denesbeck",
     icon: FaLinkedin,
   },
 ];

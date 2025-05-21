@@ -1,13 +1,5 @@
-import { BlogEntry01, BlogEntry02 } from "@/blog-entries";
-import { JSX } from "react";
-
-interface BlogEntry {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-  content: () => JSX.Element;
-}
+import { BlogEntry01, BlogEntry02 } from "../blogEntries";
+import { BlogEntry } from "../interfaces/blog";
 
 const BLOG_ENTRIES: BlogEntry[] = [
   {

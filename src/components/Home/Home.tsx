@@ -1,6 +1,6 @@
-import { ContactButton } from "@/components";
-import { useTypewriter } from "@/hooks";
-import { INFO } from "@/config/about";
+import { ContactButton } from "./components";
+import { useTypewriter } from "./hooks";
+import { INFO } from "@/components/About/config/data";
 
 interface HomeProps {
   contactAction: () => void;

@@ -1,6 +1,5 @@
-import { AlertBox, Navbar } from "@/components";
-import { About, Blog, Home, Contact } from "./pages";
-import { useNav } from "@/hooks";
+import { About, AlertBox, Blog, Contact, Home, Navbar } from "@/components";
+import { useNav } from "@/components/Navbar/hooks";
 
 function App() {
   const { navItems, refs, contactAction } = useNav();

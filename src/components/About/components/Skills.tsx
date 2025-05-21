@@ -1,5 +1,5 @@
 import { Heading3 } from "@/components";
-import { SKILLS } from "@/config/about";
+import { SKILLS } from "../config/data";
 import Tooltip from "@mui/material/Tooltip";
 
 const Skills = () => {

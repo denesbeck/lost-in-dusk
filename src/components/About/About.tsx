@@ -1,4 +1,4 @@
-import { Bio, Certificates, Info, Skills } from "@/components";
+import { Bio, Certificates, Info, Skills } from "./components";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 

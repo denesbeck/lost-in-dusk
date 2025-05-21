@@ -1,5 +1,5 @@
-import blogEntries from "@/config/blog";
-import { BlogCard } from "@/components";
+import blogEntries from "./config/data";
+import { BlogCard } from "./components";
 
 const Blog = () => {
   return (

@@ -1,6 +1,6 @@
-import validate from "@/utils/validate";
+import validate from "../utils/validate";
 import { useEffect, useRef, useState } from "react";
-import { useAlert } from "@/hooks";
+import { useAlert } from "@/components/AlertBox/hooks";
 import axios from "axios";
 
 const useContact = () => {

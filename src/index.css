@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --animate-slide-in-from-bottom: slideInFromBottom 0.2s ease-out;
@@ -10,26 +10,32 @@
       transform: translateY(2rem);
       opacity: 0;
     }
+
     100% {
       transform: translateY(0rem);
       opacity: 1;
     }
   }
+
   @keyframes textFocus {
     0% {
       filter: blur(12px);
       opacity: 0;
     }
+
     100% {
       filter: blur(0px);
       opacity: 1;
     }
   }
+
   @keyframes blink {
+
     0%,
     100% {
       opacity: 1;
     }
+
     50% {
       opacity: 0;
     }
@@ -45,6 +51,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,

@@ -1,4 +1,4 @@
-import { Alert } from ".";
+import { Alert } from "./components";
 
 import { useEffect, useState } from "react";
 

@@ -10,6 +10,7 @@ import {
   leaving_dubai,
 } from "@/assets/blog-entry-02";
 import {
+  BlogContainer,
   Heading1,
   Heading2,
   ImageContainer,
@@ -20,7 +21,6 @@ import {
   Title,
 } from "./components";
 import { Center } from "@/components";
-import BlogContainer from "./components/BlogContainer";
 
 const BlogEntry02 = () => {
   return (

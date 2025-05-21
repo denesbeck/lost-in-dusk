@@ -1,5 +1,6 @@
-import { Connections, Heading3 } from "@/components";
-import { INFO, INFO_ICONS } from "@/config/about";
+import { Heading3 } from "@/components";
+import { Connections } from ".";
+import { INFO, INFO_ICONS } from "../../config/data";
 import profile from "@/assets/ghibli_avatar.png";
 
 const Info = () => {

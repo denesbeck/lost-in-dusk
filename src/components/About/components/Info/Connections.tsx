@@ -1,5 +1,5 @@
-import { Social } from "@/components";
-import { CONNECTIONS } from "@/config/about";
+import { Social } from ".";
+import { CONNECTIONS } from "../../config/data";
 
 const Connections = () => {
   return (

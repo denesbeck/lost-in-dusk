@@ -1,4 +1,5 @@
-import { Navitem, Menu, Title } from "@/components";
+import { Menu, Title } from "@/components";
+import { Navitem } from "./components";
 import { useLocation } from "react-router-dom";
 
 interface Item {
@@ -25,7 +26,7 @@ const Navbar = ({ items }: NavbarProps) => {
                 key={item.label}
                 label={item.label}
                 path={item.path}
-                action={item.action || (() => { })}
+                action={item.action || (() => {})}
               />
             ))}
           </div>
@@ -37,7 +38,7 @@ const Navbar = ({ items }: NavbarProps) => {
                     key={item.label}
                     label={item.label}
                     path={item.path}
-                    action={item.action || (() => { })}
+                    action={item.action || (() => {})}
                   />
                 ))}
               </>

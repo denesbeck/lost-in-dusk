@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Severity } from "./AlertBox";
+import { Severity } from "../AlertBox";
 import {
   FaInfoCircle,
   FaCheckCircle,

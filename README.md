@@ -10,19 +10,19 @@ My portfolio project to showcase my web development and DevOps skills.
 
 ## Tech Stack 💻
 
-| **Category** | **Technology**                                                               |
-| ------------ | ---------------------------------------------------------------------------- |
-| **Frontend** | React (Vite)                                                                 |
-|              | Material UI                                                                  |
-|              | Tailwind CSS                                                                 |
-| **Backend**  | AWS S3                                                                       |
-|              | AWS CloudFront                                                               |
-|              | AWS API Gateway                                                              |
-|              | AWS Lambda                                                                   |
-|              | AWS Route 53                                                                 |
-|              | AWS ACM (Certificate Manager)                                                |
-|              | AWS SES                                                                      |
-|              | Terraform ([lost-in-dusk-tf](https://github.com/denes-beck/lost-in-dusk-tf)) |
+| **Category** | **Technology**                                                              |
+| ------------ | --------------------------------------------------------------------------- |
+| **Frontend** | React (Vite)                                                                |
+|              | Material UI                                                                 |
+|              | Tailwind CSS                                                                |
+| **Backend**  | AWS S3                                                                      |
+|              | AWS CloudFront                                                              |
+|              | AWS API Gateway                                                             |
+|              | AWS Lambda                                                                  |
+|              | AWS Route 53                                                                |
+|              | AWS ACM (Certificate Manager)                                               |
+|              | AWS SES                                                                     |
+|              | Terraform ([lost-in-dusk-tf](https://github.com/denesbeck/lost-in-dusk-tf)) |
 
 ## Deployment ⚡
 
@@ -38,11 +38,11 @@ The CI workflow includes:
 
 ## Contact Form 📬
 
-Secured with Google reCAPTCHA v3 to prevent spam.
+Secured with [Cloudflare Turnstile](https://www.cloudflare.com/application-services/products/turnstile/) to prevent spam.
 
 ## Getting Started 🚀
 
-1. Clone this repository: `git clone https://github.com/denes-beck/lost-in-dusk.git`
+1. Clone this repository: `git clone https://github.com/denesbeck/lost-in-dusk.git`
 2. Navigate to the project directory: `cd lost-in-dusk`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`

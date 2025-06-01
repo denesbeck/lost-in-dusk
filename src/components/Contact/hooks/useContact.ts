@@ -5,7 +5,7 @@ import axios from "axios";
 
 const useContact = () => {
   const API_GW_ENDPOINT =
-    "https://iybd4alb68.execute-api.eu-central-1.amazonaws.com/v1/contact";
+    "https://fycb5fsu8a.execute-api.eu-central-1.amazonaws.com/v1/contact";
 
   const [loading, setLoading] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);

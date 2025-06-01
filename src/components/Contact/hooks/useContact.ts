@@ -44,8 +44,7 @@ const useContact = () => {
         }),
       })
       .then((res) => {
-        if (res.data.statusCode !== 200)
-          throw new Error("Unable to send message.");
+        if (res.status !== 200) throw new Error("Unable to send message.");
         alert({
           id: "message-sent",
           title: "Success",

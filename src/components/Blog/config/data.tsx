@@ -1,8 +1,8 @@
-import { BlogEntry01 } from "../blogEntries";
 import MarkdownPage from "../components/MarkdownPage";
 import { BlogEntry } from "../interfaces/blog";
-import ibmTech2024Conference from "../blogEntries/ibm-tech-2024-conference.md?url";
-import lambdaDeployments from "../blogEntries/lambda-deployments.md?url";
+import migratingToTekton from "../blog-entries/migrating-to-tekton.md?url";
+import ibmTech2024Conference from "../blog-entries/ibm-tech-2024-conference.md?url";
+import lambdaDeployments from "../blog-entries/lambda-deployments.md?url";
 
 const BLOG_ENTRIES: BlogEntry[] = [
   {
@@ -11,7 +11,7 @@ const BLOG_ENTRIES: BlogEntry[] = [
     description:
       "This blog post is about my experience migrating from Travis CI to Tekton.",
     date: "2023-12-13",
-    content: <BlogEntry01 />,
+    content: <MarkdownPage markdownFile={migratingToTekton} />,
   },
   {
     id: 2,

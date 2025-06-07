@@ -45,7 +45,7 @@ The [Deploy Lambda](https://github.com/denesbeck/lambda-functions/blob/main/.git
 
 ### 2. Download Previous Hashes from S3
 
-Before proceeding, it pulls previously stored `.code.hash` and `.config.hash` files from S3 into a local cache. These are used to determine whether the code or configuration has changed since the last deployment.
+Before proceeding, it pulls previously stored `.code.hash` and `.config.hash` files from S3 into a local cache. These are used to determine whether the Lambda function code and/or configuration has changed since the last deployment.
 
 This enables smart, cache-aware deployments.
 

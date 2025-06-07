@@ -69,13 +69,13 @@ const Alert = ({
 
   return (
     <div
-      className={`animate-text-focus relative flex flex-col items-start px-4 py-2 text-black ${calculateStyle()} w-[30rem] rounded-sm`}
+      className={`animate-text-focus relative flex flex-col items-start px-4 py-2 text-black ${calculateStyle()} w-[30rem] max-w-[95vw] rounded-sm`}
     >
       <div className="flex items-center">
         {calculateIcon()}
-        <div className="font-bold">{title}</div>
+        <div className="font-bold text-wrap">{title}</div>
       </div>
-      <div className="ml-8 text-sm">{message}</div>
+      <div className="ml-8 text-sm text-wrap">{message}</div>
       {closable && (
         <button
           className="absolute top-1 right-1 p-1 rounded-full cursor-pointer"

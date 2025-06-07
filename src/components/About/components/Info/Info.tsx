@@ -5,9 +5,9 @@ import profile from "@/assets/ghibli_avatar.png";
 
 const Info = () => {
   return (
-    <div className="flex overflow-hidden flex-col gap-2 pr-2 animate-text-focus max-w-[34rem]">
+    <div className="flex overflow-auto flex-col gap-2 animate-text-focus max-w-[34rem]">
       <Heading3>Info</Heading3>
-      <div className="flex gap-4 items-start py-2 animate-text-focus">
+      <div className="flex gap-4 items-start py-4 animate-text-focus">
         <img
           src={profile}
           alt="profile"

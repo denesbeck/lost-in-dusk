@@ -97,4 +97,4 @@ Finally, updated `.code.hash` and `.config.hash` files are uploaded back to S3, 
 This workflow has massively reduced friction in deploying AWS Lambda infrastructure at scale. If you’re looking for a robust CI/CD setup for your serverless stack, this architecture can serve as a solid blueprint.
 
 You can check out the full repo here:  
-🔗 [https://github.com/denesbeck/lambda-functions](https://github.com/denesbeck/lambda-functions)
+[https://github.com/denesbeck/lambda-functions](https://github.com/denesbeck/lambda-functions)

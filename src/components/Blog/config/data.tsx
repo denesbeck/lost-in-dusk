@@ -1,6 +1,7 @@
-import { BlogEntry01, BlogEntry02 } from "../blogEntries";
+import { BlogEntry01 } from "../blogEntries";
 import MarkdownPage from "../components/MarkdownPage";
 import { BlogEntry } from "../interfaces/blog";
+import ibmTech2024Conference from "../blogEntries/ibm-tech-2024-conference.md?url";
 import lambdaDeployments from "../blogEntries/lambda-deployments.md?url";
 
 const BLOG_ENTRIES: BlogEntry[] = [
@@ -17,7 +18,7 @@ const BLOG_ENTRIES: BlogEntry[] = [
     title: "IBM Tech 2024 Conference",
     description: "Insights and takeaways from the IBM Tech 2024 conference.",
     date: "2024-03-22",
-    content: <BlogEntry02 />,
+    content: <MarkdownPage markdownFile={ibmTech2024Conference} />,
   },
   {
     id: 3,

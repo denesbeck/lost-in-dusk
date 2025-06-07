@@ -20,13 +20,13 @@ const MarkdownPage = ({ markdownFile }: IMarkdownPage) => {
   }, [markdownFile]);
 
   return (
-    <div className="prose h-dvh w-[50rem] max-w-[50rem] dark:prose-invert">
+    <article className="prose prose-img:mx-auto prose-img:px-12 prose-a:text-blue-400 h-dvh w-[50rem] max-w-[50rem] dark:prose-invert">
       {loading ? (
         <MarkdownLoading />
       ) : (
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
       )}
-    </div>
+    </article>
   );
 };
 

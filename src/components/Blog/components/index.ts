@@ -1,3 +1,5 @@
 import BlogCard from "./BlogCard";
+import MarkdownLoading from "./MarkdownLoading";
+import MarkdownPage from "./MarkdownPage";
 
-export { BlogCard };
+export { BlogCard, MarkdownLoading, MarkdownPage };

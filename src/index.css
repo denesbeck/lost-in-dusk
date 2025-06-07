@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --animate-slide-in-from-bottom: slideInFromBottom 0.2s ease-out;

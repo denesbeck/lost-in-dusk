@@ -5,5 +5,5 @@ export interface BlogEntry {
   title: string;
   description: string;
   date: string;
-  content: () => JSX.Element;
+  content: JSX.Element;
 }

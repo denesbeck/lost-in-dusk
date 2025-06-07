@@ -2,6 +2,8 @@
 
 _Automating AWS Lambda and Layer Deployments with GitHub Actions_
 
+📅 2025-06-07
+
 ## Introduction
 
 Managing and deploying AWS Lambda functions at scale can get complex, especially when dealing with multiple environments, configuration changes, and code versions. To simplify this, I created a GitHub Actions workflow that automates the deployment of both Lambda functions and Lambda layers — directly from a monorepo structure, with smart caching and S3-backed hash tracking.
@@ -97,4 +99,4 @@ Finally, updated `.code.hash` and `.config.hash` files are uploaded back to S3, 
 This workflow has massively reduced friction in deploying AWS Lambda infrastructure at scale. If you’re looking for a robust CI/CD setup for your serverless stack, this architecture can serve as a solid blueprint.
 
 You can check out the full repo here:  
-[https://github.com/denesbeck/lambda-functions](https://github.com/denesbeck/lambda-functions)
+🔗 [https://github.com/denesbeck/lambda-functions](https://github.com/denesbeck/lambda-functions)

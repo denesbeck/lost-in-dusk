@@ -2,6 +2,8 @@
 
 _Insights from IBM Tech 2024 Conference_
 
+📅 2024-03-22
+
 ## The Conference’s Theme
 
 I recently received an invitation to the IBM Tech 2024 conference. IBM Tech is a technical recognition program launched by Arvind Krishna back in 2023. Being invited to this event represents one of the most notable technical recognitions within IBM. Consequently, I felt deeply honored. Moreover, I was really excited as this would be my very first experience attending a professional IT conference in person.

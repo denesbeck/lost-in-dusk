@@ -20,7 +20,7 @@ const MarkdownPage = ({ markdownFile }: IMarkdownPage) => {
   }, [markdownFile]);
 
   return (
-    <article className="prose prose-img:mx-auto prose-img:px-12 prose-a:text-blue-400 h-dvh w-[50rem] max-w-[50rem] dark:prose-invert">
+    <article className="pb-12 lg:pb-0 prose prose-img:mx-auto prose-img:px-12 prose-a:text-blue-400 h-dvh w-[50rem] max-w-[50rem] dark:prose-invert">
       {loading ? (
         <MarkdownLoading />
       ) : (

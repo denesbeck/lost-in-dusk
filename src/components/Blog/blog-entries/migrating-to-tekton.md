@@ -54,7 +54,9 @@ As you can see Tekton is basically a DIY pipeline solution, that requires the un
 
 I will also leave this video here that I found useful while writing this article. Although, in this video the differences between Tekton and [Jenkins](https://www.jenkins.io/) are highlighted and evaluated, I found it quite useful for comparing Tekton with Travis CI:
 
-[![Tekton vs. Jenkins: What's the difference?](https://img.youtube.com/vi/7aSe1HQ2lXo/0.jpg)](https://www.youtube.com/watch?v=7aSe1HQ2lXo)
+<div className="flex justify-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7aSe1HQ2lXo?si=rr02PT32HqIllMnS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## InnerSource
 

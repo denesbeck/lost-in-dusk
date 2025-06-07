@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { useEffect, useState } from "react";
 import { MarkdownLoading } from ".";
 
@@ -24,7 +25,9 @@ const MarkdownPage = ({ markdownFile }: IMarkdownPage) => {
       {loading ? (
         <MarkdownLoading />
       ) : (
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+          {markdown}
+        </ReactMarkdown>
       )}
     </article>
   );

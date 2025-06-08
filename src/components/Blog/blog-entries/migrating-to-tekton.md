@@ -1,12 +1,12 @@
-# Migrating from Travis CI to Tekton
+# 🔁 Migrating from Travis CI to Tekton
 
 📅 2023-12-13
 
-## Opportunity
+## 🧙🏻‍♂️ A New Adventure
 
 At the company where I work recently a strategic decision was made to migrate all CI/CD workflows from Travis CI to the company’s own CI/CD solution built with Tekton. As result, since the majority of our applications were written in Ruby on Rails and there was no generic pipeline built for this web-framework, I got the opportunity to contribute to this InnerSource project and develop a CI/CD pipeline using Tekton. In this article I would like to share my experience and perception related to this project.
 
-## Why?
+## ❓ Why?
 
 First of all, a question to answer: Why we committed to replace Travis CI — a working pipeline solution — with another, less trending solution? Well, it was important to reduce the spending on third-party IT tools and the elimination of the dependency on these tools was also a relevant concern.
 
@@ -16,7 +16,7 @@ Beside reducing the cost and dependency, it was also important to create a secur
 
 Considering the above reasoning, we can say that this huge commitment — that moved many people out of their comfort zone — made a lot of sense actually.
 
-## What is CI/CD?
+## 🤔 What is CI/CD?
 
 If you read this article, you’re probably aware what CI/CD is, however, I felt important to write down just the basics as a refresher or as a quick introduction.
 
@@ -28,7 +28,7 @@ Continuous Integration is basically the automation process of the development te
 
 We were really just scratching the surface here to understand the relevancy and functioning of the CI/CD pipelines. If you want to read more about CI/CD, I can highly recommend [this article](https://www.redhat.com/en/topics/devops/what-is-ci-cd) from Red Hat.
 
-## Travis CI vs Tekton
+## ⚔️ Travis CI vs Tekton
 
 After dealing with the theory about CI/CD, we can jump back to my use case and examine the two CI/CD solutions. So, what’s the difference?
 
@@ -58,7 +58,7 @@ I will also leave this video here that I found useful while writing this article
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7aSe1HQ2lXo?si=rr02PT32HqIllMnS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## InnerSource
+## 🤝🏻 InnerSource
 
 I also wanted to touch on [InnerSource](https://about.gitlab.com/topics/version-control/what-is-innersource/) as for me it was a game-changer in our organization. So far, I couldn’t really participate in fancy projects that a developer would consider meaningful and exciting. Usually, in big companies such projects are outsourced to other countries considering the cost-efficiency or are driven directly from the US. Making the pipeline project InnerSource made it possible for developers around the globe within our organization to contribute to it and get in-depth knowledge about CI/CD pipeline functionality and DevOps in general.
 
@@ -70,7 +70,7 @@ InnerSource projects can increase the job satisfaction level of the developers t
 
 At the time when the Tekton solution was announced in our organization there were pipelines already created for Node.js, Java, Golang and Python, however, Ruby on Rails or Ruby in general was not covered. Our portfolio comprised several Rails-applications, moreover, other teams used the Rails-framework for their business-critical applications. We had around five months to develop a new workflow and to migrate the existing applications to this new solution. The need to secure business continuity and the opportunity to contribute to a meaningful project boosted my motivation level and moved me out of my comfort zone.
 
-## Contribution
+## 🧪 Contribution
 
 Since Tekton is a cloud-native framework, the prerequisite to work with it is to have some knowledge and work experience with Kubernetes, Docker (or other container management tools) and Linux. Fortunately, I already had the chance to work on some other projects using these tools and technologies, so I had a pretty good understanding about the idea of containerization and container orchestration and I also felt comfortable working in a Linux environment.
 
@@ -89,7 +89,7 @@ Besides getting familiar with the tools listed above, I also had to understand t
 
 Once I overcame the challenges with Rails, it was quite fast to deliver a functioning pipeline, which was later adopted by other teams and was used as a basis for other Ruby language pipelines. It might sound like a cliché but my key takeaway from this project was that as a DevOps Developer I need to keep my eyes open and grab all the opportunities to get hands-on experience with new programming languages and frameworks even if I’m 90% sure that I will not use them in the future. Understanding the concepts of more languages and frameworks will help you to get the bigger picture and will highly reduce the time to adapt to new situations and environments in future projects.
 
-## Results
+## 🔬 Results
 
 For our organization securing business continuity was obviously the most important result that I was able to support with this contribution. Besides, I think delivering a reusable asset that anyone can use globally put our local IT organization on the map. Since we also know how to work with Tekton and how we can contribute, we became self-sufficient meaning that if we have an application using an older tech stack that is not supported, we can just build a new workflow on our own.
 

@@ -1,16 +1,16 @@
-# Lambda Deployments
+# 🚀 Lambda Deployments
 
 _Automating AWS Lambda and Layer Deployments with GitHub Actions_
 
 📅 2025-06-07
 
-## Introduction
+## 🧭 Introduction
 
 Managing and deploying AWS Lambda functions at scale can get complex, especially when dealing with multiple environments, configuration changes, and code versions. To simplify this, I created a GitHub Actions workflow that automates the deployment of both Lambda functions and Lambda layers — directly from a monorepo structure, with smart caching and S3-backed hash tracking.
 
 In this post, I’ll walk you through how it works, the logic behind it, and how you can adapt it to your own projects.
 
-## Repo Structure Overview
+## 🗂️ Repo Structure Overview
 
 The repository uses a clear folder structure:
 
@@ -32,7 +32,7 @@ The repository uses a clear folder structure:
 
 This allows us to independently track changes to each function or layer, and optimize deployments accordingly.
 
-## GitHub Actions Workflow Overview
+## ⚙️ GitHub Actions Workflow Overview
 
 The [Deploy Lambda](https://github.com/denesbeck/lambda-functions/blob/main/.github/workflows/main.yml) workflow runs on every `push` to any branch. Here's a breakdown of what it does:
 
@@ -84,7 +84,7 @@ Aliases (like `dev`, `staging`, etc.) are managed via the `get-alias.sh` script,
 
 Finally, updated `.code.hash` and `.config.hash` files are uploaded back to S3, ensuring the next deployment has a reliable change reference.
 
-## Key Features
+## 💥 Key Features
 
 | Feature             | Description                                               |
 | ------------------- | --------------------------------------------------------- |
@@ -94,7 +94,7 @@ Finally, updated `.code.hash` and `.config.hash` files are uploaded back to S3, 
 | Secure              | Uses GitHub Secrets for AWS credentials                   |
 | Fully Idempotent    | Can run multiple times without side effects               |
 
-## Final Thoughts
+## 💡 Final Thoughts
 
 This workflow has massively reduced friction in deploying AWS Lambda infrastructure at scale. If you’re looking for a robust CI/CD setup for your serverless stack, this architecture can serve as a solid blueprint.
 

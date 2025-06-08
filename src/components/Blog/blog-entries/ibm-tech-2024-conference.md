@@ -8,7 +8,7 @@ _Insights from IBM Tech 2024 Conference_
 
 I recently received an invitation to the IBM Tech 2024 conference. IBM Tech is a technical recognition program launched by Arvind Krishna back in 2023. Being invited to this event represents one of the most notable technical recognitions within IBM. Consequently, I felt deeply honored. Moreover, I was really excited as this would be my very first experience attending a professional IT conference in person.
 
-![Burh Khalifa](./images/burj_khalifa.png)
+![Burh Khalifa](../images/burj_khalifa.png)
 
 The conference took place in the captivating city of Dubai, drawing attendees from various corners of the globe. I had the privilege of participating in the second wave of the event, spanning from the 5th to the 8th of March. The opening plenary session, a pivotal moment of the conference, commenced on the 6th of March.
 
@@ -16,11 +16,11 @@ Regrettably, Arvind was unable to attend the conference in person. Nonetheless, 
 
 This sentence got me thinking a lot. We live in a fast-paced world characterized by rapid change, meaning that swift adaptation becomes essential. However, it’s crucial to maintain focus and consistency as well to stay on track. On the other hand, you must also be willing to take risks and sacrifice perfection to craft something valuable and beneficial for our clients.
 
-![Rob Thomas, WatsonX](./images/rob_thomas_watsonx.png)
+![Rob Thomas, WatsonX](../images/rob_thomas_watsonx.png)
 
 During the plenary session, we had some exhilarating presentations covering a range of topics including AI, Quantum, Infrastructure, Security, and Mainframe. While I won’t delve into the specifics, I would like to highlight Dario Gil’s session, as for me it was particularly captivating. Dario introduced us to the thrilling prospects of quantum technology and the future opportunities it holds for IBM.
 
-![Dario Gil, Quantum](./images/dario_gil_quantum.png)
+![Dario Gil, Quantum](../images/dario_gil_quantum.png)
 
 As far as I’m concerned, I was somewhat astonished by the potential of Quantum combined with AI to accelerate development and shape trends, especially considering the already fast-paced nature of our world.
 
@@ -30,8 +30,8 @@ After the plenary session, we enjoyed a delightful lunch at the Grand Hyatt. How
 
 After enjoying lunch with other IBMers/Red Hatters, we participated in a recreational activity. Various options were available, including a Burj Khalifa tour and a water explorer tour. Personally, I was invited to the souk explorer tour, which took us to a traditional market in the old town of Dubai. It was an exciting program, offering insight into the lifestyle of people outside Dubai’s city center and providing valuable cultural experiences within the market. Exploring the spice market and the gold market was particularly fascinating, as was witnessing almost infinite amount of merchandise available.
 
-![Souk Tour](./images/souk_tour.png)
-![Spice Market](./images/spice_market.png)
+![Souk Tour](../images/souk_tour.png)
+![Spice Market](../images/spice_market.png)
 
 ## The Session
 
@@ -59,11 +59,11 @@ With its agentless architecture, it offers a relatively straightforward approach
 
 During the sessions about Ansible, the team presented their aim to make the tool fast and accessible for beginners. As previously mentioned, to speed up developer onboarding and enhance code quality, they have started utilizing the Watsonx Code Assistant to assist developers in generating Ansible content. In addition to this solution, they are continually developing new tools and solutions to further simplify the lives of Ansible developers.
 
-![Red Hat Session](./images/rh_session1.png)
+![Red Hat Session](../images/rh_session1.png)
 
 Operationalizing AI is another significant challenge in today’s landscape, as highlighted in one of the sessions. It requires integrating AI into the daily operations of your organization, transitioning it from experimental stages to full-scale production. Red Hat introduced a new platform called Red Hat Openshift AI which aims to simplify and accelerate this process.
 
-![Red Hat Session](./images/rh_session2.png)
+![Red Hat Session](../images/rh_session2.png)
 
 OpenShift AI is an MLOps platform designed to assist developers in building, deploying, and managing AI-enabled applications. It was fascinating to learn that this platform is built on top of other open-source technologies. Essentially, it provides a securely configured and tested set of tools that enables faster production deployment of AI-enabled applications.
 
@@ -73,7 +73,7 @@ OpenShift AI is an MLOps platform designed to assist developers in building, dep
 
 The sessions about security primarily centered around AI. The rationale behind this focus is clear: AI introduces new opportunities, challenges, and rules, which forces us to reassess our security protocols. Two particularly interesting perspectives have been highlighted: leveraging GenAI for security and the security of GenAI.
 
-![Red Hat Session](./images/rh_session3.png)
+![Red Hat Session](../images/rh_session3.png)
 
 While one might assume that the adoption of AI weakens our defensive capabilities, the reality is quite the opposite. AI can support the defenders just as effectively. As a matter of fact, the importance of minimizing human interface latencies and prioritizing AI over human involvement was emphasized.
 
@@ -91,4 +91,4 @@ Overall, the conference provided a comprehensive overview of IBM’s technologic
 
 I really enjoyed the conference and my stay in the stunning city of Dubai. As this was my first in-person conference, it was an incredibly enriching experience, and I sincerely hope it won’t be my last. These events not only provide motivation to the invitees but also spark new ideas through conversations with experts from around the world. The opportunity to exchange insights and perspectives with peers is invaluable and can lead to innovative collaborations.
 
-![Leaving Dubai](./images/leaving_dubai.png)
+![Leaving Dubai](../images/leaving_dubai.png)

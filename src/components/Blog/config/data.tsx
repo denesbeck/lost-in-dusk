@@ -6,12 +6,12 @@ import lambdaDeployments from "../blog-entries/lambda-deployments.md?url";
 
 const BLOG_ENTRIES: BlogEntry[] = [
   {
-    id: 1,
-    title: "Migrating to Tekton",
+    id: 3,
+    title: "Lambda Deployments",
     description:
-      "This blog post is about my experience migrating from Travis CI to Tekton.",
-    date: "2023-12-13",
-    content: <MarkdownPage markdownFile={migratingToTekton} />,
+      "Automating AWS Lambda and Layer Deployments with GitHub Actions",
+    date: "2025-06-07",
+    content: <MarkdownPage markdownFile={lambdaDeployments} />,
   },
   {
     id: 2,
@@ -21,12 +21,12 @@ const BLOG_ENTRIES: BlogEntry[] = [
     content: <MarkdownPage markdownFile={ibmTech2024Conference} />,
   },
   {
-    id: 3,
-    title: "Lambda Deployments",
+    id: 1,
+    title: "Migrating to Tekton",
     description:
-      "Automating AWS Lambda and Layer Deployments with GitHub Actions",
-    date: "2025-06-07",
-    content: <MarkdownPage markdownFile={lambdaDeployments} />,
+      "This blog post is about my experience migrating from Travis CI to Tekton.",
+    date: "2023-12-13",
+    content: <MarkdownPage markdownFile={migratingToTekton} />,
   },
 ];
 

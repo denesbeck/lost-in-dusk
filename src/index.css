@@ -3,8 +3,7 @@
 
 @theme {
   --animate-slide-in-from-bottom: slideInFromBottom 0.2s ease-out;
-  --animate-text-focus: textFocus 0.3s ease-in;
-  --animate-blink: blink 1s step-end infinite;
+  --animate-text-focus: textFocus 0.4s ease-in;
 
   @keyframes slideInFromBottom {
     0% {
@@ -27,18 +26,6 @@
     100% {
       filter: blur(0px);
       opacity: 1;
-    }
-  }
-
-  @keyframes blink {
-
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
     }
   }
 }

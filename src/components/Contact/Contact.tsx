@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="absolute -top-[6%] -left-[6%] hidden h-48 w-48 border-t-2 border-l-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-top-[5%] group-hover:-left-[5%] sm:block" />
         <div className="absolute -bottom-[6%] -left-[6%] hidden h-12 w-12 border-b-2 border-l-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-bottom-[5%] group-hover:-left-[5%] sm:block" />
         <div className="absolute -right-[6%] -bottom-[6%] hidden h-48 w-48 border-r-2 border-b-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-right-[5%] group-hover:-bottom-[5%] sm:block" />
-        <div className="flex overflow-auto relative flex-col p-6 min-w-max ring-2 ring-offset-gray-900 transition-all duration-200 ease-in-out hover:ring-offset-2 h-max max-h-[calc(100vh-200px)] max-w-[90dvw] gap-[1rem] ring-slate-800 backdrop-blur-md hover:ring-slate-500">
+        <div className="flex overflow-auto relative flex-col p-6 min-w-max ring-2 ring-gray-800 ring-offset-gray-800 transition-all duration-200 ease-in-out hover:ring-gray-500 hover:ring-offset-2 h-max max-h-[calc(100vh-200px)] max-w-[90dvw] gap-[1rem] backdrop-blur-md">
           <Heading2>Contact </Heading2>
           <Input placeholder="Name" nameRef={nameRef} />
           <Input placeholder="Email" nameRef={emailRef} />

@@ -34,36 +34,24 @@ const useNav = () => {
   // Make sure to position the current page at the correct position based on the window size
   useEffect(() => {
     if (typeof window === "undefined") return;
-    switch (pathname) {
-      case "/":
-        (home.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
-        navigate("/");
-        break;
-      case "/blog":
-        (blog.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
-        navigate("/blog");
-        break;
-      case "/about":
-        (about.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
-        navigate("/about");
-        break;
-      case "/contact":
-        (contact.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
-        navigate("/contact");
-        break;
-      default:
-        break;
+    if (pathname === "/") {
+      (home.current as HTMLDivElement).scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (/^\/blog\/\d+/.test(pathname)) {
+      (blog.current as HTMLDivElement).scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (pathname === "/about") {
+      (about.current as HTMLDivElement).scrollIntoView({
+        behavior: "smooth",
+      });
+    } else if (pathname === "/contact") {
+      (contact.current as HTMLDivElement).scrollIntoView({
+        behavior: "smooth",
+      });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [windowSize]);
+  }, [windowSize, pathname]);
 
   const navItems = [
     {

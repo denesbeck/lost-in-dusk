@@ -10,6 +10,7 @@ const Blog = () => {
             return (
               <BlogCard
                 key={entry.id}
+                id={entry.id}
                 title={entry.title}
                 description={entry.description}
                 date={entry.date}

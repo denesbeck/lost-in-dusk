@@ -1,4 +1,3 @@
-import MarkdownPage from "../components/MarkdownPage";
 import { BlogEntry } from "../interfaces/blog";
 import migratingToTekton from "../blog-entries/migrating-to-tekton.md?url";
 import ibmTech2024Conference from "../blog-entries/ibm-tech-2024-conference.md?url";
@@ -11,16 +10,16 @@ const BLOG_ENTRIES: BlogEntry[] = [
     description:
       "Automating AWS Lambda and Layer Deployments with GitHub Actions",
     date: "2025-06-07",
-    content: <MarkdownPage id={3} markdownFile={lambdaDeployments} />,
     tags: ["aws", "lambda", "cicd", "github-actions"],
+    content: lambdaDeployments,
   },
   {
     id: 2,
     title: "IBM Tech 2024 Conference",
     description: "Insights and takeaways from the IBM Tech 2024 conference.",
     date: "2024-03-22",
-    content: <MarkdownPage id={2} markdownFile={ibmTech2024Conference} />,
     tags: ["ibm", "red-hat", "openshift", "ansible", "security", "watsonx"],
+    content: ibmTech2024Conference,
   },
   {
     id: 1,
@@ -28,7 +27,6 @@ const BLOG_ENTRIES: BlogEntry[] = [
     description:
       "This blog post is about my experience migrating from Travis CI to Tekton.",
     date: "2023-12-13",
-    content: <MarkdownPage id={1} markdownFile={migratingToTekton} />,
     tags: [
       "cicd",
       "tekton",
@@ -37,6 +35,7 @@ const BLOG_ENTRIES: BlogEntry[] = [
       "kubernetes",
       "docker",
     ],
+    content: migratingToTekton,
   },
 ];
 

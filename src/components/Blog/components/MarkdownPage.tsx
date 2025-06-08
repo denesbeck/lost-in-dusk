@@ -2,14 +2,15 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { useEffect, useState } from "react";
-import { MarkdownLoading, Share } from ".";
+import { MarkdownLoading, Share, Tag } from ".";
 
 interface IMarkdownPage {
   id: number;
+  tags: string[];
   markdownFile: string;
 }
 
-const MarkdownPage = ({ id, markdownFile }: IMarkdownPage) => {
+const MarkdownPage = ({ id, tags, markdownFile }: IMarkdownPage) => {
   const [markdown, setMarkdown] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -26,11 +27,21 @@ const MarkdownPage = ({ id, markdownFile }: IMarkdownPage) => {
       {loading ? (
         <MarkdownLoading />
       ) : (
-        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
-          {markdown}
-        </ReactMarkdown>
+        <>
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            remarkPlugins={[remarkGfm]}
+          >
+            {markdown}
+          </ReactMarkdown>
+          <div className="flex flex-wrap mt-8 space-x-4">
+            {tags.map((tag) => (
+              <Tag name={tag} />
+            ))}
+          </div>
+          <Share id={id} />
+        </>
       )}
-      <Share id={id} />
     </article>
   );
 };

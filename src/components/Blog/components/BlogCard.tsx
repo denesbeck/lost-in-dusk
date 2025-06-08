@@ -1,5 +1,5 @@
-import { Modal } from ".";
-import { ReactElement, useEffect, useState } from "react";
+import { MarkdownPage, Modal } from ".";
+import { useEffect, useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -8,9 +8,18 @@ interface BlogCardProps {
   title: string;
   description: string;
   date: string;
-  content: ReactElement;
+  tags: string[];
+  content: string;
 }
-const BlogCard = ({ id, title, description, date, content }: BlogCardProps) => {
+
+const BlogCard = ({
+  id,
+  title,
+  description,
+  date,
+  tags,
+  content,
+}: BlogCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -37,7 +46,11 @@ const BlogCard = ({ id, title, description, date, content }: BlogCardProps) => {
           <div className="text-sm">{date}</div>
         </div>
       </button>
-      {isVisible && <Modal close={() => navigate("/blog")}>{content}</Modal>}
+      {isVisible && (
+        <Modal close={() => navigate("/blog")}>
+          <MarkdownPage id={id} tags={tags} markdownFile={content} />
+        </Modal>
+      )}
     </>
   );
 };

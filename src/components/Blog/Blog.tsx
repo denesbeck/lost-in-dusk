@@ -14,6 +14,7 @@ const Blog = () => {
                 title={entry.title}
                 description={entry.description}
                 date={entry.date}
+                tags={entry.tags}
                 content={entry.content}
               />
             );

@@ -4,5 +4,6 @@ import MarkdownLoading from "./MarkdownLoading";
 import MarkdownPage from "./MarkdownPage";
 import Modal from "./Modal";
 import Share from "./Share";
+import Tag from "./Tag";
 
-export { BlogCard, MacOSBar, MarkdownLoading, MarkdownPage, Modal, Share };
+export { BlogCard, MacOSBar, MarkdownLoading, MarkdownPage, Modal, Share, Tag };

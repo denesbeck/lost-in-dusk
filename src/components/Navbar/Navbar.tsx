@@ -1,5 +1,4 @@
-import { Menu, Title } from "@/components";
-import { Navitem } from "./components";
+import { Menu, Navitem, Title } from "./components";
 import { useLocation } from "react-router-dom";
 
 interface Item {

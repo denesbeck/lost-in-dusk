@@ -1,3 +1,5 @@
+import Menu from "./Menu";
 import Navitem from "./Navitem";
+import Title from "./Title";
 
-export { Navitem };
+export { Menu, Navitem, Title };

@@ -1,4 +1,5 @@
-import { DarkLayout, MacOSBar } from "@/components";
+import { DarkLayout } from "@/components";
+import { MacOSBar } from ".";
 import { ReactElement } from "react";
 import { useClickOutside } from "@/hooks";
 

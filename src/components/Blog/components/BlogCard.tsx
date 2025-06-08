@@ -1,4 +1,4 @@
-import { Modal } from "@/components";
+import { Modal } from ".";
 import { ReactElement, useEffect, useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";

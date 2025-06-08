@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 py-8 px-6 text-xs animate-text-focus text-slate-200 backdrop-blur-md">
-      LostInDusk © 2024
+    <footer className="py-8 px-6 mt-auto text-xs animate-text-focus text-slate-200">
+      Copyright © 2025 | All rights reserved.
     </footer>
   );
 };

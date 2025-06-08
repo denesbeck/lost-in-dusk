@@ -7,12 +7,10 @@ interface HomeProps {
 const Home = ({ contactAction }: HomeProps) => {
   return (
     <div className="flex flex-col justify-center items-center px-4 w-full h-screen min-h-screen animate-text-focus">
-      <div className="relative text-2xl text-center min-h-8">
+      <div className="text-2xl text-center">
         👋🏻 Hello, my name is {INFO.Name.split(" ")[0]}.
       </div>
-      <div className="relative mt-2 text-base text-center min-h-6">
-        I'm a {INFO.Role}.
-      </div>
+      <div className="mt-2 text-base text-center">I'm a {INFO.Role}.</div>
       <ContactButton label={"Contact me"} action={contactAction} />
     </div>
   );

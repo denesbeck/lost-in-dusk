@@ -1,24 +1,30 @@
 import blogEntries from "./config/data";
 import { BlogCard } from "./components";
+import { useSearchParams } from "react-router-dom";
 
 const Blog = () => {
+  const [searchParams] = useSearchParams();
+  const tags = searchParams.getAll("tag");
+
+  const filteredEntries = blogEntries.filter((entry) =>
+    tags.every((tag) => entry.tags.includes(tag)),
+  );
+
   return (
     <div className="h-screen">
       <div className="overflow-auto py-4 mt-[80px] max-h-[calc(100vh-170px)] lg:mt-[100px]">
         <div className="grid sm:gap-12 sm:justify-center sm:px-10 sm:[grid-template-columns:repeat(auto-fit,minmax(21rem,0))]">
-          {blogEntries.map((entry) => {
-            return (
-              <BlogCard
-                key={entry.id}
-                id={entry.id}
-                title={entry.title}
-                description={entry.description}
-                date={entry.date}
-                tags={entry.tags}
-                content={entry.content}
-              />
-            );
-          })}
+          {(tags.length > 0 ? filteredEntries : blogEntries).map((entry) => (
+            <BlogCard
+              key={entry.id}
+              id={entry.id}
+              title={entry.title}
+              description={entry.description}
+              date={entry.date}
+              tags={entry.tags}
+              content={entry.content}
+            />
+          ))}
         </div>
       </div>
     </div>

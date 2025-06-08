@@ -21,7 +21,7 @@ const BlogCard = ({
   content,
 }: BlogCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const BlogCard = ({
         </div>
       </button>
       {isVisible && (
-        <Modal close={() => navigate("/blog")}>
+        <Modal close={() => navigate(`/blog${search}`)}>
           <MarkdownPage id={id} tags={tags} markdownFile={content} />
         </Modal>
       )}

@@ -36,7 +36,7 @@ const MarkdownPage = ({ id, tags, markdownFile }: IMarkdownPage) => {
           </ReactMarkdown>
           <div className="flex flex-wrap mt-8 space-x-4">
             {tags.map((tag) => (
-              <Tag name={tag} />
+              <Tag key={tag} name={tag} />
             ))}
           </div>
           <Share id={id} />

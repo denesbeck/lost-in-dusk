@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const useNav = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   const home = useRef<HTMLDivElement | null>(null);
   const blog = useRef<HTMLDivElement | null>(null);
@@ -69,7 +69,8 @@ const useNav = () => {
         (blog.current as HTMLDivElement).scrollIntoView({
           behavior: "smooth",
         });
-        navigate("/blog");
+        // INFO: Concatenate the search params for tags.
+        navigate(`/blog${search}`);
       },
     },
     {

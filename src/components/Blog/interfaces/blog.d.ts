@@ -6,4 +6,5 @@ export interface BlogEntry {
   description: string;
   date: string;
   content: JSX.Element;
+  tags: string[];
 }

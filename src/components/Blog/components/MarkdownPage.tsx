@@ -2,13 +2,14 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { useEffect, useState } from "react";
-import { MarkdownLoading } from ".";
+import { MarkdownLoading, Share } from ".";
 
 interface IMarkdownPage {
+  id: number;
   markdownFile: string;
 }
 
-const MarkdownPage = ({ markdownFile }: IMarkdownPage) => {
+const MarkdownPage = ({ id, markdownFile }: IMarkdownPage) => {
   const [markdown, setMarkdown] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -29,6 +30,7 @@ const MarkdownPage = ({ markdownFile }: IMarkdownPage) => {
           {markdown}
         </ReactMarkdown>
       )}
+      <Share id={id} />
     </article>
   );
 };

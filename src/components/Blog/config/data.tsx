@@ -11,14 +11,14 @@ const BLOG_ENTRIES: BlogEntry[] = [
     description:
       "Automating AWS Lambda and Layer Deployments with GitHub Actions",
     date: "2025-06-07",
-    content: <MarkdownPage markdownFile={lambdaDeployments} />,
+    content: <MarkdownPage id={3} markdownFile={lambdaDeployments} />,
   },
   {
     id: 2,
     title: "IBM Tech 2024 Conference",
     description: "Insights and takeaways from the IBM Tech 2024 conference.",
     date: "2024-03-22",
-    content: <MarkdownPage markdownFile={ibmTech2024Conference} />,
+    content: <MarkdownPage id={2} markdownFile={ibmTech2024Conference} />,
   },
   {
     id: 1,
@@ -26,7 +26,7 @@ const BLOG_ENTRIES: BlogEntry[] = [
     description:
       "This blog post is about my experience migrating from Travis CI to Tekton.",
     date: "2023-12-13",
-    content: <MarkdownPage markdownFile={migratingToTekton} />,
+    content: <MarkdownPage id={1} markdownFile={migratingToTekton} />,
   },
 ];
 

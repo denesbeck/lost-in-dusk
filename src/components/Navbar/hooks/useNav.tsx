@@ -59,7 +59,7 @@ const useNav = () => {
       path: "/",
       action: () => {
         (home.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
-        navigate("/");
+        navigate({ pathname: "/", search });
       },
     },
     {
@@ -80,7 +80,7 @@ const useNav = () => {
         (about.current as HTMLDivElement).scrollIntoView({
           behavior: "smooth",
         });
-        navigate("/about");
+        navigate({ pathname: "/about", search });
       },
     },
   ];
@@ -89,7 +89,7 @@ const useNav = () => {
     (contact.current as HTMLDivElement).scrollIntoView({
       behavior: "smooth",
     });
-    navigate("/contact");
+    navigate({ pathname: "/contact", search });
   };
 
   return { navItems, refs: { home, blog, about, contact }, contactAction };

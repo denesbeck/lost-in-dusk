@@ -8,7 +8,7 @@ interface BadgeProps {
 const Badge = ({ url, size = 28, img, alt }: BadgeProps) => {
   return (
     <a
-      className="transition-all duration-200 ease-in hover:scale-110 hover:brightness-125"
+      className="transition-all duration-200 ease-in-out hover:scale-110 animate-text-focus hover:brightness-125"
       href={url}
       target="_blank"
     >

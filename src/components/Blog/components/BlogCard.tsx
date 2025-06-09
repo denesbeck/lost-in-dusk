@@ -34,7 +34,7 @@ const BlogCard = ({
     <>
       <button
         onClick={() => navigate({ pathname: `/blog/${id}`, search })}
-        className="flex flex-col py-3 px-6 space-y-2 min-w-full h-auto border-b-2 border-gray-800 ring-teal-400 ring-offset-gray-900 transition-all duration-200 ease-in-out cursor-pointer sm:w-full sm:border-b-0 sm:ring-2 last:border-b-0 group animate-text-focus min-h-[9rem] w-dvw sm:max-w-[75vw] sm:hover:ring-offset-4 sm:active:ring-slate-200"
+        className="flex flex-col py-3 px-6 space-y-2 min-w-full h-auto border-b-2 border-gray-800 ring-teal-400 ring-offset-gray-900 transition-all duration-200 ease-in-out cursor-pointer sm:w-full sm:border-b-0 sm:ring-2 last:border-b-0 group animate-text-focus min-h-[9rem] w-dvw backdrop-blur-md sm:max-w-[75vw] sm:hover:ring-offset-4 sm:active:ring-slate-200"
       >
         <h1 className="relative text-lg text-left transition-all duration-200 ease-in-out group-hover:font-bold after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-0 after:bg-teal-400 after:transition-all after:duration-200 after:ease-in-out after:content-[''] group-hover:after:w-full">
           {title}

@@ -7,7 +7,7 @@ const Contact = () => {
 
   const { token } = useTurnstile();
   return (
-    <div className="flex flex-col justify-center items-center h-dvh">
+    <div className="flex flex-col justify-center items-center animate-slide-in-from-bottom h-dvh">
       <div className="relative group">
         <div className="absolute -top-[6%] -right-[6%] hidden h-12 w-12 border-t-2 border-r-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-top-[5%] group-hover:-right-[5%] sm:block" />
         <div className="absolute -top-[6%] -left-[6%] hidden h-48 w-48 border-t-2 border-l-2 border-teal-400 transition-all duration-200 ease-in-out group-hover:-top-[5%] group-hover:-left-[5%] sm:block" />

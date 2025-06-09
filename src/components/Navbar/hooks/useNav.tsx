@@ -70,7 +70,7 @@ const useNav = () => {
           behavior: "smooth",
         });
         // INFO: Concatenate the search params for tags.
-        navigate(`/blog${search}`);
+        navigate({ pathname: `/blog`, search });
       },
     },
     {

@@ -1,4 +1,3 @@
-import { aws_dev, terraform } from "@/assets/certificates";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiCredly,
@@ -62,13 +61,13 @@ export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/b4bf4117-6a90-49eb-baee-e382447b72c2/public_url",
     size: 105,
-    img: aws_dev,
+    img: "https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
     alt: "awsDeveloperAssociate",
   },
   {
     url: "https://www.credly.com/badges/91d294a8-8f7d-4f5a-80c1-071fa0bf2be6/public_url",
     size: 105,
-    img: terraform,
+    img: "https://images.credly.com/size/680x680/images/ed4be915-68f8-428a-b332-40ded9084ee5/blob",
     alt: "terraform",
   },
 ];

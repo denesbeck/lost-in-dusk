@@ -9,7 +9,7 @@ const ContactButton = ({ label, action }: ContactButtonProps) => {
   return (
     <button
       onClick={action}
-      className="flex items-center py-2 px-3 mt-6 text-teal-400 ring-2 ring-teal-400 transition-colors duration-200 ease-in-out cursor-pointer hover:bg-teal-400 animate-text-focus backdrop-blur-md hover:text-slate-800"
+      className="flex items-center py-2 px-3 mt-6 ring-2 transition-colors duration-200 ease-in-out cursor-pointer ring-primary text-primary animate-text-focus backdrop-blur-md hover:bg-primary hover:text-slate-800"
     >
       {label}
       <FaArrowCircleRight className="inline ml-2 text-xl" />

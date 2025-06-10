@@ -14,7 +14,7 @@ const Title = ({ mr = false, ml = false }: TitleProps) => {
         alt="Lost In Dusk Logo"
         className="inline-block mr-2 w-12 h-12"
       />
-      <span className="ml-2 text-white">LostInDusk</span>
+      <span className="ml-2">LostInDusk</span>
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Menu = ({ children }: MenuProps) => {
     <>
       <button
         onClick={() => setIsOpen((prevState) => !prevState)}
-        className={`z-50 cursor-pointer p-1 ${!isOpen && "ring-1 hover:bg-gray-800"} ring-slate-200 transition-colors duration-200 ease-in-out`}
+        className={`z-50 cursor-pointer p-1 ${!isOpen && "hover:bg-secondary ring-1"} ring-slate-200 transition-colors duration-200 ease-in-out`}
       >
         <RxHamburgerMenu
           className={`text-3xl transition-all duration-200 ease-in-out ${isOpen && "rotate-90"}`}
@@ -31,7 +31,7 @@ const Menu = ({ children }: MenuProps) => {
       </button>
       {isOpen && (
         <div
-          className={`animate-text-focus fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center space-y-4 p-8 ${["Safari", "Chrome"].includes(browser) ? "bg-gray-900" : "bg-gray-900/30 backdrop-blur-md backdrop-brightness-90"}`}
+          className={`animate-text-focus fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center space-y-4 p-8 ${["Safari", "Chrome"].includes(browser) ? "bg-root" : "bg-root/30 backdrop-blur-md backdrop-brightness-90"}`}
         >
           {children}
         </div>

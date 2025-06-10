@@ -11,7 +11,7 @@ const Skills = () => {
           const Icon = skill.icon;
           return (
             <Tooltip key={skill.name} arrow title={skill.name}>
-              <Icon className="text-3xl text-teal-400 transition-all duration-200 ease-in-out hover:scale-110 hover:brightness-125" />
+              <Icon className="text-3xl transition-all duration-200 ease-in-out hover:scale-110 text-primary hover:brightness-125" />
             </Tooltip>
           );
         })}

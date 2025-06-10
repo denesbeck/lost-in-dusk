@@ -49,17 +49,11 @@ const FilterTags = () => {
         <DarkLayout>
           <>
             <div className="flex absolute top-2 right-2 gap-4">
-              <IconButton
-                className="ring-blue-400 hover:ring-2"
-                onClick={handleCancel}
-              >
+              <IconButton onClick={handleCancel}>
                 <IoClose className="text-3xl text-white" />
               </IconButton>
-              <IconButton
-                className="ring-blue-400 hover:ring-2"
-                onClick={handleSave}
-              >
-                <IoCheckmarkSharp className="text-3xl text-teal-400" />
+              <IconButton onClick={handleSave}>
+                <IoCheckmarkSharp className="text-3xl text-primary" />
               </IconButton>
             </div>
 
@@ -68,7 +62,7 @@ const FilterTags = () => {
                 <button
                   key={tag}
                   onClick={() => handleSelect(tag)}
-                  className={`text-3xl ${selection.includes(tag) ? "scale-110 text-teal-400" : "text-gray-300"} cursor-pointer transition-all duration-200 ease-in-out hover:scale-110`}
+                  className={`text-3xl ${selection.includes(tag) ? "text-primary scale-110" : "text-gray-200"} cursor-pointer transition-all duration-200 ease-in-out hover:scale-110`}
                 >
                   #{tag}
                 </button>

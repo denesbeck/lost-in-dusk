@@ -14,7 +14,7 @@ const Modal = ({ children, close }: ModalProps) => {
     <DarkLayout>
       <div
         ref={ref}
-        className="flex flex-col w-max h-full ring-teal-400 lg:px-4 lg:pb-2 lg:ring-2 animate-slide-in-from-bottom max-w-[90vw] font-[DepartureMono] lg:h-[90vh]"
+        className="flex flex-col w-max h-full lg:px-4 lg:pb-2 lg:ring-2 ring-primary animate-slide-in-from-bottom max-w-[90vw] font-[DepartureMono] lg:h-[90vh]"
       >
         <MacOSBar close={close} />
         <div className="overflow-y-auto overflow-x-hidden pr-4 pl-2 h-full max-h-[calc(100vh-85px)] lg:max-h-[calc(100vh-170px)]">

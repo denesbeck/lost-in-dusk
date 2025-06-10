@@ -11,7 +11,7 @@ const Info = () => {
         <img
           src={profile}
           alt="profile"
-          className="hidden mx-3 w-40 h-40 rounded-full ring-teal-400 transition-all duration-200 ease-in-out sm:block hover:ring-2 hover:scale-110"
+          className="hidden mx-3 w-40 h-40 rounded-full transition-all duration-200 ease-in-out sm:block hover:ring-2 hover:scale-110 ring-primary"
         />
         <div className="flex justify-between space-x-4 sm:flex-col sm:w-max w-dvw">
           <div>
@@ -21,7 +21,7 @@ const Info = () => {
                 <div key={key} className="flex space-x-4 sm:max-w-[40vw]">
                   <div className="flex items-center space-x-2 h-6">
                     <Icon />
-                    <div className="hidden text-base font-semibold text-white lg:block min-w-[6rem]">
+                    <div className="hidden font-semibold lg:block min-w-[6rem]">
                       {key}
                     </div>
                   </div>

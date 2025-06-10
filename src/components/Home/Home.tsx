@@ -10,7 +10,7 @@ const Home = ({ contactAction }: HomeProps) => {
       <div className="text-2xl text-center animate-text-focus">
         👋🏻 Hello, my name is {INFO.Name.split(" ")[0]}.
       </div>
-      <div className="mt-2 text-base text-center animate-text-focus">
+      <div className="mt-2 text-center animate-text-focus">
         I'm a {INFO.Role}.
       </div>
       <ContactButton label={"Contact me"} action={contactAction} />

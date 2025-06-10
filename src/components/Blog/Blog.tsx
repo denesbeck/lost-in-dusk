@@ -13,7 +13,7 @@ const Blog = () => {
   const entries = tags.length > 0 ? filteredEntries : blogEntries;
   return (
     <div className="h-screen">
-      <div className="overflow-auto py-4 mt-[80px] max-h-[calc(100vh-170px)] lg:mt-[100px]">
+      <div className="overflow-auto py-4 mt-[80px] max-h-[calc(100vh-240px)] lg:mt-[100px]">
         <FilterTags />
         {entries.length === 0 ? (
           <NoRecords />

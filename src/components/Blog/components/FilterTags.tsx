@@ -63,7 +63,7 @@ const FilterTags = () => {
               </IconButton>
             </div>
 
-            <div className="flex overflow-auto flex-wrap gap-8 justify-center items-center p-4 my-14 animate-text-focus max-h-[90dvh] max-w-[50rem]">
+            <div className="flex overflow-auto flex-wrap gap-8 justify-center items-center p-4 animate-text-focus max-h-[80dvh] max-w-[50rem]">
               {[...allTags].map((tag) => (
                 <button
                   key={tag}

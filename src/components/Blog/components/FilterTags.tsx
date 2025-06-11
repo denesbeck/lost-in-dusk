@@ -38,7 +38,7 @@ const FilterTags = () => {
 
   return (
     <>
-      <div className="flex justify-end py-2 px-8 animate-text-focus">
+      <div className="flex justify-end py-2 px-6 animate-text-focus">
         <Badge badgeContent={tags.length} color="primary">
           <IconButton onClick={() => setIsOpen(true)}>
             <IoSettingsSharp className="text-white" />

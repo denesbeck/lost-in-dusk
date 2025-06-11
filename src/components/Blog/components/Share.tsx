@@ -31,7 +31,7 @@ const Share = ({ id }: IShare) => {
           const Icon = option.icon;
           return (
             <a href={option.getHref(id)} target="_blank">
-              <Icon className="text-2xl transition-all duration-200 ease-in-out hover:scale-110 text-slate-200 hover:text-primary" />
+              <Icon className="w-7 h-7 transition-all duration-200 ease-in-out hover:scale-110 text-slate-200 hover:text-primary" />
             </a>
           );
         })}

@@ -13,9 +13,9 @@ const Blog = () => {
   const entries = tags.length > 0 ? filteredEntries : blogEntries;
   return (
     <div className="h-screen">
-      <div className="mt-[80px]">
+      <div className="mt-[90px]">
         <FilterTags />
-        <div className="flex overflow-auto justify-center py-4 max-h-[calc(100dvh-200px)]">
+        <div className="flex overflow-auto justify-center py-4 max-h-[calc(100dvh-210px)]">
           {entries.length === 0 ? (
             <NoRecords />
           ) : (

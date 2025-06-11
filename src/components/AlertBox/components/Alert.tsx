@@ -55,13 +55,13 @@ const Alert = ({
   const calculateStyle = () => {
     switch (severity) {
       case "error":
-        return "bg-red-300";
+        return "bg-alert-error";
       case "warning":
-        return "bg-orange-300";
+        return "bg-alert-warning";
       case "info":
-        return "bg-blue-300";
+        return "bg-alert-info";
       case "success":
-        return "bg-green-300";
+        return "bg-alert-success";
       default:
         break;
     }

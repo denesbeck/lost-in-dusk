@@ -33,8 +33,16 @@
   --color-secondary: var(--color-gray-800);
   --color-root: #1a202c;
   --color-active: var(--color-blue-400);
+  --color-focus: var(--color-blue-400);
   --color-text-dark: var(--color-white);
   --color-text-light: var(--color-black);
+  --color-alert-error: var(--color-red-300);
+  --color-alert-warning: var(--color-orange-300);
+  --color-alert-info: var(--color-blue-300);
+  --color-alert-success: var(--color-green-300);
+  --color-macos-red: var(--color-red-400);
+  --color-macos-yellow: var(--color-yellow-400);
+  --color-macos-green: var(--color-green-400);
 }
 
 /*

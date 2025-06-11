@@ -9,7 +9,7 @@ const TextArea = ({ placeholder, messageRef }: ITextArea) => {
   return (
     <textarea
       placeholder={placeholder}
-      className="py-3 px-4 bg-transparent ring-2 focus-visible:ring-blue-400 active:ring-blue-400 ring-primary min-w-[300px] focus-visible:outline-hidden"
+      className="py-3 px-4 bg-transparent ring-2 ring-primary min-w-[300px] focus-visible:ring-focus focus-visible:outline-hidden active:ring-active"
       ref={messageRef}
     />
   );

@@ -19,8 +19,8 @@ createRoot(document.getElementById("root")!).render(
               position: "fixed",
               top: 0,
               zIndex: 10,
-              width: "100vw",
-              height: "100vh",
+              width: "100dvw",
+              height: "100dvh",
               backgroundSize: "2rem 2rem",
               backgroundImage:
                 "linear-gradient(to right, rgba(17, 24, 39, 0.2) 2px, transparent 2px),linear-gradient(to bottom, rgba(17, 24, 39, 0.2) 2px, transparent 2px)",

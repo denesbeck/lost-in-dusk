@@ -15,7 +15,7 @@ const Blog = () => {
     <div className="h-screen">
       <div className="mt-[80px]">
         <FilterTags />
-        <div className="overflow-auto py-4 max-h-[calc(100vh-270px)]">
+        <div className="overflow-auto py-4 max-h-[calc(100dvh-200px)]">
           {entries.length === 0 ? (
             <NoRecords />
           ) : (

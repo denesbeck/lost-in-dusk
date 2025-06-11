@@ -18,7 +18,7 @@ const Info = () => {
             {Object.entries(INFO).map(([key, value]) => {
               const Icon = INFO_ICONS[key as keyof typeof INFO_ICONS];
               return (
-                <div key={key} className="flex space-x-4 sm:max-w-[40vw]">
+                <div key={key} className="flex space-x-4 sm:max-w-[40dvw]">
                   <div className="flex items-center space-x-2 h-6">
                     <Icon />
                     <div className="hidden font-semibold lg:block min-w-[6rem]">

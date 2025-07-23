@@ -7,13 +7,13 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 
 const FilterTags = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selection, setSelection] = useState<string[]>([]);
+  const [searchParams] = useSearchParams();
+  const tags = searchParams.getAll("tag");
+  const [selection, setSelection] = useState<string[]>(tags);
   const allTags = Array.from([
     ...new Set(BLOG_ENTRIES.map((el) => el.tags).flat()),
   ]).sort();
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const tags = searchParams.getAll("tag");
 
   const handleSelect = (tag: string) => {
     if (selection.includes(tag)) {

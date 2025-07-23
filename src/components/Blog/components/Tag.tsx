@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 interface ITag {
   name: string;
 }
+
 const Tag = ({ name }: ITag) => {
   return (
     <Link

@@ -67,7 +67,7 @@ export const CERTIFICATES: Certificate[] = [
   {
     url: "https://www.credly.com/badges/91d294a8-8f7d-4f5a-80c1-071fa0bf2be6/public_url",
     size: 105,
-    img: "https://images.credly.com/size/680x680/images/ed4be915-68f8-428a-b332-40ded9084ee5/blob",
+    img: "https://images.credly.com/size/680x680/images/0dc62494-dc94-469a-83af-e35309f27356/blob",
     alt: "terraform",
   },
 ];

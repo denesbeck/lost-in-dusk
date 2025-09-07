@@ -24,7 +24,7 @@ const ScrollToTop = () => {
     <>
       {visible && (
         <button
-          className="fixed right-6 bottom-6 z-20 p-2 text-white rounded-md cursor-pointer bg-secondary animate-text-focus"
+          className="fixed right-6 bottom-6 z-20 p-2 text-white rounded-md border transition-colors duration-200 ease-in-out cursor-pointer border-dark-500 bg-secondary animate-text-focus hover:bg-dark-900"
           onClick={() => navigate({ pathname: "/", search })}
         >
           Scroll to top

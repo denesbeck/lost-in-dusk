@@ -34,20 +34,20 @@ const useNav = () => {
   // Make sure to position the current page at the correct position based on the window size
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (pathname === "/") {
-      (home.current as HTMLDivElement).scrollIntoView({
+    if (pathname === "/" && home.current) {
+      home.current.scrollIntoView({
         behavior: "smooth",
       });
-    } else if (/^\/blog\/\d+/.test(pathname)) {
-      (blog.current as HTMLDivElement).scrollIntoView({
+    } else if (/^\/blog\/\d+/.test(pathname) && blog.current) {
+      blog.current.scrollIntoView({
         behavior: "smooth",
       });
-    } else if (pathname === "/about") {
-      (about.current as HTMLDivElement).scrollIntoView({
+    } else if (pathname === "/about" && about.current) {
+      about.current.scrollIntoView({
         behavior: "smooth",
       });
-    } else if (pathname === "/contact") {
-      (contact.current as HTMLDivElement).scrollIntoView({
+    } else if (pathname === "/contact" && contact.current) {
+      contact.current.scrollIntoView({
         behavior: "smooth",
       });
     }
@@ -58,7 +58,9 @@ const useNav = () => {
       label: "Home",
       path: "/",
       action: () => {
-        (home.current as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+        if (home.current) {
+          home.current.scrollIntoView({ behavior: "smooth" });
+        }
         navigate({ pathname: "/", search });
       },
     },
@@ -66,9 +68,11 @@ const useNav = () => {
       label: "Blog",
       path: "/blog",
       action: () => {
-        (blog.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
+        if (blog.current) {
+          blog.current.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
         // INFO: Concatenate the search params for tags.
         navigate({ pathname: `/blog`, search });
       },
@@ -77,18 +81,22 @@ const useNav = () => {
       label: "About",
       path: "/about",
       action: () => {
-        (about.current as HTMLDivElement).scrollIntoView({
-          behavior: "smooth",
-        });
+        if (about.current) {
+          about.current.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
         navigate({ pathname: "/about", search });
       },
     },
   ];
 
   const contactAction = () => {
-    (contact.current as HTMLDivElement).scrollIntoView({
-      behavior: "smooth",
-    });
+    if (contact.current) {
+      contact.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
     navigate({ pathname: "/contact", search });
   };
 

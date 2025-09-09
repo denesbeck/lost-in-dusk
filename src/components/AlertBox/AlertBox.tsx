@@ -24,8 +24,9 @@ const AlertBox = ({ maxAlert = 5, context = "" }: IAlertBox) => {
   useEffect(() => {
     function handleAlert(event: CustomEvent) {
       const alertEventDetail = event.detail as IAlertPayload;
-      if (alerts.find((alert) => alert.id === alertEventDetail.id)) return;
       setAlerts((prev) => {
+        // Check for duplicates using the current state
+        if (prev.find((alert) => alert.id === alertEventDetail.id)) return prev;
         return [alertEventDetail, ...prev].slice(0, maxAlert);
       });
     }
@@ -70,7 +71,7 @@ const AlertBox = ({ maxAlert = 5, context = "" }: IAlertBox) => {
       );
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [alerts]);
+  }, [maxAlert, context]);
 
   return (
     <div className="flex fixed top-2 right-2 flex-col space-y-2 w-max z-[999]">

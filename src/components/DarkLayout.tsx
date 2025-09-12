@@ -10,7 +10,7 @@ const DarkLayout = ({ children, id }: DarkLayoutProps) => {
   return createPortal(
     <div
       id={id}
-      className="flex overflow-y-auto fixed top-0 left-0 flex-col justify-center items-center w-screen h-screen bg-root/30 z-[888] backdrop-blur-lg backdrop-brightness-50 backdrop-grayscale"
+      className="flex overflow-y-auto fixed top-0 left-0 flex-col justify-center items-center w-screen h-screen bg-dark-900/60 z-[888] backdrop-blur-md backdrop-grayscale"
     >
       {children}
     </div>,

@@ -1,18 +1,13 @@
 import { Heading3 } from "@/components";
-import { Connections } from ".";
+import { Avatar, Connections } from ".";
 import { INFO, INFO_ICONS } from "../../config/data";
-import profile from "@/assets/ghibli_avatar.png";
 
 const Info = () => {
   return (
     <div className="flex overflow-auto flex-col gap-2 animate-text-focus sm:max-w-[40rem]">
       <Heading3>Info</Heading3>
       <div className="flex gap-4 justify-between items-start sm:py-4 animate-text-focus">
-        <img
-          src={profile}
-          alt="profile"
-          className="hidden mx-3 w-40 h-40 rounded-full transition-all duration-200 ease-in-out sm:block hover:ring-2 hover:scale-110 ring-primary"
-        />
+        <Avatar />
         <div className="flex justify-between space-x-4 sm:flex-col sm:w-max w-dvw">
           <div>
             {Object.entries(INFO).map(([key, value]) => {

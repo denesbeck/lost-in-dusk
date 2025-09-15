@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider theme={theme}>
       <BrowserRouter basename="/">
         <div className="flex relative flex-col text-text-dark font-[DepartureMono]">
-          <div className="fixed top-0 w-screen h-screen from-black to-black via-dark-900 bg-linear-to-r" />
+          <div className="fixed top-0 w-screen h-screen from-dark-1400 to-dark-1400 via-dark-900 bg-linear-to-r" />
           <div
             style={{
               position: "fixed",

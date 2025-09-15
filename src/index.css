@@ -39,6 +39,12 @@
   --color-dark-700: #22222e;
   --color-dark-800: #20202c;
   --color-dark-900: #1a1a24;
+  --color-dark-1000: #141420;
+  --color-dark-1100: #12121c;
+  --color-dark-1200: #101018;
+  --color-dark-1300: #0e0e14;
+  --color-dark-1400: #0a0a10;
+  --color-dark-1500: #08080c;
 
   --color-primary: var(--color-teal-400);
   --color-secondary: var(--color-dark-800);

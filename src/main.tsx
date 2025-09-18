@@ -23,7 +23,7 @@ createRoot(document.getElementById("root")!).render(
               height: "100dvh",
               backgroundSize: "2rem 2rem",
               backgroundImage:
-                "linear-gradient(to right, rgba(17, 24, 39, 0.2) 2px, transparent 2px),linear-gradient(to bottom, rgba(17, 24, 39, 0.2) 2px, transparent 2px)",
+                "linear-gradient(to right, rgb(26, 26, 36, 0.2) 2px, transparent 2px),linear-gradient(to bottom, rgb(26, 26, 36, 0.2) 2px, transparent 2px)",
             }}
           />
           <App />

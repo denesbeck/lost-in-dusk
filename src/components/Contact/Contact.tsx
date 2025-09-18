@@ -9,10 +9,10 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center items-center animate-slide-in-from-bottom h-dvh">
       <div className="relative group">
-        <div className="border-primary absolute -top-[6%] -right-[6%] hidden h-12 w-12 border-t-2 border-r-2 transition-all duration-200 ease-in-out group-hover:-top-[5%] group-hover:-right-[5%] sm:block" />
-        <div className="border-primary absolute -top-[6%] -left-[6%] hidden h-48 w-48 border-t-2 border-l-2 transition-all duration-200 ease-in-out group-hover:-top-[5%] group-hover:-left-[5%] sm:block" />
-        <div className="border-primary absolute -bottom-[6%] -left-[6%] hidden h-12 w-12 border-b-2 border-l-2 transition-all duration-200 ease-in-out group-hover:-bottom-[5%] group-hover:-left-[5%] sm:block" />
-        <div className="border-primary absolute -right-[6%] -bottom-[6%] hidden h-48 w-48 border-r-2 border-b-2 transition-all duration-200 ease-in-out group-hover:-right-[5%] group-hover:-bottom-[5%] sm:block" />
+        <div className="hidden absolute w-12 h-12 border-t-2 border-r-2 transition-all duration-200 ease-in-out sm:block border-primary -top-[24px] -right-[24px] group-hover:-top-[16px] group-hover:-right-[16px]" />
+        <div className="hidden absolute w-48 h-48 border-t-2 border-l-2 transition-all duration-200 ease-in-out sm:block border-primary -top-[24px] -left-[24px] group-hover:-top-[16px] group-hover:-left-[16px]" />
+        <div className="hidden absolute w-12 h-12 border-b-2 border-l-2 transition-all duration-200 ease-in-out sm:block border-primary -bottom-[24px] -left-[24px] group-hover:-bottom-[16px] group-hover:-left-[16px]" />
+        <div className="hidden absolute w-48 h-48 border-r-2 border-b-2 transition-all duration-200 ease-in-out sm:block border-primary -right-[24px] -bottom-[24px] group-hover:-right-[16px] group-hover:-bottom-[16px]" />
         <div className="flex overflow-auto relative flex-col p-6 min-w-max ring-2 transition-all duration-200 ease-in-out hover:ring-gray-500 hover:ring-offset-2 ring-secondary ring-offset-root h-max max-h-[calc(100dvh-200px)] max-w-[90dvw] gap-[1rem] backdrop-blur-md">
           <Heading2>Contact </Heading2>
           <Input placeholder="Name" nameRef={nameRef} />

@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface Heading1Props {
-  children: string;
+  children: string | ReactNode;
 }
 
 const Heading1 = ({ children }: Heading1Props) => {

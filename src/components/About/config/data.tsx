@@ -124,5 +124,55 @@ export const SKILLS = [
   },
 ];
 
-export const BIO =
-  "🚀 I'm a full-stack software engineer with a strong focus on creating scalable, efficient, and maintainable applications using modern frameworks and best practices.";
+export const BIO_START = (
+  <p className="mb-4 text-ellipsis">
+    🚀 I&apos;m a full-stack software engineer with a strong focus on creating
+    scalable, efficient, and maintainable applications using modern frameworks
+    and best practices...
+  </p>
+);
+
+export const BIO = (
+  <div className="text-text-dark">
+    <p className="mb-8">
+      🚀 I&apos;m a full-stack software engineer with a strong focus on creating
+      scalable, efficient, and maintainable applications using modern frameworks
+      and best practices. I thrive on building self-hosted solutions and
+      automating workflows, with a deep interest in DevOps and infrastructure
+      management.
+    </p>
+    <p className="mb-8">
+      🛠️ I&apos;m a huge Nvim and Tmux enthusiast — both help me optimize my
+      development environment (check out{" "}
+      <a
+        target="_blank"
+        className="underline text-active underline-offset-4"
+        href="https://github.com/denesbeck/dotfiles"
+      >
+        my dotfiles
+      </a>
+      ).
+    </p>
+    <p>
+      📁 Check out on{" "}
+      <a
+        target="_blank"
+        className="underline text-active underline-offset-4"
+        href="https://github.com/denesbeck"
+      >
+        my work
+      </a>{" "}
+      on GitHub
+    </p>
+    <p>
+      💻 Check out{" "}
+      <a
+        target="_blank"
+        className="underline text-active underline-offset-4"
+        href="https://lostindusk.com"
+      >
+        my portfolio page
+      </a>
+    </p>
+  </div>
+);

@@ -10,6 +10,7 @@ import Heading2 from "./Heading2";
 import Heading3 from "./Heading3";
 import Home from "./Home";
 import Input from "./Input";
+import MacOSBar from "./MacOSBar";
 import Navbar from "./Navbar";
 import ScrollToTop from "./ScrollToTop";
 import Spinner from "./Spinner";
@@ -28,6 +29,7 @@ export {
   Heading3,
   Home,
   Input,
+  MacOSBar,
   Navbar,
   ScrollToTop,
   Spinner,

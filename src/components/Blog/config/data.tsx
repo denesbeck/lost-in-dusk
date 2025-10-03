@@ -2,8 +2,17 @@ import { BlogEntry } from "../interfaces/blog";
 import migratingToTekton from "../blog-entries/migrating-to-tekton.md?url";
 import ibmTech2024Conference from "../blog-entries/ibm-tech-2024-conference.md?url";
 import lambdaDeployments from "../blog-entries/lambda-deployments.md?url";
+import buildingMyHomeServerP2 from "../blog-entries/building-my-home-server-p2.md?url";
 
 const BLOG_ENTRIES: BlogEntry[] = [
+  {
+    id: 5,
+    title: "Building my home server",
+    description: "My journey of building my home server - Part 2",
+    date: "2025-10-03",
+    tags: ["linux", "smb", "samba", "ubuntu"],
+    content: buildingMyHomeServerP2,
+  },
   {
     id: 3,
     title: "Lambda Deployments",

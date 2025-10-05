@@ -30,7 +30,11 @@ const Share = ({ id }: IShare) => {
         {SHARE_OPTIONS.map((option) => {
           const Icon = option.icon;
           return (
-            <a href={option.getHref(id)} target="_blank">
+            <a
+              href={option.getHref(id)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon className="w-7 h-7 transition-all duration-200 ease-in-out hover:scale-110 text-slate-200 hover:text-primary" />
             </a>
           );

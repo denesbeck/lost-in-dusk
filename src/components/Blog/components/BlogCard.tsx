@@ -36,7 +36,7 @@ const BlogCard = ({
     <>
       <button
         onClick={() => navigate({ pathname: `/blog/${id}`, search })}
-        className="flex overflow-hidden border-b-2 transition-all duration-200 ease-in-out cursor-pointer sm:border-b-0 sm:ring-2 last:border-b-0 ring-offset-root border-secondary ring-primary group animate-text-focus min-h-[10rem] backdrop-blur-md sm:active:ring-active sm:hover:ring-offset-4"
+        className="flex overflow-hidden border-b-2 transition-all duration-200 ease-in-out cursor-pointer sm:border-b-0 sm:ring-2 last:border-b-0 ring-offset-root border-secondary ring-primary group animate-text-focus max-h-[10rem] min-h-[10rem] backdrop-blur-md sm:active:ring-active sm:hover:ring-offset-4"
       >
         <img
           src={cover.image}
@@ -48,7 +48,9 @@ const BlogCard = ({
             {title}
           </h1>
 
-          <p className="flex-1 text-sm text-left">{description}</p>
+          <p className="overflow-hidden flex-1 text-sm text-left whitespace-nowrap md:w-full md:whitespace-pre-wrap w-[20ch] text-ellipsis sm:w-[32ch]">
+            {description}
+          </p>
           <div className="flex justify-end items-center space-x-2 w-full">
             <FaRegCalendarAlt />
             <div className="text-sm">{date}</div>

@@ -15,11 +15,11 @@ const Blog = () => {
     <div className="h-screen">
       <div className="mt-[90px]">
         <FilterTags />
-        <div className="flex overflow-auto justify-center py-4 max-h-[calc(100dvh-210px)]">
+        <div className="flex overflow-auto justify-center py-4 max-h-[calc(100dvh-215px)]">
           {entries.length === 0 ? (
             <NoRecords />
           ) : (
-            <div className="grid justify-center mx-6 sm:gap-12 sm:px-10 sm:w-dvw sm:[grid-template-columns:repeat(auto-fit,minmax(21rem,0))]">
+            <div className="mr-6 grid h-[110%] justify-center sm:w-dvw sm:[grid-template-columns:repeat(auto-fit,minmax(31rem,0))] sm:gap-12 sm:px-10">
               {entries.map((entry) => (
                 <BlogCard
                   key={entry.id}
@@ -29,6 +29,7 @@ const Blog = () => {
                   date={entry.date}
                   tags={entry.tags}
                   content={entry.content}
+                  cover={entry.cover}
                 />
               ))}
             </div>

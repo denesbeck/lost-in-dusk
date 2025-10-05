@@ -5,4 +5,5 @@ export interface BlogEntry {
   date: string;
   content: string;
   tags: string[];
+  cover: { image: string; alt: string };
 }

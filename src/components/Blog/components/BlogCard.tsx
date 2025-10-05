@@ -10,6 +10,7 @@ interface BlogCardProps {
   date: string;
   tags: string[];
   content: string;
+  cover: { image: string; alt: string };
 }
 
 const BlogCard = ({
@@ -19,6 +20,7 @@ const BlogCard = ({
   date,
   tags,
   content,
+  cover,
 }: BlogCardProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const { pathname, search } = useLocation();
@@ -34,16 +36,23 @@ const BlogCard = ({
     <>
       <button
         onClick={() => navigate({ pathname: `/blog/${id}`, search })}
-        className="flex flex-col py-3 px-6 space-y-2 border-b-2 transition-all duration-200 ease-in-out cursor-pointer sm:border-b-0 sm:ring-2 last:border-b-0 ring-offset-root border-secondary ring-primary group animate-text-focus min-h-[9rem] backdrop-blur-md sm:active:ring-active sm:hover:ring-offset-4"
+        className="flex overflow-hidden border-b-2 transition-all duration-200 ease-in-out cursor-pointer sm:border-b-0 sm:ring-2 last:border-b-0 ring-offset-root border-secondary ring-primary group animate-text-focus min-h-[10rem] backdrop-blur-md sm:active:ring-active sm:hover:ring-offset-4"
       >
-        <h1 className="relative text-lg text-left transition-all duration-200 ease-in-out group-hover:font-bold after:bg-primary after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:ease-in-out after:content-[''] group-hover:after:w-full">
-          {title}
-        </h1>
+        <img
+          src={cover.image}
+          alt={cover.alt}
+          className="h-full animate-text-focus max-w-36 min-w-36 sm:max-w-42 sm:min-w-42"
+        />
+        <div className="flex flex-col py-3 px-6 space-y-2">
+          <h1 className="relative text-lg text-left transition-all duration-200 ease-in-out group-hover:font-bold after:bg-primary after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:ease-in-out after:content-[''] group-hover:after:w-full">
+            {title}
+          </h1>
 
-        <p className="flex-1 text-sm text-left">{description}</p>
-        <div className="flex justify-end items-center space-x-2 w-full">
-          <FaRegCalendarAlt />
-          <div className="text-sm">{date}</div>
+          <p className="flex-1 text-sm text-left">{description}</p>
+          <div className="flex justify-end items-center space-x-2 w-full">
+            <FaRegCalendarAlt />
+            <div className="text-sm">{date}</div>
+          </div>
         </div>
       </button>
       {isVisible && (

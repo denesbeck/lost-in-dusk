@@ -4,10 +4,10 @@ import ibmTech2024Conference from "../blog-entries/ibm-tech-2024-conference.md?u
 import lambdaDeployments from "../blog-entries/lambda-deployments.md?url";
 import buildingMyHomeServerP1 from "../blog-entries/building-my-home-server-p1.md?url";
 import buildingMyHomeServerP2 from "../blog-entries/building-my-home-server-p2.md?url";
-import buildHomeServer from "@/assets/blog/building_home_server.png";
-import lambdaDeploy from "@/assets/blog/lambda_deploy.png";
-import tektonCicd from "@/assets/blog/tekton_cicd.png";
-import techConference from "@/assets/blog/tech_conference.png";
+import buildHomeServer from "@/assets/blog/building_home_server_sm.png";
+import lambdaDeploy from "@/assets/blog/lambda_deploy_sm.png";
+import tektonCicd from "@/assets/blog/tekton_cicd_sm.png";
+import techConference from "@/assets/blog/tech_conference_sm.png";
 
 const BLOG_ENTRIES: BlogEntry[] = [
   {

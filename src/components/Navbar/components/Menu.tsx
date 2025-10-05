@@ -31,7 +31,7 @@ const Menu = ({ children }: MenuProps) => {
       </button>
       {isOpen && (
         <div
-          className={`animate-text-focus fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center space-y-4 p-8 ${["Safari", "Chrome"].includes(browser) ? "bg-root" : "bg-root/30 backdrop-blur-md backdrop-brightness-90"}`}
+          className={`animate-text-focus fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center space-y-4 p-8 ${["Safari", "Chrome", "Firefox"].includes(browser) ? "bg-root" : "bg-root/30 backdrop-blur-md backdrop-brightness-90"}`}
         >
           {children}
         </div>

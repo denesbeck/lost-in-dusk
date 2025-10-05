@@ -1,4 +1,4 @@
-# 🧪 Building my home server: Part 1
+# 🏗️ Building my home server: Part 1
 
 _Starting and connecting to the server_
 

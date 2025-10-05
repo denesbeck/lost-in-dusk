@@ -1,4 +1,4 @@
-# 🧪 Building my home server: Part 2
+# 🏗️ Building my home server: Part 2
 
 _SMB with Samba_
 
